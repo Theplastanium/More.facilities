@@ -1,0 +1,16 @@
+{
+"name": "更多设施",
+"displayName":"更多设施",
+ "java": false,
+   "main": "XXXUAN.FullTextDialog_X42",
+ "minGameVersion": 149,
+  "macGameVersion": 153.1,
+ "author": "额？！",
+ "version": "1.1121"
+	"hideInBrowser": false,
+	hidden: true
+	"description":"请输入标题框"
+	dependencies:[
+adaptivecoredatabase
+]
+}
