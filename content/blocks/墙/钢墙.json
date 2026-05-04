@@ -1,0 +1,64 @@
+{
+	"type": "ForceProjector",
+	"name": "钢质复合墙",
+	"health": 10800,
+	"armor": 24,
+	"size": 3,
+	"radius": 32,
+	"canOverdrive": false,
+		"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"shieldHealth": 2500,
+	shieldRotation: 45
+	"phaseRadiusBoost": 13,
+	"cooldownNormal": 1,
+	sides: 4
+	"cooldownLiquid": 9,
+	"cooldownBrokenBase": 1,
+	"coolantConsumption": 0.1,
+	"absorbEffect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"sizeFrom": 0,
+		"sizeTo": 13,
+		"length": 0,
+		"baseLength": 0,
+		"sizeInterp": "pow10Out",
+		"lifetime": 20,
+		"layer": 120,
+		"colorFrom": "000000",
+		"colorTo": "00000000"
+	},
+	"consumes": {
+		"power": 0.5
+		    liquids: {
+    "liquids": [
+      "淡气/0.1"
+    ],
+      optional: true
+      booster: true
+    }
+	},
+	"requirements": [
+		"硅钢片/30",
+		"silicon/18",
+		"铝合金/35",
+		"thorium/20"
+		"titanium/38"
+		"phase-fabric/18"
+	],
+	"itemCapacity": 0,
+	"research": {
+		"parent": "force-projector",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "impact0078"
+			}
+		]
+	}
+	"category": "effect"
+	"category": "defense",//不能改
+}

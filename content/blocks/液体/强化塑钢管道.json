@@ -1,0 +1,16 @@
+{
+	"type": "Conduit",
+	"health": 200,
+	"liquidCapacity": 50,
+	"liquidPressure": 11.45,
+	"requirements": [
+		"titanium/2",
+		"metaglass/3",
+		"plastanium/2"
+	],
+	"deflect":false ,
+	"absorbLasers":true,
+	"bridgeReplacement": "phase-conduit",
+	"category": "liquid",
+	"research": "conduit"
+}

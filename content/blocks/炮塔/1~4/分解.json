@@ -1,0 +1,25 @@
+{
+	"type": "PointDefenseTurret",
+	"size": 2,
+	"health": 1380,
+	"range": 200,
+	"hasPower": true,
+	"shootLength": 10,
+	"bulletDamage": 80,
+	"retargetTime": 1,
+	"reload": 1,
+	"consumes": {
+		"power": 8
+	},
+	"requirements": [
+		"metaglass/100",
+		"silicon/140",
+		"copper/55",
+		"graphite/35",
+		"lead/50"
+		"plastanium/80"
+		"phase-fabric/30"
+	],
+	"category": "turret",
+	"research": "segment"
+}

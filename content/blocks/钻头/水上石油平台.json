@@ -1,0 +1,82 @@
+{
+	"name": "水上原油钻井",
+	"type": "AttributeCrafter",
+	"health": 5000,
+	"size": 10,
+	"hasPower": true,
+	"hasLiquids": true,
+	"liquidCapacity": 1200,
+	"updateEffect": "redgeneratespark",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-底"
+			},
+			{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "oil",
+				"suffix": "-液体"
+			},
+			"DrawDefault"
+		]
+	},
+	"consumes": {
+		"power": 11
+	},
+			"absorbLasers": true
+			"placeableLiquid": true,
+		"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"requirements": [
+	"scrap/100"
+        "氮化镓/30"
+        "氧化镓/35"
+		"metaglass/250",
+        "硅钢片/180",
+		"silicon/260",
+		"thorium/220"
+		"titanium/350"
+		"plastanium/300"
+		"phase-fabric/80"
+		"graphite/180"
+		"sand/1000"
+		"surge-alloy/200"
+	],
+	researchCost: [
+ "scrap/100"
+        "氮化镓/30"
+        "氧化镓/35"
+		"metaglass/250",
+        "硅钢片/180",
+		"silicon/260",
+		"thorium/220"
+		"titanium/290"
+		"plastanium/250"
+		"phase-fabric/80"
+		"graphite/180"
+		"sand/1000"
+		"surge-alloy/200"
+		"铝合金/120"
+		"磁钢/110"
+  ]
+	"outputLiquid": "原油/1",
+	"baseEfficiency": -0.1,
+	"maxBoost": 2.111111,
+	"boostScale": 0.334,
+	"minEfficiency": 0
+	"attribute": "crude",
+"category": "production",
+"research": {
+		"parent": "石油钻井",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "impact0078"
+			}
+		]
+	}
+}

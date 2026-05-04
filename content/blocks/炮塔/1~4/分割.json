@@ -1,0 +1,159 @@
+{
+	"type": "ItemTurret",
+	"targetAir": true,
+	"targetGround": false,
+	"health": 350,
+	"size": 2,
+	"shootSound": "shootBig",
+	"shake": 0.05,
+	"inaccuracy": 2,
+	"recoil": 2,
+	"recoilTime":10,
+	"cooldownTime": 80,
+		"ammoTypes": {
+		"metaglass": {
+		"type": "PointBulletType",
+		"trailEffect": "none",
+		"hitEffect": "none",
+		"despawnEffect": "none",
+		"splashDamageRadius": 16,
+		"splashDamage": 40,
+		"knockback": 2.5,
+		"speed": 20,
+		"lifetime": 30,
+		"ammoMultiplier": 1,
+		"fragBullets": 14,
+		"fragBullet": {
+			"type": "PointBulletType",
+			"trailEffect": "none",
+			"hitEffect": "flakExplosion",
+			"despawnEffect": "flakExplosion",
+			"splashDamageRadius": 24,
+			"splashDamage": 15,
+			"status": "sapped",
+			"statusDuration": 60,
+			"speed": 20,
+			"lifetime": 1
+		}
+		}
+		"lead": {
+		"type": "PointBulletType",
+		"trailEffect": "none",
+		"hitEffect": "none",
+		"despawnEffect": "none",
+		"splashDamageRadius": 16,
+		"splashDamage": 20,
+		"knockback": 2.5,
+		"speed": 20,
+		"lifetime": 30,
+		"ammoMultiplier": 1,
+		"fragBullets": 6,
+		"fragBullet": {
+			"type": "PointBulletType",
+			"trailEffect": "none",
+			"hitEffect": "flakExplosion",
+			"despawnEffect": "flakExplosion",
+			"splashDamageRadius": 16,
+			"splashDamage": 12,
+			"status": "sapped",
+			"statusDuration": 60,
+			"speed": 20,
+			"lifetime": 1
+		}
+		}
+		"graphite": {
+		"type": "PointBulletType",
+		"trailEffect": "none",
+		"hitEffect": "none",
+		"despawnEffect": "none",
+		"splashDamageRadius": 8,
+		"splashDamage": 22,
+		"knockback": 2,
+		"speed": 20,
+		"lifetime": 30,
+		"ammoMultiplier": 1,
+		"fragBullets": 6,
+		"fragBullet": {
+			"type": "PointBulletType",
+			"trailEffect": "none",
+			"hitEffect": "flakExplosion",
+			"despawnEffect": "flakExplosion",
+			"splashDamageRadius": 16,
+			"splashDamage": 15,
+			"status": "freezing",
+			"statusDuration": 30,
+			"speed": 20,
+			"lifetime": 1
+		}
+		},
+		"pyratite": {
+		"type": "PointBulletType",
+		"trailEffect": "none",
+		"hitEffect": "none",
+		"despawnEffect": "none",
+		"splashDamageRadius": 8,
+		"splashDamage": 35,
+		"knockback": 0.5,
+		"speed": 20,
+		"lifetime": 30,
+		"ammoMultiplier": 1,
+		"fragBullets": 3,
+		"fragBullet": {
+			"type": "PointBulletType",
+			"trailEffect": "none",
+			"hitEffect": "flakExplosion",
+			"despawnEffect": "flakExplosion",
+			"splashDamageRadius": 20,
+			"splashDamage": 20,
+			"status": "burning",
+			"statusDuration": 30,
+			"speed": 20,
+			"lifetime": 1
+		}
+		}
+		"silicon": {
+		"type": "PointBulletType",
+		"trailEffect": "none",
+		"hitEffect": "none",
+		"despawnEffect": "none",
+		"splashDamageRadius": 24,
+		"splashDamage": 35,
+		"knockback": 2.5,
+		"speed": 8,
+		"lifetime": 25,
+		"ammoMultiplier": 1,
+		"fragBullets": 3,
+		"fragBullet": {
+			"type": "PointBulletType",
+			"trailEffect": "none",
+			"hitEffect": "flakExplosion",
+			"despawnEffect": "flakExplosion",
+			"splashDamageRadius": 16,
+			"splashDamage": 10,
+			"status": "slow",
+			"statusDuration": 100,
+			"speed": 4,
+			"lifetime": 40
+						"homingRange": 45,
+			"homingPower": 0.6,
+		}
+		}
+	},
+	"shootEffect": "shootBig",
+	"consumes": {
+		"coolant": {
+			"amount": 0.2,
+			"optional": true
+		}
+	},
+	"reload": 20,
+	"rotateSpeed": 7,
+	"range": 200,
+	"category": "turret",
+	"research": "scatter",
+	"requirements": [
+		"copper/25",
+		"graphite/15",
+		"lead/30"
+	]
+}

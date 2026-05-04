@@ -1,0 +1,179 @@
+{
+	"type": "PowerTurret",
+	"canOverdrive": false,
+	"health": 2550,
+	"size": 4,
+	"armor": 12
+	"accurateDelay": false,
+	"moveWhileCharging": false,
+	"shake": 15,
+	"inaccuracy": 0,
+	"recoil": 12,
+	"cooldownTime": 100,
+	"liquidCapacity": 180,
+	"canOverdrive": false,
+	"recoilTime": 120,
+	"shoot": {
+				"shots": 2,
+				"shotDelay": 5
+			},
+	"shootY": 10,
+	"coolantMultiplier": 0.5,
+	"heatColor": "FF4040",
+	"shootSound": "laserblast",
+	"shootEffect": {
+		"type": "WaveEffect",
+		"lifetime": 45,
+		"interp":"circleOut",
+		"sizeFrom": 0,
+		"sizeTo": 200,
+		"strokeFrom": 9,
+		"strokeTo": 0,
+		"colorFrom": "FFFFFF",
+		"colorTo": "25C9AB"
+	},
+	"chargeSound": "lasercharge",
+	"shootType": {
+		"type": "LaserBulletType",
+		"lightningSpacing": 8,
+		"lightningLength": 6,
+		"lightningDelay": 1.7,
+		"lightningLengthRand": 2,
+		"lightningAngleRand": 90,
+		"lightningDamage": 3.5,
+		"lightningColor": "25C9AB",
+		"length": 4000,
+		"width": 40,
+		"sideAngle": 30,
+		"sideWidth": 2,
+		"sideLength": 400,
+		"damage": 2348,
+		"knockback": 20,
+		"status": "损坏III",
+		"statusDuration": 500,
+		"buildingDamageMultiplier": 0.8,
+		"lifetime": 88,
+		"pierceArmor":true,
+		"collidesAir": true,
+		"splashDamageRadius": 30,
+		"splashDamage": 3048,
+		"ammoMultiplier": 1,
+		"colors": [
+			"25C9ABA8",
+			"25C9AB",
+			"FFFFFF"
+		],
+		"smokeEffect": "smokeCloud",
+		"chargeEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				{
+					"type": "WaveEffect",
+					"lifetime": 80,
+					"sizeFrom": 130,
+					"sizeTo": 0,
+					"strokeFrom": 0,
+					"strokeTo": 6,
+					"colorFrom": "25C9AB",
+					"colorTo": "BFFFDB"
+				},
+				{
+					"type": "ParticleEffect",
+					"particles": 35,
+					"strokeFrom": 0,
+					"strokeTo": 2,
+					"line": true,
+					"sizeInterp": "pow5Out",
+					"interp": "pow5In",
+					"lenFrom": 0,
+					"lenTo": 18,
+					"length": 200,
+					"baseLength": -180,
+					"lifetime": 70,
+					"colorFrom": "25C9AB",
+					"colorTo": "BFFFDB"
+				},
+				{
+					"type": "ParticleEffect",
+					"particles": 1,
+					"sizeFrom": 0,
+					"sizeTo": 8,
+					"length": 0,
+					"baseLength": -0,
+					"lifetime": 80,
+					"colorFrom": "25C9AB",
+					"colorTo": "BFFFDB"
+				},
+				{
+					"type": "ParticleEffect",
+					"particles": 1,
+					"strokeFrom": 10,
+					"strokeTo": 0,
+					"lenFrom": 0,
+					"lenTo": 40000,
+					"sizeInterp": "pow5In",
+					"line": true,
+					"randLength": false,
+					"length": 0,
+					"baseLength": 1,
+					"lifetime": 76,
+					"colorFrom": "25C9AB80",
+					"colorTo": "BFFFDB80",
+					"cone": 0
+				}
+			]
+		},
+		"despawnEffect": "none",
+		"hitEffect": {
+			"type": "ExplosionEffect",
+						"lifetime": 45,
+						"waveStroke": 10,
+						"waveLife": 26,
+						"waveRadBase": 8,
+						"waveColor": "BFFFDB",
+						"waveRad": 94,
+						"smokes": 22,
+						"smokeColor": "FFFFFF",
+						"sparkColor": "BFFFDB",
+						"sparks": 33,
+						"sparkRad": 95,
+						"sparkStroke": 2,
+						"sparkLen": 22
+				}
+	},
+	"consumes": {
+		"power": 100,
+		"liquid": {
+			"liquid": "water",
+			"amount": 0.5
+		}
+	},
+	"reload": 300,
+	"rotateSpeed": 1,
+	"fogRadiusMultiplier": 0.3,
+	"range": 1600,
+	"category": "turret",
+"research": {
+		"parent": "lancer",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "planetaryTerminal"
+			}
+		]
+	}
+	"requirements": [
+		"copper/500",
+		"graphite/600",
+		"plastanium/440",
+		"surge-alloy/480",
+		"titanium/620"
+		"硅钢片/180"
+		"thorium/280"
+		"silicon/850",
+		"metaglass/220"
+		"lead/440"
+		"phase-fabric/340"
+	]
+	
+}

@@ -1,0 +1,36 @@
+{
+"type": "SolidPump",
+"health": 550,
+"size": 3,
+"floating":true,
+"hasPower": true,
+"hasLiquids": true,
+"liquidCapacity": 180,
+"size":3 ,
+			"placeableLiquid": true,
+			
+	"health":320 ,
+	"liquidCapacity": 180,
+	"pumpAmount": 1,
+	"rotateSpeed": 11,
+	"attribute": "water",
+	"baseEfficiency": 1.5,
+	"requirements": [
+"硅钢片/35",
+		"silicon/20",
+		"graphite/50",
+		"thorium/35"
+		"titanium/60"
+		"metaglass/80"
+	],
+"baseEfficiency": 1,
+	"maxBoost": 5,
+	"boostScale": 0.5,
+	"minEfficiency": 0.5,
+	"consumes": {
+        "power": 4.5
+    },
+
+	"category": "production",
+	"research":"water-extractor"
+}

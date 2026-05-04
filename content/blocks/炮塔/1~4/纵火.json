@@ -1,0 +1,189 @@
+{
+	"type": "LiquidTurret",
+	"name": "纵火",
+	"health": 2200,
+	"size": 4,
+	"range": 130,
+healAmount: 10
+			"reload": 1,
+			"shootY": 9,
+			"mirror": false,
+			"top": false,
+			"rotate": true,
+			"rotateSpeed": 1,
+			"rotationLimit": 13,
+			"shootSound": "torch",
+			"alwaysContinuous": true,
+			"cooldownTime": 300,
+			"heatColor":"FF4040",
+	"consumes": {
+		"power": 0.5
+	},
+	"liquidCapacity": 280,
+	"ammoTypes": {
+		"重油": {
+"type": "ContinuousFlameBulletType",
+				"recoil": 0.01,
+				"pierceBuilding": false,
+				"colors":["F33304A0","F33304B8","FEAF1FCC","FCBE11","FEFF5F"],
+				"lightColor":"FCBE11",
+				"flareColor":"FEAF1F",
+				"length": 186,
+							"speed": 14,
+								"rangeChange": 88,		
+				"lifetime": 4,
+				"knockback": 2.5,
+				"statusDuration": 1200,
+				"status": "tarred",
+				"damage": 50,
+				"healColor": "F33304",
+				"incendAmount": 1,
+				"incendSpread": 8,
+				"incendChance": 0.2,
+								"pierceCap": 3,
+				"makeFire": true,
+				"shootEffect": {
+					"type": "ParticleEffect",
+					"particles": 4,
+					"sizeFrom":3.3,
+					"sizeTo":0,
+					"interp":"pow10Out",
+					"sizeInterp":"pow5In",
+					"length": 100,
+					"baseLength": 0,
+					"lifetime": 22,
+					"colorFrom": "f8ad42",
+					"colorTo": "F33304B8",
+					"cone": 13
+				},
+				}
+						"oil": {
+"type": "ContinuousFlameBulletType",
+				"recoil": 0.01,
+				"pierceBuilding": false,
+				"colors":["F33304A0","F33304B8","FEAF1FCC","FCBE11","FEFF5F"],
+				"lightColor":"FCBE11",
+				"flareColor":"FEAF1F",
+				"length": 186,
+							"speed": 18,
+										"rangeChange": 128,
+				"lifetime": 8,
+				"knockback": 2.5,
+				"statusDuration": 1200,
+				"status": "tarred",
+				"damage": 50,
+				"healColor": "F33304",
+				"incendAmount": 1,
+				"incendSpread": 8,
+				"incendChance": 0.2,
+								"pierceCap": 3,
+				"makeFire": true,
+				"shootEffect": {
+					"type": "ParticleEffect",
+					"particles": 4,
+					"sizeFrom":3.3,
+					"sizeTo":0,
+					"interp":"pow10Out",
+					"sizeInterp":"pow5In",
+					"length": 100,
+					"baseLength": 0,
+					"lifetime": 22,
+					"colorFrom": "f8ad42",
+					"colorTo": "F33304B8",
+					"cone": 13
+				},
+				}
+						"页岩气": {
+"type": "ContinuousFlameBulletType",
+				"recoil": 0.01,
+				"pierceBuilding": false,
+								"pierceCap": 5,
+				"colors":["F33304A0","F33304B8","FEAF1FCC","FCBE11","FEFF5F"],
+				"lightColor":"FCBE11",
+				"flareColor":"FEAF1F",
+				"length": 96,
+				"lifetime": 8
+				"knockback": 3,
+				"statusDuration": 600,
+				"rangeChange": -24,
+				"status": "burning",
+				"damage": 80,
+				"healColor": "F33304",
+				"incendAmount": 1,
+				"incendSpread": 20,
+				"incendChance": 0.2,
+				"makeFire": true,
+				"shootEffect": {
+					"type": "ParticleEffect",
+					"particles": 20,
+					"sizeFrom":18.3,
+					"sizeTo":0,
+					"interp":"pow10Out",
+					"sizeInterp":"pow5In",
+					"length": 88,
+					"baseLength": 20,
+					"lifetime": 22,
+					"colorFrom": "f8ad42",
+					"colorTo": "F33304B8",
+					"cone": 18
+				},
+				}
+				"天然气":{
+				"type": "ContinuousFlameBulletType",
+				"recoil": 0.01,
+				"pierceBuilding": false,
+								"pierceArmor": true,
+				"colors":["F33304A0","F33304B8","FEAF1FCC","FCBE11","FEFF5F"],
+				"lightColor":"FCBE11",
+				"flareColor":"FEAF1F",
+				"length": 96,
+				"rangeChange": -24,
+				"lifetime": 8
+				"knockback": 3,
+				"statusDuration": 600,
+				"status": "melting",
+				"damage": 110,
+				"healColor": "F33304",
+				"incendAmount": 1,
+				"incendSpread": 8,
+				"incendChance": 0.2,
+				"makeFire": true,
+				"shootEffect": {
+					"type": "ParticleEffect",
+					"particles": 4,
+					"sizeFrom":3.3,
+					"sizeTo":0,
+					"interp":"pow10Out",
+					"sizeInterp":"pow5In",
+					"length": 88,
+					"baseLength": 0,
+					"lifetime": 22,
+					"colorFrom": "f8ad42",
+					"colorTo": "F33304B8",
+					"cone": 13
+				},
+	},
+	}
+	"requirements": [
+		"scrap/0"
+        "氮化镓/5"
+        "氧化镓/5"
+		"metaglass/40",
+        "硅钢片/80",
+		"silicon/20",
+		"thorium/60"
+		"titanium/20"
+		"plastanium/20"
+		"surge-alloy/80"
+	],
+	"category": "turret",
+research: {
+        parent: "tsunami",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "nuclearComplex"
+            }
+        ]
+    },
+}

@@ -1,0 +1,20 @@
+{
+	"type": "Drill",
+	"size":2 ,
+	"health":220 ,
+	"tier": 2,
+	"drillTime":185,
+	"consumes":{
+		 "liquid": {
+			"liquid": "hydrogen", "amount": 0.1,
+			"booster":true,
+			"optional": true
+		}
+	},
+	"requirements": [
+    "copper/30"
+    "lead/40"
+	],
+	"category": "production",
+	"research":"mechanical-drill"
+}

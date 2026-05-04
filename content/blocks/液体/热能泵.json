@@ -1,0 +1,23 @@
+{
+	"type": "Pump",
+	"size":3,
+	"health":800 ,
+	"liquidCapacity": 600,
+	"pumpAmount": 0.4,
+
+	"requirements": [
+		{"item": "titanium", "amount":45 }
+		{"item": "silicon", "amount":55 }
+		{"item": "plastanium", "amount":30 }
+		{"item": "thorium", "amount":30 }
+		{"item": "metaglass", "amount":80 }
+		{"item": "硅钢片", "amount":10 }
+	],
+
+	"consumes": {
+        "power": 2,
+    },
+
+	"category": "liquid",
+	"research":"impulse-pump"
+}

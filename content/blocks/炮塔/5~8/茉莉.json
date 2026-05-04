@@ -1,0 +1,246 @@
+{
+	"type": "PowerTurret",
+	"canOverdrive": false,
+	"health": 3050,
+	"size": 5,
+	"armor": 18
+	"accurateDelay": false,
+	"moveWhileCharging": false,
+	"shake": 15,
+	"inaccuracy": 0
+	"range": 385,
+	"recoil": 1,
+	"cooldownTime": 180,
+	"liquidCapacity": 180,
+	"canOverdrive": false,
+	"recoilTime": 120,
+shoot: {
+shots: 6
+shotDelay: 13
+firstShotDelay: 20
+}
+	"shootY": 10,
+	"coolantMultiplier": 0.5,
+	"heatColor": "FF4040",
+	"shootSound": "laserblast",
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "7788CB",
+                "colorTo": "AAB8EE",
+                "sizeFrom": 0,
+                "sizeTo": 6,
+                "lifetime": 140
+                strokeFrom: 5
+                strokeTo: 0
+            }
+        ]
+    }
+	"chargeSound": "lasercharge",
+	"shootType": {
+    type: BasicBulletType
+    speed: 5.8
+    lifetime: 90
+    damage: 114
+    "splashDamageRadius": 34,
+	"splashDamage": 80,
+				"status": "损坏I",
+			"statusDuration": 180,
+    width: 16
+    height: 16
+    spin: 3
+    inaccuracy: 25
+    "homingRange": 45,
+	"homingPower": 0.05,
+    healAmount: 80
+    homingPower: 0.15
+    homingRange: 150
+    homingDelay: 45
+    collidesTeam: true
+			"pierceArmor": true,
+						"pierceCap": 3,
+    collides: true
+    keepVelocity: false
+    backColor: 7788CB
+    frontColor: 41e860 
+    smokeEffect: "shootSmallSmoke"
+      "fragVelocityMin": 0.3,
+      "fragVelocityMax": 1.5,
+      "fragBullets": 6,
+      despawnHit: true
+      "fragBullet": {
+        "speed": 3,
+        "collidesTiles": false,
+        "damage": 58,
+        "splashDamageRadius": 15,
+        "status": "损坏I",
+			"statusDuration": 120,
+		"splashDamage": 45,
+        "homingRange": 120,
+		"homingPower": 1.5,
+            healAmount: 12
+        "width": 6,
+        "heigth": 6,
+        lifetime: 30
+    trailChance: 1
+    trailEffect: {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7788CB
+    colorTo: AAB8EE
+    region: particle
+  }
+    despawnHit: true
+    despawnEffect: {
+    type: WaveEffect
+    lifetime: 30
+    sizeFrom: 0
+    sizeTo: 8
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: 7788CB
+    colorTo: AAB8EE
+  }
+      }
+    ammoMultiplier: 1
+                "chargeEffect": {
+                    "type": "multiEffect",
+                    "lifetime": 140,
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "sizeFrom": 0,
+                            "sizeTo": 8,
+                            "length": 0,
+                            "lifetime": 120,
+                            "colorFrom": "84F491FF",
+                            "colorTo": "84F491FF",
+                            "cone": 360
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            line: true
+                            "particles": 15,
+                            "sizeFrom": 0,
+                            "sizeTo": 8,
+                            offset: 60
+                            baseLength: -40
+                            "length": 40,
+                            lenFrom: 0
+                            lenTo: 5
+                            strokeFrom: 0
+                            strokeTo: 3
+                            "lifetime": 120,
+                            "colorFrom": "84F491FF",
+                            "colorTo": "84F491FF",
+                            "cone": 360
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 120,
+                            "sizeFrom": 0,
+                            "sizeTo": 18,
+                            "strokeFrom": 5,
+                            "strokeTo": 0,
+                            "colorFrom": "62AE7FFF",
+                            "colorTo": "84F491FF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "sizeFrom": 0,
+                            "sizeTo": 17,
+                            "length": 0,
+                            "spin": 7,
+                            "lifetime": 120,
+                            "region": "更多设施-star",                           
+                            "colorFrom": "62AE7FFF",
+                            "colorTo": "84F491FF"
+                        },
+                    ]
+                }
+    hitEffect: {
+    type: WaveEffect
+    lifetime: 30
+    sizeFrom: 0
+    sizeTo: 15
+    strokeFrom: 8
+    strokeTo: 0
+    colorFrom: 7788CB
+    colorTo: AAB8EE
+  }
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "7788CB",
+                "colorTo": "AAB8EE",
+                "sizeFrom": 0,
+                "sizeTo": 6,
+                "lifetime": 25
+                strokeFrom: 5
+                strokeTo: 0
+            }
+        ]
+    }
+    backSprite: 更多设施-star
+    sprite: 更多设施-star2
+    shrinkX: 0
+    shrinkY: 0
+      weaveMag: 3
+      weaveScale: 5
+    trailChance: 1
+    trailEffect: {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 25
+    sizeFrom: 7
+    sizeTo: 0
+    colorFrom: 7788CB
+    colorTo: AAB8EE
+    region: particle
+  }
+}
+	"consumes": {
+		"power": 54,
+		"liquid": {
+			"liquid": "water",
+			"amount": 0.5
+		}
+	},
+	"reload": 80,
+	"rotateSpeed": 3,
+	"fogRadiusMultiplier": 0.3,
+	"category": "turret",
+"research": {
+		"parent": "lancer",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "肼江"
+			}
+		]
+	}
+	"requirements": [
+		"copper/200",
+		"graphite/110",
+		"plastanium/140",
+		"surge-alloy/80",
+		"titanium/120"
+		"thorium/180"
+		"silicon/250",
+		"metaglass/120"
+		"lead/200"
+		"phase-fabric/40"
+	]
+	
+}

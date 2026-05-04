@@ -1,0 +1,25 @@
+{
+	"type": "radar",
+	"name": "雷达",
+	"size": 5,
+	"health": 2200,
+	"fogRadius": 220,
+	"buildCostMultiplier": 0.5,
+	"outlineColor": "383848",
+	"glowColor": "BFFFDB",
+	"discoveryTime": 720,
+	"consumes": {
+		"power": 8
+	},
+	"requirements": [
+		"titanium/100",
+		"plastanium/40"
+		"thorium/50"
+		"silicon/150",
+		"氧化镓/50"
+		"氮化镓/20"
+		"铝合金/200"
+	],
+	"category": "effect",
+	"research": "高频雷达"
+}

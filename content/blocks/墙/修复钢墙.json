@@ -1,0 +1,38 @@
+{
+	"type": "MendProjector",
+	"name": "修复型钢墙",
+	"health": 4800,
+	"size": 2,
+	"range": 36,
+		"armor": 24,
+	"reload": 180,
+	"healPercent": 8,
+	"phaseBoost": 4,
+	"phaseRangeBoost": 4,
+	"canOverdrive": false,
+		"canOverdrive": false,
+		"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"consumes": {
+		"power": 0.25,
+liquids: {
+    "liquids": [
+      "淡气/0.1"
+    ],
+      optional: true
+      booster: true
+    }
+	},
+	"requirements": [
+		"硅钢片/22",
+		"silicon/14",
+		"铝合金/16",
+		"thorium/18"
+		"titanium/32"
+		"phase-fabric/16"
+	],
+	"category": "defense",
+	"research": "钢墙"
+}

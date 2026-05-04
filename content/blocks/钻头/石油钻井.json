@@ -1,0 +1,35 @@
+{
+"type": "SolidPump",
+"health": 550,
+"size": 5,
+"floating":true,
+"hasPower": true,
+"hasLiquids": true,
+"liquidCapacity": 200,
+	"requirements": [
+		"silicon/85",
+		"graphite/90",
+		"metaglass/85",
+	    "thorium/90"
+	    "硅钢片/50"
+		"titanium/50"
+],
+"consumes":{
+"power": 6.8
+}
+"pumpAmount": 0.5,
+"rotateSpeed": 1.5,
+"result":"原油",
+"baseEfficiency": 1,
+"attribute": "oil",
+"category": "production",
+"research": {
+		"parent": "oil-extractor",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "降落区"
+			}
+		]
+	}
+}

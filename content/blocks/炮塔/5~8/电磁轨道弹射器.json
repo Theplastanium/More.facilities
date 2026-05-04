@@ -1,0 +1,162 @@
+{
+	"type": "ItemTurret",
+	"health": 20650,
+	"size": 10,
+	"reload": 60,
+	"armor": 48
+	"fogRadiusMultiplier": 0.16,
+	"range": 2300,
+	"maxAmmo": 105,
+		"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+    "pierce":true,//子弹是否可以穿过单位
+		"pierceBuilding":true,
+		   "drawSize":2,
+	"recoilTime": 10,
+			"reflectable":false,//这颗子弹是否能反射出来。(?
+		"absorbable":false
+	"recoil": 20,
+	"canOverdrive": false,
+	"cooldownTime": 10,
+	"shake": 3,
+	"shootSound": "hum",
+	"ammoUseEffect": "casing3Double",
+	"shootEffect": {
+		"type": "WaveEffect",
+		"lifetime": 15,
+		"sizeFrom": 0,
+		"sizeTo": 200,
+		"strokeFrom": 3,
+		"strokeTo": 0,
+		"colorFrom": "6879B1",
+		"colorTo": "529788"
+	},
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 0,
+	"rotateSpeed": 2,
+	"ammoPerShot": 50,
+	"ammoTypes": {
+		"硅钢片": {
+			"type": "BasicBulletType",
+			"ammoMultiplier": 1,
+			"speed": 200,
+			"drag": 0.017,
+			"lifetime": 90,
+						"reflectable":false,//这颗子弹是否能反射出来。(?
+			"knockback": 6,
+			"width": 23,
+			"height": 45,
+			"damage": 22222,
+						"pierceArmor": true,
+			"status": "重创",
+			"statusDuration": 2147483647,
+			"trailColor": "6879B1",
+			"frontColor": "6879B1",
+			"backColor": "ABB9ED","buildingDamageMultiplier":"0.6"
+"pierceCap": 3,
+			"pierceBuilding": false,
+			"trailChance": 1,
+			"trailInterval": 24,
+			"trailRotation": true,
+			"trailEffect": "instTrail",
+			"hitSound": "shotgun",
+			"shootEffect": {
+				"type": "WaveEffect",
+				"lifetime": 15,
+				"sizeFrom": 0,
+				"sizeTo": 200,
+				"strokeFrom": 3,
+				"strokeTo": 0,
+				"colorFrom": "ABB9ED",
+				"colorTo": "6879B1"
+				"pierceArmor": true,
+			},
+			"smokeEffect": {
+				"type": "ParticleEffect",
+				"particles": 17,
+				"sizeFrom": 11,
+				"sizeTo": 0,
+				"lifetime": 120,
+				"interp": "pow10Out",
+				"sizeInterp": "pow3In",
+				"baseLength": 0,
+				"length": 45,
+				"cone": 16,
+				"colorFrom": "ABB9ED",
+				"colorTo": "6879B1"
+			},
+			"hitEffect": "instHit",
+			"despawnEffect": "none"
+		}
+		"磁钢": {
+			"type": "BasicBulletType",
+			"ammoMultiplier": 1,
+						"reflectable":false,//这颗子弹是否能反射出来。(?
+			"speed": 200,
+			"drag": 0.017,
+			"lifetime": 90,
+			"pierceArmor": true,
+			"knockback": 15,
+			"width": 23,
+			"height": 45,
+			"damage": 288200,
+			"status": "损坏IV",
+						"pierceArmor": true,
+			"statusDuration": 2147483647,
+			"buildingDamageMultiplier":"0.88"
+"pierceCap": 5,
+			"pierceBuilding": false,
+			"trailChance": 1,
+			"trailInterval": 24,
+			"trailRotation": true,
+			"trailEffect": "instTrail",
+			"hitSound": "shotgun",
+			"shootEffect": {
+				"type": "WaveEffect",
+				"lifetime": 15,
+				"sizeFrom": 0,
+				"sizeTo": 200,
+				"strokeFrom": 3,
+				"strokeTo": 0,
+				"colorFrom": "3D3D4F",
+				"colorTo": "9B9DCB"
+			},
+			"smokeEffect": {
+				"type": "ParticleEffect",
+				"particles": 17,
+				"sizeFrom": 11,
+				"sizeTo": 0,
+				"lifetime": 120,
+				"interp": "pow10Out",
+				"sizeInterp": "pow3In",
+				"baseLength": 0,
+				"length": 45,
+				"cone": 16,
+				"colorFrom": "3D3D4F",
+				"colorTo": "9B9DCB"
+			},
+			"hitEffect": "instHit",
+			"despawnEffect": "none"
+		}
+	},
+	"consumes": {
+		"power": 200,
+		"liquid": "cryofluid/1"
+	},
+	"category": "turret"
+"research": {
+		"parent": "foreshadow",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "鸿漓"
+			}
+		]
+	}
+	"requirements": [
+	"surge-alloy/300","氧化镓/300","铝合金/400","磁钢/300","硅钢片/500","metaglass/800","graphite/100","titanium/600","thorium/400","scrap/80","silicon/1145","plastanium/1000","phase-fabric/100",
+	],
+}

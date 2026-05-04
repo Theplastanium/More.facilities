@@ -1,0 +1,14 @@
+{
+	"type": "Conduit",
+	"health": 20,
+	"liquidCapacity": 1,
+	"liquidPressure": 0.5,
+	"requirements": [
+		"titanium/1",
+		"metaglass/2",
+		"silicon/1"
+	],
+	"bridgeReplacement": "phase-conduit",
+	"category": "liquid",
+	"research": "conduit"
+}

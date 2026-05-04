@@ -1,0 +1,17 @@
+{
+	"type":"LiquidRouter",
+	"name":"强化储液塔",
+	"size":3,
+	"health": 600,
+	"liquidCapacity": 7200,
+	"absorbLasers":true,
+	"requirements": [
+		"copper/120",
+		"metaglass/300",
+		"plastanium/180",
+		"titanium/80"
+		"thorium/110"
+	],
+	"category": "liquid",
+	"research":"liquid-tank"
+	}
