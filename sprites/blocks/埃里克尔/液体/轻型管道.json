@@ -1,0 +1,20 @@
+{
+	"type": "ArmoredConduit",
+	"name": "轻型管道",
+	"description": "使用氧化物的轻型管道，密封处理，可以浮在液体上。",
+	"health": 250,
+	"insulated":true,
+	"absorbLasers":true,
+	"displayFlow":true,
+	"placeableLiquid": true,
+	"liquidCapacity":100,
+	"liquidPressure": 8, 
+	"requirements": [
+		"oxide/1",
+		"beryllium/2",
+		"tungsten/1",
+		"graphite/1"
+	],
+	    "bridgeReplacement": "reinforced-liquid-junction"
+"research":"reinforced-conduit"
+}

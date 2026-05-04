@@ -1,0 +1,33 @@
+{
+            "name":"氮气井"
+	"description": "使用涡轮将大量气体吸入并压缩出氮气",
+    "details": "这，这，这不对吧？"
+            "type":"ThermalGenerator"
+            "category": "power",
+            "attribute" :"steam"
+            "minEfficiency":7,
+            "displayEfficiencyScale":0.1111111111111
+            "displayEfficiency":false
+            "outputLiquid": { "liquid": "nitrogen", "amount": 0.025},
+            "group" : "liquids" 
+            "powerProduction" : 1.65
+            "drawer": {"type": "DrawMulti",
+	"drawers": [
+	"DrawDefault",
+		{"type": "DrawBlurSpin",
+		"suffix": "-rotator"
+		"rotateSpeed":0.5
+		},
+		]	}
+            "effectChance" :0.05
+            "generateEffect": "turbinegenerate"
+            "size" : 3
+            "ambientSound" : "hum"
+            "ambientSoundVolume" : 1
+            "requirements": [
+		    "beryllium/70",
+            "oxide/15"
+            "钨合金钢/30"
+                            ],
+        "research":"turbine-condenser"
+}

@@ -1,0 +1,108 @@
+{
+            "name":"高压涡轮冷凝机"
+	"description": "使用较轻的氧化物作为叶片，可以捕获更多蒸汽，将冷凝的水甩飞，使用石墨电刷可以减少电阻。",
+    "details": "⚡️转到冒烟了⚡️"
+            "type":"ThermalGenerator"
+            "category": "power",
+            "attribute" :"steam"
+            "minEfficiency":8,
+            "liquidCapacity": 120,
+            "canOverdrive": false,
+            "displayEfficiencyScale":0.105
+            "displayEfficiency":false
+            "outputLiquid": { "liquid": "water", "amount": 0.05},
+            "group" : "liquids" 
+            "powerProduction" : 0.05
+            "drawer": {"type": "DrawMulti",
+	"drawers": [
+	"DrawDefault",
+		{"type": "DrawBlurSpin",
+		"suffix": "-转"
+		"rotateSpeed":20
+		},
+		]	}
+            "effectChance" :0.05
+            	"destroyBullet": {
+			"type": "MissileBulletType",
+			"reloadMultiplier": 1.3,
+			"width": 10,
+			"height": 55,
+			"sprite": "饱和火力-工业拓展mod-涡轮",
+			"speed": 15,
+			"weaveMag": 2,
+			"weaveScale": 3,
+			"lifetime": 40,
+			"homingDelay": 10,
+			"homingPower": 0.08,
+			"homingRange": 80,
+			"ammoMultiplier": 2,
+			"status": "unmoving",
+			"statusDuration": 9,
+			"trailLength": 8,
+			"trailWidth": 3,
+			"trailColor": "FEEBB3",
+			"shrinkY": 0,
+			"shrinkX": 0,
+			"backColor": "FEEBB3",
+			"frontColor": "FEEBB3",
+			"hitShake": 3,
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"particles": 3,
+						"sizeFrom": 8,
+						"sizeTo": 0,
+						"length": 18,
+						"baseLength": 20,
+						"lifetime": 25,
+						"colorFrom": "FFFFFF80",
+						"colorTo": "FEEBB3"
+					},
+					{
+						"type": "WaveEffect",
+						"lifetime": 15,
+						"sizeFrom": 1,
+						"sizeTo": 30,
+						"strokeFrom": 3,
+						"strokeTo": 0,
+						"colorFrom": "FFFFFF",
+						"colorTo": "FFFFFF"
+					}
+				]
+			},
+			"hitSound": "explosion",
+			"despawnEffect": "none",
+			"shootEffect": "none",
+			"smokeEffect": {
+				"type": "ParticleEffect",
+				"particles": 5,
+				"sizeFrom": 4,
+				"sizeTo": 0,
+				"length": 45,
+				"baseLength": 0,
+				"lifetime": 25,
+				"colorFrom": "7595D2",
+				"colorTo": "FFFFFF",
+				"cone": 30
+			},
+			"damage": 60,
+			"splashDamageRadius": 30,
+			"splashDamage": 32,
+			"lightningDamage": 9,
+			"lightning": 2,
+			"lightningLength": 3,
+			"lightningColor": "7595D2"
+		},
+            "generateEffect":"turbinegenerate"
+            "size" : 3
+            "ambientSound" : "hum"
+            "ambientSoundVolume" : 1
+            "requirements": [
+		    "beryllium/50",
+            "oxide/15"
+            "graphite/20"
+                            ],
+        "research":"turbine-condenser"
+}
