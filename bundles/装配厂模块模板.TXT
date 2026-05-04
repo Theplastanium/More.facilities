@@ -1,0 +1,35 @@
+{
+  "localizedName": "名字",
+  //名称
+  "description": "描述"
+  //描述
+  "type": "UnitAssemblerModule",
+  //类:单位汇编模块
+  "category": "units",
+  //分类:单位
+  "size": 5,
+  //大小
+  "tier": 1,
+  //提供的装配等级
+  "consumes": {
+      //消耗:电力
+    "power": 5
+  },
+  "research": {
+      //研究
+    "parent": "soletux-rebuilder",
+    //父级
+    "objectives": [
+        //需要解锁的目标(可以删掉)
+      "soletux-mech-reassembly",
+      "soletux-tank-reassembly"
+    ]
+  },
+  "requirements": [
+      //建造需求
+    "primal-red/600",
+    "silicon/500",
+    "thorium/500",
+    "oxide/200"
+  ]
+}

@@ -1,0 +1,162 @@
+      "type":"ShrapnelBulletType",//子弹类型
+	  "speed":200,//子弹飞行速度,?单位/刻度(?
+      "length":200,//子弹长度
+      "damage":6000,//子弹基础伤害
+      "ammoMultiplier":1,//每消耗一个子弹射出几颗子弹
+      "reloadMultiplier":1,//射击速度倍率
+	  "buildingDamageMultiplier":1,//对建筑伤害倍率
+       "fromColor":"EF0000",//开火颜色
+       "toColor":"00EFEF",//开火后渐变至颜色
+	   "lifetime":10,//子弹存在时间,1/帧
+	   "drawSize":0,//子弹碰撞箱
+	   "drag":0,////减速度
+	   "pierce":false,//子弹是否可以穿过单位
+		"pierceBuilding":false,//子弹是否可以穿过建筑
+		"pierceCap":0,//最多可以穿过多少单位
+		"layer":0,//所在图层
+		"hitEffect":"despawnEffect",//子弹命中特效
+		"despawnEffect":"despawnEffect",//子弹爆炸特效
+		"shootEffect":"shootSmall",//拍摄时产生的特效?(应该是指飞行过程中的特效
+		"chargeShootEffect":"none",//应该是指子弹充能满之后的特效(充电完成时产生的效果;只能用于带有firstShotDelay /shotDelay的单发武器。
+		"smokeEffect":"shootSmallSmoke",//飞行时产生的额外烟雾效果
+		"hitSound":"none",//命中音效
+		"despawnSound":"none",//也是命中音效
+		"hitSoundPitch":"none",//击中后的音效的音高
+		"hitSoundVolume":"none",//也是击中后的音效的音高
+		"inaccuracy":0,//弹道偏移
+		"recoil":0,//子弹后坐力
+		"killShooter":false,//拍摄时是否杀死射手。对于自杀式炸弹袭击者。
+		"instantDisappear":false,//子弹是否显示
+		"knockback":0,//击退效果
+		"knockback":false,//击退是否跟随子弹方向
+		"status":"none",//点击时应用的状态效果
+		"statusDuration":480,//状态递增:就持续时间而言，应用状态效应的强度。
+		"collidesTiles":true,//是否与单位碰撞。
+		"collidesTeam":false,是否与属于同一团队的单位发生冲突。
+		"collidesAir":true,//碰撞空气:这种子弹类型是否与空中/地面单位相撞。
+		"collidesGround":true,//碰撞地面:这种子弹类型是否与空中/地面单位相撞。
+		"collides":true,//碰撞:这种子弹类型是否与任何东西发生碰撞。
+		"collideFloor":false,//碰撞地板:如果为真，则此射弹会与非表面地板碰撞。(?
+		"collideTerrain":false,//如果为真，则此弹药会与自然生成的地图方块碰撞
+		 "keepVelocity":true,//速度是否继承炮塔。
+		 "scaleVelocity":false,//是否缩放寿命（实际上不是速度！）以在目标位置消失。用于火炮。
+		"hittable":true,//这颗子弹是否能被点防守击中。(?
+		"reflectable":true,//这颗子弹是否能反射出来。(?
+		"absorbable":true,//这种子弹是否能被护盾吸收。
+		"backMove":true,//是否根据增量将项目符号移回以修复一些与增量时间相关的问题。除非你知道自己在做什么，否则不要改变。
+		"maxRange":-1,//子弹范围覆盖。最大范围
+		"healPercent":0,//对建筑的治疗百分比
+		"makeFire":false,//击中后是否起火
+		"despawnHit":false,//是否在重生时判定一次命中(如:溅射伤害武器会在开炮瞬间造成一次溅射伤害。如果此子弹具有任何特殊效果（如飞溅伤害），则强制为真。
+		"fragCone":360,//碎锥(可能是指破片?
+		"fragAngle":0,//碎片角度
+		"fragBullets":9,//破片出多少颗子弹
+		"fragVelocityMin":0.2,//破片速度最小值
+		"fragVelocityMax":1,//破片速度最大值
+		"fragLifeMin":1,//破片最小声明值
+		"fragLifeMax":1,//破片最大生命值
+		"fragBullet":null,//破片出的子弹类型(填入子弹名
+		"hitColor":"ffffffff",//命中颜色
+		"trailColor":"e58956ff",//尾迹颜色
+		"trailChance":-1.0E-4,//尾迹概率(?
+		"trailInterval":0,//尾迹间隔
+		"trailEffect":"missileTrail",//轨迹特效
+		"trailParam":2,//尾迹参数
+		"trailRotation":false,//尾迹旋转
+		"trailInterp":"one",//尾迹间歇
+		"trailLength":-1,//尾迹长度:任何< = 0 的值都将禁用尾迹。
+		"trailWidth":2,//尾迹宽度
+		"splashDamage":0,//溅射伤害
+		"splashDamageRadius":-1,//溅射伤害范围:使用负值禁用飞溅伤害。8/格
+		"incendAmount":0,//燃烧量(?
+		"incendSpread":8,//燃烧传播速度
+		"incendChance":1,//燃烧概率
+		"homingPower":0,//归位功率
+		"homingRange":50,//归位范围
+		"homingDelay":-1,//归位延迟:使用负值禁用归位延迟。
+		"lightningColor":"f3e979ff",//闪电颜色
+		"lightning":0,//闪电
+		"lightningLength":5,//闪电长度
+		"lightningLengthRand":0,//闪电长度兰特(Rand单独拿出来应该是用来生成随机数值的一个函数 具体有啥用也不清楚)
+		"lightningDamage":-1,//闪电伤害
+		"lightningCone":360,//闪电锥
+		"lightningAngle":0,//闪电角
+		"lightningType":"null",//闪电类型:在闪电点处创建的子弹。
+		"weaveScale":1,//曲线前进 值用来调整曲折的程度
+		"weaveMag":-1,//迂回磁性（？）
+		"hitShake":0,//命中后摇屏幕晃摇
+		"despawnShake":0,//子弹消失后屏幕摇晃
+		"puddles":0,//水炮
+		"puddleRange":0,//水炮范围
+		"puddleAmount":5,//水炮量
+		"puddleLiquid":"water",//水炮喷射的液体
+		"displayAmmoMultiplier":true,//显示弹药倍增器
+		"lightRadius":-1,//光照范围
+		"lightOpacity":0.3,//光不透明度
+		"lightColor":"fbd367ff",//光的颜色
+		
+		
+		
+		const fB1 = extend(BasicBulletType, {});
+fB1.lifetime = 30;
+fB1.damage = 0;
+fB1.drag = 0.02;
+fB1.backColor = colors.silverGlow;
+fB1.frontColor = colors.silverGlow;
+fB1.splashDamage = 30;
+fB1.splashDamageRadius = 16;
+fB1.width = 1;
+fB1.height = 1;
+fB1.trailWidth = 1;
+fB1.trailLength = 400;
+fB1.trailColor = colors.silverGlow;
+fB1.trailEffect = Fx.none;
+fB1.hitEffect = bEs.bE1;
+fB1.hitSound = Sounds.spark;
+fB1.despawnEffect = Fx.none;
+fB1.shootEffect = Fx.none;
+
+const fB2 = extend(BasicBulletType, {});
+fB2.lifetime = 30;
+fB2.damage = 0;
+fB2.backColor = colors.silverGlow;
+fB2.frontColor = colors.silverGlow;
+fB2.intervalBullets = 4;
+fB2.bulletInterval = 6;
+fB2.intervalBullet = fB1;
+fB2.fragRandomSpread = 0;
+fB2.fragVelocityMin = 1;
+fB2.fragVelocityMax = 1;
+fB2.splashDamage = 30;
+fB2.splashDamageRadius = 16;
+fB2.width = 1;
+fB2.height = 1;
+fB2.trailWidth = 1;
+fB2.trailLength = 400;
+fB2.trailColor = colors.silverGlow;
+fB2.trailEffect = Fx.none;
+fB2.hitEffect = bEs.bE1;
+fB2.hitSound = Sounds.spark;
+fB2.despawnEffect = Fx.none;
+fB2.shootEffect = Fx.none;
+
+const fB3 = extend(BasicBulletType, {});
+fB3.lifetime = 30;
+fB3.damage = 0;
+fB3.speed = 4;
+fB3.backColor = colors.silverGlow;
+fB3.frontColor = colors.silverGlow;
+fB3.fragBullets = 1;
+fB3.fragRandomSpread = 0;
+fB3.fragAngle = 180;
+fB3.fragBullet = fB2;
+fB3.fragVelocityMin = 4;
+fB3.fragVelocityMax = 4;
+fB3.homingRange = 40;
+fB3.homingPower = 0.3;
+fB3.width = 2;
+fB3.height = 2;
+fB3.trailEffect = Fx.none;
+fB3.hitEffect = Fx.none;
+fB3.despawnEffect = Fx.none;
+fB3.shootEffect = Fx.none;
