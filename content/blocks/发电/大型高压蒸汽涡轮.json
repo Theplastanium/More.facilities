@@ -1,0 +1,80 @@
+{
+	"type": "ConsumeGenerator",
+	"size": 4,
+	"health": 820,
+	"hasLiquids": true,
+	"hasItems": true,
+	"itemDuration": 15,
+	"powerProduction": 55,
+	"itemCapacity": 20,
+	"liquidCapacity": 300,
+	  "outputLiquid": "中压蒸汽/1"
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom" 
+      },
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "water"
+      },
+      {
+        "type": "DrawBlurSpin",
+        "suffix": "-rotator",
+        "rotateSpeed": 11
+      },
+            {
+        "type": "DrawBlurSpin",
+        "suffix": "-rotator",
+        "rotateSpeed": -9
+      },
+      {
+        "type": "DrawDefault" 
+      }
+    ]
+  },
+  generateEffectRange: 1
+effectChance: 0.025
+generateEffect: {
+    type: RadialEffect
+    layer: 118
+    rotationSpacing: 60
+    amount: 6
+    lengthOffset: 6
+    effect: {
+      particles: 1
+      length: 90
+      lifetime: 400
+      cone: 20
+      baseRotation: 32
+      useRotation: false 
+      sizeFrom: 0
+      sizeTo: 12
+      colorFrom: e0e0e066
+      colorTo: e0e0e000
+      sizeInterp: pow2Out
+      interp: pow2Out
+      layer: 111
+    }
+  }
+	"generateEffect": "generatespark",
+	"consumes": {
+		"liquid": "高压蒸汽/2"
+	},
+	"buildCostMultiplier": 0.95,
+	"requirements": [
+		"lead/80",
+		"titanium/820",
+		"metaglass/110",
+		"silicon/60",
+		"铝合金/110"
+		"氧化镓/20"
+		"硅钢片/100"
+	],
+	"ambientSound": "smelter",
+	"ambientSoundVolume": 0.06,
+	"category": "power",
+	"research": "高压蒸汽涡轮"
+}

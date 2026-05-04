@@ -1,0 +1,70 @@
+{
+	"type": "UnitAssembler",
+	"health": 12000,
+	"armor":30,
+	"size": 14,
+	"liquidCapacity": 800,
+	"consumes": {
+		"power": 20,
+		"liquid": {
+			"liquid": "更多设施-燃料",
+			"amount": 0.15
+		}
+	},
+	"areaSize": 18
+	"plans": [
+		{
+			"unit": "更多设施-牢大",
+			"time": 12000,
+			"requirements": [
+			"liquid-tank/1"
+			"mend-projector/1"
+			"overdrive-projector/1"
+			"conduit/8"
+			"force-projector/1"
+			"battery-large/1"
+			"vault/1"
+			"unloader/1"
+			"thorium-wall-large/6"
+			"plastanium-wall-large/4"
+			"swarmer/1"
+			"cyclone/1"
+			"tsunami/1"
+			"更多设施-分解/1"
+			]
+		}
+		
+				{
+			"unit": "要塞",
+			"time": 8000,
+			"requirements": [
+				"oct/1"
+				"更多设施-军用引擎/1"
+				"cyclone/1"
+				"liquid-tank/1"
+			]
+		}
+				{
+			"unit": "日蚀",
+			"time": 8000,
+			"requirements": [
+				"eclipse/1"
+				"更多设施-军用引擎/1"
+				"thorium-wall-large/2"
+				"liquid-tank/1"
+			]
+		}
+	],
+	"droneType": "组装机",
+	"requirements": [
+	"surge-alloy/200","更多设施-硅钢片/500","metaglass/300","graphite/400","titanium/600","thorium/400","scrap/80","silicon/1145","plastanium/600","phase-fabric/100",
+	],
+	"category": "units",
+	"research": "core-nucleus"
+"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "desolateRift"
+			}
+		]
+}

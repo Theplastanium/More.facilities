@@ -1,0 +1,150 @@
+{
+	"type": "ItemTurret",
+	"name": "a127",
+	"health": 2200,
+	"armor": 8,
+	"size": 3,
+	"reload": 15,
+	"range": 268,
+	"maxAmmo": 30,
+	"recoilTime": 20,
+	"recoil": 3,
+	"cooldownTime": 80,
+	"shoot": {
+			"barrels": [
+			10.5, 11, 0,
+			-10.5, 11, 0
+			10.5, 11, 0,
+			-10.5, 11, 0
+		]
+		"shots": 2,
+		"shotDelay": 1,
+		"type": "ShootAlternate",
+		"barrels": 2,
+		"spread": 6
+	},
+	"ammoUseEffect": "casing3Double",
+	"ammoPerShot": 1,
+	"consumeAmmoOnce": false,
+	"targetGround": true,
+	"targetAir": true,
+	"consumes": {
+		"coolant": {
+			"amount": 0.5,
+			"optional": true
+		}
+	},
+	"coolantMultiplier": 0.5,
+	"liquidCapacity": 360,
+	"inaccuracy": 2,
+	"shake": 3,
+	"shootSound": "shootBig",
+	"rotateSpeed": 7,
+	"ammoTypes": {
+		"12.7^99钛弹": {
+			"speed": 9,
+			"damage": 70,
+			"knockback": 1,
+			"reloadMultiplier": 1.7,
+			"lifetime": 28,
+			"pierceBuilding": true,
+			"pierceCap": 4,
+			"width": 16,
+			"height": 20,
+				"pierceArmor": true,
+						"backColor": "7595D2",
+			"hitColor": "7595D2",
+			"shootEffect": "shootBig",
+			"smokeEffect": "shootBigSmoke",
+			"hitEffect": "hitBulletBig"
+		},
+		"12.7^99合金弹": {
+			"speed": 9,
+			"damage": 52,
+			"knockback": 2,
+			"reloadMultiplier": 1.7,
+			"lifetime": 28,
+			"pierceCap": 2,
+			"width": 16,
+						"backColor": "F2E770FF",
+			"hitColor": "F2E770FF",
+			"height": 20,
+			"shootEffect": "shootBig",
+			"status": "wet",
+		    "statusDuration": 1200,
+			"smokeEffect": "shootBigSmoke",
+			"hitEffect": "hitBulletBig"
+		"splashDamage": 40,
+		"splashDamageRadius": 38,
+		"lightning": 2,
+		"collidesGround": true,
+		"explodeRange": 20,
+		"lightningLength": 6.5,
+		"fragBullets": 2,
+		"fragBullet": {
+			"speed": 0.2,
+			"splashDamageRadius": 25,
+			"splashDamage": 40,
+			"lifetime": 1,
+			"pierceCap": 2,
+			"status": "击穿",
+		    "statusDuration": 300,
+    }
+		},
+		"12.7^99钍弹": {
+			"speed": 10.5,
+			"damage": 110,
+			"knockback": 5,
+			"reloadMultiplier": 1.7,
+			"lifetime": 23,
+			"pierceArmor": true,
+			"status": "辐射",
+		    "statusDuration": 600,
+			"pierceBuilding": true,
+			"pierceCap": 2,
+			"width": 16,
+			"height": 20,
+						"backColor": "ECA7C6",
+			"hitColor": "ECA7C6",
+			"shootEffect": "shootBig",
+			"smokeEffect": "shootBigSmoke",
+			"hitEffect": "hitBulletBig"
+					"fragBullets": 4,
+					"fragBullet": {
+			"speed": 0,
+			"splashDamageRadius": 20,
+			"splashDamage": 80,
+			"lifetime": 1,
+			"pierceArmor": true,
+			"status": "sapped",
+		    "statusDuration": 120,
+    }
+		},
+	},
+	"consumes": {
+		"liquid": {
+			"liquid": "water",
+			"amount": 0.3
+		}
+	},
+	"requirements": [
+		"copper/600",
+		"graphite/80",
+		"plastanium/120",
+		"surge-alloy/200",
+		"titanium/80"
+		"thorium/30"
+		"silicon/250",
+		"metaglass/80"
+	],
+	"category": "turret",
+	"research": {
+		"parent": "spectre",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "肼江"
+			}
+		]
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"type": "ArmoredConduit",
+	"health": 250,
+	"insulated":true,
+	"absorbLasers":true,
+	"displayFlow":true,
+	"placeableLiquid": true,
+	"liquidCapacity":100,
+	"liquidPressure": 8, 
+	"requirements": [
+		"oxide/1",
+		"beryllium/2",
+		"tungsten/1",
+		"graphite/1"
+	],
+	    "bridgeReplacement": "reinforced-liquid-junction"
+"research":"reinforced-conduit"
+}

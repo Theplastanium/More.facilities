@@ -1,0 +1,61 @@
+{
+	"type": "GenericCrafter",
+	"name": "重油化工厂",
+	"outputItem": "沥青弹/4",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 120,
+	"itemCapacity": 40,
+	"liquidCapacity": 80,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "重油"
+			},
+			{
+				"type": "DrawPistons",
+				"sinMag": 1
+			},
+			"DrawDefault",
+			"DrawFade"
+		]
+	},
+	"craftEffect": "formsmoke",
+	"updateEffect": "plasticburn",
+	"consumes": {
+		"power": 8,
+		"liquids": [
+		    "重油/0.3"
+		    "water/0.5"
+		]
+		"items": [
+		    "blast-compound/5"
+		]
+	},
+	"requirements": [
+		"graphite/80",
+		"titanium/50",
+		"plastanium/80",
+		"copper/40",
+		"silicon/80"
+		"metaglass/80"
+	],
+	"category": "crafting",
+"research": {
+		"parent": "塑钢厂",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "降落区"
+			}
+		]
+	}
+}

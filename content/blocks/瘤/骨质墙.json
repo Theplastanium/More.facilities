@@ -1,0 +1,8 @@
+{
+	"type": "Wall",
+	"health": 480,
+	"size": 2,
+	"armor":50,
+	"category": "defense",
+	"buildVisibility": "sandboxOnly",
+}

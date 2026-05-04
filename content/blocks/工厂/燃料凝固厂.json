@@ -1,0 +1,49 @@
+{
+	"type": "GenericCrafter",
+	"health": 560,
+	"outputItem": "凝固汽油弹/3",
+	"itemCapacity": 40,
+	"size": 4,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 120,
+	"updateEffect": "none",
+	"craftEffect": "smeltsmoke",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameRadius": 0,
+				"flameRadiusIn": 0,
+				"flameRadiusMag": 0,
+				"flameRadiusInMag": 0
+			}
+		]
+	
+	},
+	"consumes": {
+		"power": 3,
+		"liquids": [
+        "oil/0.25"
+        "燃料/0.3"
+        "天然气/0.15"
+		]
+		"items": [
+        "氧化铁/1"
+		]
+	},
+	"requirements": [
+		"graphite/50",
+		"titanium/80"
+		"silicon/40"
+		"metaglass/20"
+		"lead/40"
+		"copper/80"
+	],
+	"category": "crafting",
+	"ambientSound": "smelter",
+	"research": "coal-centrifuge"
+}

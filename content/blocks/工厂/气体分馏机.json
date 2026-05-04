@@ -1,0 +1,33 @@
+{
+	"type": "GenericCrafter",
+	"size": 3,
+	"health": 560,
+	"craftTime": 10,
+	"rotate": true,
+	"invertFlip": true,
+	"liquidCapacity": 110,
+	"regionRotated1": 3,
+	"requirements": [
+    "silicon/60"
+    "plastanium/55"
+    "titanium/45"
+    "lead/30"
+    "metaglass/20"
+    "硅钢片/30"
+    ],
+    "outputLiquids":[
+
+        {"liquid": "天然气","amount":0.15},
+		{"liquid": "乙烯","amount":0.1}
+		],
+
+	"consumes": {
+		"power":2,
+		"liquid": {"liquid":"页岩气","amount":0.2,}	
+	},
+    "liquidOutputDirections": [1,3],
+    "ambientSound": "electricHum",
+    "ambientSoundVolume": 0.08,
+	"category": "crafting",
+	"research": "石油分馏机"
+	}

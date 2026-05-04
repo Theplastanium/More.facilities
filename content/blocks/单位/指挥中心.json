@@ -1,0 +1,17 @@
+{
+"name":"指挥中心",
+"type":"StorageBlock",
+"health":300,
+"itemCapacity":0,
+"size":2,
+"unitCapModifier":3,
+"researchCostMultiplier":0.5,
+"requirements": [
+	{"item": "copper","amount": 250}
+	{"item": "lead","amount": 250}
+	{"item": "graphite","amount": 100}
+	{"item": "silicon","amount": 400}
+],
+"category":"units",
+"research":"groundFactory"
+}

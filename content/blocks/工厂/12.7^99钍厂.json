@@ -1,0 +1,51 @@
+{
+	"type": "GenericCrafter",
+	"name": "钍弹厂",
+	"outputItem": "12.7^99钍弹/15",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 180,
+	"itemCapacity": 80,
+	"liquidCapacity": 40,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "water"
+			},
+			{
+				"type": "DrawPistons",
+				"sinMag": 1
+			},
+			"DrawDefault",
+			"DrawFade"
+		]
+	},
+	"craftEffect": "formsmoke",
+	"updateEffect": "plasticburn",
+	"consumes": {
+		"power": 6,
+		"liquid": "water/0.4",
+		"items": [
+		    "blast-compound/8"
+		    "titanium/12"
+			"thorium/8"
+		]
+	},
+	"requirements": [
+		"graphite/80",
+		"thorium/50",
+		"plastanium/80",
+		"copper/90",
+		"silicon/40"
+	],
+	"category": "crafting",
+	"research": "12.7^99钛厂"
+}

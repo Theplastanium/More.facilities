@@ -1,0 +1,25 @@
+{
+	"type":"UnitAssemblerModule",
+	"category":"units",
+	"health":200,
+	"size":1,
+	"tier":2,
+	"consumes":{
+	"power":1
+	},
+		"alwaysUnlocked":true,
+	"hasPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"regionSuffix": "装厂",
+	"research":{
+	"parent":"电鳄装配厂"
+   },
+	"requirements":[
+		"thorium/80",
+		"surge-alloy/40",
+		"metaglass/80",
+		"plastanium/20",
+		"titanium/40"
+	]
+}

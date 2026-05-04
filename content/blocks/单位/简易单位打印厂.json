@@ -1,0 +1,39 @@
+{
+	"type": "UnitFactory",
+	"name": "简易单位打印厂",
+	"size":2 ,
+	"health": 120 ,
+    "itemCapacity": 80,
+
+    "consumes": {
+"liquids": {
+      "liquids": [
+        {
+          "liquid": "hydrogen",
+          "amount": 0.1
+        },
+      ]
+    }
+        "power": 1
+
+       },
+
+    "requirements": [
+
+                { "item": "copper", "amount": 70}
+                { "item": "lead", "amount": 60}
+                { "item": "titanium", "amount": 80}
+                { "item": "silicon", "amount": 70}
+    ],
+
+    "plans":[
+        {
+            "unit": "简易飞行装置",
+            "time": 600.0,
+            "requirements": [ "silicon/10","metaglass/10","blast-compound/11""graphite/5"]
+            }
+        ],
+
+	"category": "units",
+	"research":"additive-reconstructor"
+}

@@ -1,0 +1,173 @@
+{
+type: "ConsumeGenerator"
+size: 5
+hasLiquids: true
+liquidCapacity: 1000
+canOverdrive: false
+itemDuration: 10
+baseExplosiveness: 0
+   		"despawnEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				{
+					"type": "ParticleEffect",
+					"particles": 60,
+					"sizeFrom": 60,
+					"sizeTo": 0,
+					"length": 480,
+					"baseLength": 0,
+					"lifetime": 480,
+					"interp": "pow10Out",
+					"sizeInterp": "pow10In",
+					"colorFrom": "FFFFFFBE",
+					"colorTo": "EEC591"
+				},
+				{
+					"type": "ParticleEffect",
+					"particles": 1,
+					"sizeFrom": 10,
+					"sizeTo": 480,
+					"length": 0,
+					"baseLength": 0,
+					"lifetime": 12,
+					"sizeInterp": "pow10Out",
+					"colorFrom": "FFFFFF",
+					"colorTo": "EEC591"
+				},
+				{
+					"type": "ParticleEffect",
+					"particles": 1,
+					"startDelay": 9,
+					"sizeFrom": 480,
+					"sizeTo": 0,
+					"length": 0,
+					"baseLength": 0,
+					"lifetime": 60,
+					"colorFrom": "EEC591",
+					"colorTo": "EEC591"
+				}
+			]
+		},
+		"trailColor": "FFFFFF",
+		"backColor": "FF5B5B",
+		"frontColor": "E3E3E3",
+		"width": 0,
+		"height": 0,
+		"hitSound": "DBZ1",
+		"hitSoundVolume": 3,
+		"status": "损坏II",
+		"statusDuration": 1000,
+		"fragBullets": 60,
+		"fragLifeMin": 0.15,
+		"fragLifeMax": 1.1,
+		"fragBullet": {
+			"type": "BasicBulletType",
+			"collides": false,
+			"hittable": false,
+			"absorbable": false,
+			"splashDamage": 100,
+			"splashDamageRadius": 180,
+			"buildingDamageMultiplier": 8,
+			"status": "损坏II",
+			"statusDuration": 1000,
+			"speed": 30,
+			"drag": 0.1,
+			"hitShake": 50,
+			"lifetime": 240,
+			"hitSound": "explosionbig",
+			"hitSoundVolume": 10,
+			"width": 30,
+			"height": 30,
+			"shrinkY": 0,
+			"sprite": "circle-bullet",
+			"trailLength": 18,
+			"trailWidth": 2.25,
+			"trailColor": "EEC59190",
+			"hitEffect": {
+				"type": "WaveEffect",
+				"lifetime": 35,
+				"interp": "circleOut",
+				"sizeFrom": 40,
+				"sizeTo": 230,
+				"strokeFrom": 30,
+				"strokeTo": 0,
+				"colorFrom": "EEC591",
+				"colorTo": "EEC591"
+			},
+			"despawnEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"particles": 1,
+						"sizeFrom": 10,
+						"sizeTo": 180,
+						"length": 0,
+						"baseLength": 0,
+						"lifetime": 12,
+						"sizeInterp": "pow10Out",
+						"colorFrom": "EEC591",
+						"colorTo": "EEC591"
+					},
+					{
+						"type": "ParticleEffect",
+						"particles": 1,
+						"startDelay": 9,
+						"sizeFrom": 180,
+						"sizeTo": 0,
+						"length": 0,
+						"baseLength": 0,
+						"lifetime": 15,
+						"colorFrom": "EEC591",
+						"colorTo": "EEC591"
+					}
+				]
+			}
+		}
+  "drawer": {
+  "type": "DrawMulti",
+        "drawers": [
+        {
+       "type": "DrawRegion",
+       "suffix": "-bottom"
+	   },
+        {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "water",
+        "suffix": "-liquid"
+        },
+        {	
+        "type": "DrawDefault"
+	       }
+    ]
+    },
+	"consumes": {
+		"items": [
+        "thorium/2"
+		]
+				"liquid": {"liquid":"water","amount":5,"booster":false}
+	},
+outputLiquid: 高压蒸汽/15
+	"explosionRadius":12,
+	"explosionDamage":30000,
+	"explodeOnFull": true,
+	"generateEffect": "blastExplosion",
+		"outputItem": "裂变产物/3",	
+powerProduction: 0
+category: power
+"research": {
+		"parent": "thorium-reactor",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "肼江"
+			}
+		]
+	}
+research: [
+   "surge-alloy/300","氮化镓/80""氧化镓/80","铝合金/400","磁钢/60","硅钢片/120","metaglass/120","graphite/300","titanium/500","thorium/400","scrap/20","silicon/1145","plastanium/1100","phase-fabric/100"
+],
+researchCost: [
+"surge-alloy/300","氮化镓/200""氧化镓/300","铝合金/600","磁钢/400","硅钢片/400","metaglass/600","graphite/300","titanium/1000","thorium/800","scrap/200","silicon/1145","plastanium/1100","phase-fabric/200",
+    ]
+    }

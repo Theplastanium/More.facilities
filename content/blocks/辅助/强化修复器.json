@@ -1,0 +1,37 @@
+{
+	"type": "MendProjector",
+	"health": 450,
+	"size": 3,
+	"armor":4,
+	"range": 300,
+	"reload": 60,
+	"healPercent": 5,
+	"phaseBoost": 5,
+	"phaseRangeBoost": 45,
+	"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"canOverdrive": false,
+	"consumes": {
+		"power": 10,
+		"items": {
+			"items": [
+				"thorium/15"
+			],
+			"booster": true,
+			"optional": true
+		}
+	},
+	"requirements": [
+		"titanium/120",
+		"plastanium/50",
+		"surge-alloy/50",
+		"titanium/50"
+		"phase-fabric/30"
+		"硅钢片/200",
+		"scrap/2"
+	],
+	"category": "effect",
+	"research": "mend-projector"
+}

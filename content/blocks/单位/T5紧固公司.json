@@ -1,0 +1,82 @@
+{
+	"type": "UnitAssembler",
+	"health": 12000,
+	"armor":20,
+	"size": 16,
+	"liquidCapacity": 90,
+	"consumes": {
+		"power": 25,
+		"liquid": {
+			"liquid": "燃料",
+			"amount": 0.15
+		}
+	},
+	"areaSize": 6.75
+	"plans": [
+				{
+			"unit": "王座",
+			"time": 2000,
+			"requirements": [
+				"reign/1"
+				"thorium-wall-large/4"
+				"phase-wall-large/2"
+				"liquid-tank/1"
+			]
+		}
+						{
+			"unit": "天蝎",
+			"time": 2000,
+			"requirements": [
+				"toxopid/1"
+				"phase-wall-large/2"
+				"thorium-wall-large/2"
+				"liquid-tank/1"
+			]
+		}
+						{
+			"unit": "死星",
+			"time": 5000,
+			"requirements": [
+				"corvus/1"
+				"更多设施-标准引擎/2"
+				"茉莉/1"
+				"liquid-tank/1"
+				"thorium-wall-large/2"
+			]
+		}
+						{
+			"unit": "海神",
+			"time": 8000,
+			"requirements": [
+				"omura/1"
+				"更多设施-标准引擎/1"
+				"thorium-wall-large/4"
+				"liquid-tank/1"
+			]
+		}
+						{
+			"unit": "龙王",
+			"time": 10000,
+			"requirements": [
+				"oct/1"
+				"更多设施-标准引擎/1"
+				"cyclone/1"
+				"liquid-tank/1"
+				"thorium-wall-large/4"
+				"phase-wall-large/2"
+			]
+		}
+	],
+	"droneType": "组装机",
+	"requirements": [
+		"surge-alloy/100","更多设施-硅钢片/300","metaglass/200","graphite/200","titanium/400","thorium/300","scrap/20","silicon/1145","plastanium/180","phase-fabric/80",
+	],
+	"category": "units",
+	"research": "tetrative-reconstructor"
+"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "nuclearComplex"
+			}
+		]
+}

@@ -1,0 +1,85 @@
+{
+	"type": "UnitFactory",
+	"health": 6000,
+	"size": 14,
+	"consumes": {
+		"power": 9,
+		"liquid": "aa12?/0.05"
+	},
+	"plans": [
+		{
+			"unit": "锁定",
+			"time": 3000,
+			"requirements": [
+				"oxide/15",
+				"silicon/90",
+				"graphite/40",
+				"beryllium/80",
+				"tungsten/40"
+				"钨合金钢/30"
+			]
+		},
+		{
+			"unit": "消灭",
+			"time": 3800,
+			"requirements": [
+				"oxide/5",
+				"silicon/110",
+				"graphite/50",
+				"beryllium/20",
+				"tungsten/50"
+				"钨合金钢/30"
+			]
+		},
+        		{
+			"unit": "清除",
+			"time": 4800,
+			"requirements": [
+				"oxide/50",
+				"silicon/110",
+				"graphite/80",
+				"thorium/30",
+				"tungsten/100"
+				"钨合金钢/40"
+			]
+		},
+        		{
+			"unit": "灭绝",
+			"time": 5800,
+			"requirements": [
+				"oxide/50",
+				"silicon/160",
+				"graphite/60",
+				"thorium/80",
+				"tungsten/80"
+				"carbide/35"
+				"钨合金钢/70"
+			]
+		},
+        		{
+			"unit": "歼灭",
+			"time": 6000,
+			"requirements": [
+				"oxide/50",
+				"silicon/200",
+				"graphite/90",
+				"thorium/70",
+				"tungsten/60"
+				"carbide/30"
+				"surge-alloy/45"
+				"钨合金钢/130"
+			]
+		},
+	],
+	"requirements": [
+		"silicon/300",
+		"graphite/200",
+		"beryllium/200",
+		"tungsten/130",
+		"oxide/50"
+	],
+	"category": "units",
+	"research":{
+    "parent":"tank-fabricator"
+    }
+}

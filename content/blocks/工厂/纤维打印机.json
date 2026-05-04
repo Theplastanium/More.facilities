@@ -1,0 +1,46 @@
+{
+	"type": "GenericCrafter",
+	"name": "纤维打印机",
+	"health": 650,
+	"outputItem": "碳纤维布/10",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 60,
+	"itemCapacity": 80,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawFade",
+				"scale": 1.13,
+				"alpha": 0.99
+			},
+			"DrawWeave",
+			"DrawDefault"
+		]
+	},
+	"consumes": {
+		"power": 11,
+		"items": [
+			"纯碳/2",
+		]
+	}
+	"category": "crafting",
+	"ambientSound": "techloop",
+	"ambientSoundVolume": 0.35,
+	"research": {
+		"parent": "phase-weaver",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "desolateRift"
+			}
+		]
+	}
+}

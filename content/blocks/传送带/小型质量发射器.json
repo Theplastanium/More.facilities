@@ -1,0 +1,25 @@
+{
+	"type": "MassDriver",
+	"name": "小型质量发射器",
+	"size":1,
+	"health":60 ,
+	"itemCapacity": 15,
+	"hasItems": true,
+	"minDistribute": 5,
+	"reload": 20,
+	"range": 100,
+	"rotateSpeed": 200,
+	"bulletSpeed": 100,
+	"requirements": [
+		"plastanium/5",
+		"metaglass/5",
+		"graphite/5"
+		"titanium/5"
+		"silicon/10"
+	],
+	"consumes": {
+        "power":0.1,
+    },
+	"category": "distribution",
+	"research":"bridge-conveyor"
+}

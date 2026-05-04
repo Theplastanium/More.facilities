@@ -1,0 +1,65 @@
+{
+	"type": "GenericCrafter",
+"name": "中型离心机",
+    "itemCapacity": 50,
+    "health": 340,
+    "size":"3"
+    "requirements": [
+		"plastanium/50",
+		"硅钢片/30",
+		"thorium/90",
+		"metaglass/100",
+		"graphite/80"
+		"titanium/60"
+    ],
+"craftTime": 60,
+		"drawer": {
+			"type": "DrawMulti",
+			"drawers": [
+				"DrawDefault",
+							{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "slag"
+			},
+				{
+					"type": "DrawRegion",
+					"suffix": "-转",
+					"spinSprite": true,
+					"rotateSpeed": 10
+				}
+								{
+					"type": "DrawRegion",
+					"suffix": "-top",
+					"spinSprite": true,
+					"rotateSpeed": 0
+				}
+			]
+		},
+	"craftEffect": "formsmoke",
+	"updateEffect": "plasticburn",
+"outputLiquid": "镓/0.3"
+	"consumes": {
+		"power": 9,
+		"liquids": [
+		"slag/0.5",
+		]
+	},
+outputItems: [
+"铝土/3"
+"氧化铁/4"
+]
+	"category": "crafting",
+research: {
+        parent: "重型分层离心机",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "降落区"
+            }
+        ]
+    },
+}

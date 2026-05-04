@@ -1,0 +1,53 @@
+{
+	"type": "GenericCrafter",
+	"outputItem": { "item": "冰晶石", "amount": 2 },
+	"size": 4,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 60,
+	"itemCapacity": 40,
+	/*
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "water",
+				"suffix": "-w"
+			},
+			"DrawDefault"
+		]
+	},
+	*/
+	"consumes": {
+	    "liquids": {
+      "liquids": [
+        {
+          "liquid": "water",
+          "amount": 0.15
+        },
+      ]
+    }
+    "power":4,
+	 "items": [
+	"铝土/3"
+	"纳/3"
+		]
+ },
+"requirements": [
+"metaglass/25"
+"graphite/20"
+"titanium/35"
+"thorium/40"
+"silicon/70"
+	],
+	"category": "crafting",
+	"research": "铝冶炼厂",
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+}

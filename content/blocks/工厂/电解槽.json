@@ -1,0 +1,58 @@
+{
+	"type": "GenericCrafter",
+	"health": 400,
+	"outputItem": "纳/3",
+	"outputLiquid": {
+		"liquid": "氯气",
+		"amount": 0.30555
+	},
+			"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "氯气",
+				"suffix": "-y"
+			},
+						{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "淡气",
+				"suffix": "-氯"
+			},
+			{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "water",
+				"suffix": "-w"
+			},
+			"DrawDefault"
+		]
+	},
+
+	"itemCapacity": 14,
+	"size": 3,
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 60,
+	"craftTime": 60,
+	"consumes": {
+		"power": 4,
+		"liquids":[
+		"water/0.61"
+		"淡气/0.1"
+		]
+	},
+	"requirements": [
+		"thorium/150",
+		"metaglass/40",
+		"silicon/40",
+		"硅钢片/80",
+	],
+	"category": "crafting",
+	"research": "氮气压缩机"
+}

@@ -1,0 +1,38 @@
+{
+	"type": "GenericCrafter",
+	"name": "高温熔炉",
+	"health": 360,
+	"size":2,
+	"hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 30,
+    "liquidCapacity": 240,
+    "itemCapacity": 40,
+    "craftEffect": "smeltsmoke",
+    "consumes": {
+        "power": 12,
+        "items": {
+		"items": [
+				{ "item": "scrap", "amount": 4 }				
+			]
+		}
+    },
+    "outputLiquid": {"liquid": "slag", "amount": 1.5},
+	"requirements": [
+ "silicon/20"
+ "copper/30"
+ "titanium/45"
+ "metaglass/20"
+    ],
+    "category": "crafting",
+"research": {
+		"parent": "melter",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "fungalPass"
+			}
+		]
+	}
+}

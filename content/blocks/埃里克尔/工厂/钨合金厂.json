@@ -1,0 +1,54 @@
+{
+  "type": "HeatCrafter",
+  "health": 7680,
+  "itemCapacity": 20,
+  "outputItem": {
+    "item": "钨合金钢",
+    "amount": 3
+  },
+  "size": 4,
+  "hasPower": true,
+  "hasItems": true,
+  "craftTime": 120,
+  "heatRequirement": 3,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      "DrawDefault",
+      {
+        "type": "DrawHeatInput",
+        "suffix": "-heat"
+      },
+      "DrawHeatInput",
+      "DrawCrucibleFlame"
+    ]
+  },
+  "consumes": {
+    "power": 2,
+    "items": {
+      "items": [
+        {
+          "item": "silicon",
+          "amount": 2
+        },
+        {
+          "item": "tungsten",
+          "amount": 3
+        }
+      ]
+    }
+  },
+  "requirements": [
+    "oxide/10",
+    "graphite/130",
+    "tungsten/100"
+    "silicon/50"
+  ],
+  "category": "crafting",
+  "research": "carbide-crucible",
+  "idleSound": "respawning"
+}

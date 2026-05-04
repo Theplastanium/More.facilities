@@ -1,0 +1,42 @@
+{
+	"type": "GenericCrafter",
+	"name": "石墨结晶机",
+    "category": "crafting",
+    "size": 3,
+    "health": 260,
+    "itemCapacity": 120,
+    "liquidCapacity": 30,
+    "craftTime": 30,
+    "hasPower": "true",
+    "hasItems": "true",
+    "craftEffect": "pulverizeMedium",
+    "requirements": [
+	"lead/40",
+	"silicon/30",
+	"plastanium/30"
+	"copper/40"
+	"graphite/30"
+	"metaglass/60"
+	],
+    "consumes": {
+        "power": 5,
+        "items": {
+		"items": [
+				"graphite/1"
+			]
+		},
+         "liquid": "oil/0.4"
+    },
+   
+    "outputItem": "graphite/8"
+        "outputLiquid": "重油/0.1"
+  "research": {
+		"parent": "塑钢厂",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "impact0078"
+			}
+		]
+	}
+}

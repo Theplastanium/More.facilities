@@ -1,0 +1,38 @@
+{
+	"type": "PowerNode",
+	"name": "镓高压输电塔",
+	"health": 550,
+	"size": 3,
+	"maxNodes": 3,
+	"laserRange": 100,
+	"absorbLasers": true"
+	"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"laserScale": 0.6,
+	"laserColor2": "C5C1BD",
+	"research": {
+		"parent": "镓节点",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "肼江"
+			}
+		]
+	}
+	"requirements": [
+"metaglass/40",
+"氮化镓/80"
+"氧化镓/40"
+"scrap/2"
+"plastanium/25"
+"磁钢/20"
+        "硅钢片/20",
+		"silicon/45",
+		"thorium/30"
+		"titanium/40"
+		"phase-fabric/20"
+	],
+	"category": "power"
+}

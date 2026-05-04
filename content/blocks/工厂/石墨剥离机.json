@@ -1,0 +1,37 @@
+{
+	"type": "GenericCrafter",
+	"name": "石墨剥离机",
+	"health": 500,
+	"outputItem": "纯碳/20",
+	"size": 4,
+	"hasPower": true,
+	"hasItems": true,
+	"craftTime": 300,
+	"itemCapacity": 80,
+	"consumes": {
+		"power": 3,
+		"items": [
+			"graphite/1",
+		]
+	},
+	"requirements": [
+		"plastanium/40",
+		"silicon/80",
+		"copper/30"
+		"thorium/30",
+		"metaglass/40",
+		"graphite/30"
+	],
+	"category": "crafting",
+	"ambientSound": "smelter",
+	"ambientSoundVolume": 0.65,
+	"research": {
+		"parent": "石墨结晶机",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "desolateRift"
+			}
+		]
+	}
+}

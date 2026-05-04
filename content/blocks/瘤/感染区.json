@@ -1,0 +1,10 @@
+{
+	"type": "duct",
+	"health": "125",
+	acceptsItems: false
+instantTransfer: false
+solid: false
+liquidPressure: 0
+liquidCapacity: 0
+	"buildVisibility": "sandboxOnly",
+}

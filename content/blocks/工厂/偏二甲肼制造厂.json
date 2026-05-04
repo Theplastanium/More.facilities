@@ -1,0 +1,114 @@
+{
+	"type": "GenericCrafter",
+	"size":8 ,
+	"health":3600,
+	"liquidCapacity": 250,
+	"itemCapacity": 32,
+	"hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+    "craftTime": 45,
+    "ambientSoundVolume": 1,
+    "buildCostMultiplier": 0.7,
+generateEffectRange: 1
+effectChance: 0.025
+generateEffect: {
+    type: RadialEffect
+    layer: 118
+    y:-40
+    x:-40
+    rotationSpacing: 60
+    amount: 6
+    lengthOffset: 6
+    effect: {
+      particles: 1
+      length: 90
+      lifetime: 400
+      cone: 20
+      baseRotation: 32
+      useRotation: false 
+      sizeFrom: 0
+      sizeTo: 12
+      colorFrom: e0e0e066
+      colorTo: e0e0e000
+      sizeInterp: pow2Out
+      interp: pow2Out
+      layer: 111
+    }
+  }
+	"requirements": [
+	],
+
+	"consumes": {
+        "power": 25
+		"liquids": [
+        "低压蒸汽/1"
+        "天然气/0.3"
+        "淡气/0.4"
+        "hydrogen/0.4"
+        "water/0.5"
+        ]
+    },
+	"ambientSound": "plasticburn",
+    "drawer":{
+    	"type":"DrawMulti",
+    	"drawers":[
+    	    		{
+    	"type":"DrawRegion",
+		"suffix":"-bottom"
+	},
+
+						{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "偏二甲肼",
+				"suffix": "-偏"
+			},
+    				{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "天然气",
+				"suffix": "-天然气"
+			},
+						{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "低压蒸汽",
+				"suffix": "-低压蒸汽"
+			},
+    				{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "hydrogen",
+				"suffix": "-氢气"
+			},
+    				{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "water",
+				"suffix": "-水"
+			},
+    				{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "淡气",
+				"suffix": "-淡气"
+			},
+    				{
+				"type": "DrawRegion",
+				"x": 18.5,
+				"y": -13,
+				"suffix": "-搅屎棍",
+				"spinSprite": true,
+				"rotateSpeed": 0.855
+			},
+	    				{
+				"type": "DrawRegion",
+				"x": 0,
+				"y": 0,
+				"suffix": "-icon",
+				"spinSprite": false,
+				"rotateSpeed": 0
+			},
+    	]
+    },
+
+	"outputLiquid": "偏二甲肼/0.5"
+
+	"category": "crafting",
+
+}

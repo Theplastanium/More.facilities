@@ -1,0 +1,29 @@
+{
+	"type": "HeaterGenerator",
+	"size": 4,
+	"health": 1145,
+	"armor":3,
+	"liquidCapacity": 80,
+	"heatOutput": 14,
+	"explodeOnFull": true,
+	"hasLiquids": true,
+	"requirements": [
+	"copper/200",
+	"lead/180",
+	"silicon/120"
+	"titanium/95"
+	"metaglass/80"
+	"graphite/85"
+	"硅钢片/50"
+	"氮化镓/20"
+    ],
+    "powerProduction": 24,
+    "itemDuration": 360,
+    "ambientSoundVolume": 0.01,
+    "rebuildable": false,
+    "consumes": {
+		"liquid": {"liquid":"燃料","amount":0.4,"booster":false}
+	},
+	"category": "power",
+	"research": "标准引擎",
+}

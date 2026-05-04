@@ -1,0 +1,38 @@
+{
+	"type": "PowerNode",
+	"name": "镓电力节点",
+	"health": 280,
+	"size": 2,
+	"maxNodes": 45,
+	"laserRange": 30,
+	"laserScale": 0.38,
+		"absorbLasers": true
+	"research": {
+		"parent": "power-node-large",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "planetaryTerminal"
+			}
+		]
+	}
+	"laserColor2": "C5C1BD",
+	"placeableLiquid": true,
+		"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"requirements": [
+	"scrap/0"
+        "氮化镓/10"
+        "氧化镓/15"
+		"metaglass/10",
+        "硅钢片/10",
+		"silicon/15",
+		"thorium/12"
+		"titanium/8"
+		"plastanium/10"
+		"phase-fabric/5"
+	],
+	"category": "power"
+}

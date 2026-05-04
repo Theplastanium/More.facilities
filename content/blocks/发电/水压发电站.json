@@ -1,0 +1,79 @@
+{
+	"type": "ConsumeGenerator",
+	"name": "水压发电站",
+	"size": 2,
+	"health": 500,
+	"hasLiquids": true,
+	"hasItems": true,
+	"itemDuration": 15,
+	"powerProduction": 10,
+	"itemCapacity": 20,
+		"craftEffect": "smeltsmoke",
+	"liquidCapacity": 450,
+	generateEffect: {
+    type: RadialEffect
+    layer: 118
+    rotationSpacing: 60
+    amount: 6
+    lengthOffset: 6
+    effect: {
+      particles: 1
+      length: 8
+      lifetime: 400
+      cone: 20
+      baseRotation: 32
+      useRotation: false 
+      sizeFrom: 0
+      sizeTo: 12
+      colorFrom: FFFFFF
+      colorTo: FFFFFF
+      sizeInterp: pow2Out
+      interp: pow2Out
+      layer: 111
+    }
+  }
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom" 
+      },
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "water"
+      },
+      {
+        "type": "DrawBlurSpin",
+        "suffix": "-rotator",
+        "rotateSpeed": 11
+      },
+            {
+        "type": "DrawBlurSpin",
+        "suffix": "-rotator",
+        "rotateSpeed": -9
+      },
+      {
+        "type": "DrawDefault" 
+      }
+    ]
+  },
+	"generateEffect": "generatespark",
+	"consumes": {
+		"liquid": "高压水/2.5"
+	},
+			  "outputLiquid": "water/2.5"
+	"buildCostMultiplier": 0.5,
+	"requirements": [
+		"lead/20",
+		"titanium/90",
+		"metaglass/110",
+		"silicon/40",
+		"thorium/60"
+		"铝合金/5"
+		"硅钢片/60"
+	],
+	"ambientSoundVolume": 0.06,
+	"category": "power",
+	"research": "steam-generator"
+}

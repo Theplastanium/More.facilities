@@ -1,0 +1,47 @@
+{
+	"type": "GenericCrafter",
+	"name": "高压电解池",
+	"size": 3,
+	"health": 560,
+	"craftTime": 10,
+	"rotate": true,
+	"invertFlip": true,
+	"liquidCapacity": 60,
+	"regionRotated1": 3,
+
+	"requirements": [
+		"surge-alloy/50",
+		"硅钢片/50",
+		"thorium/40",
+		"metaglass/60",
+		"graphite/80"
+		"titanium/50"
+    ],
+    "outputLiquids":[
+"hydrogen/0.3333333332"
+"ozone/0.166666666"
+		],
+
+	"consumes": {
+		"power":5,
+		    "liquids": {
+      "liquids": [
+"water/0.5"
+]
+}
+	},
+
+    "liquidOutputDirections": [1,3],
+    "ambientSound": "electricHum",
+    "ambientSoundVolume": 0.08,
+	"category": "crafting",
+"research": {
+		"parent": "spore-press",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "impact0078"
+			}
+		]
+	}
+	}

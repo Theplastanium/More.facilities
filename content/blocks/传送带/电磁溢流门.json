@@ -1,0 +1,28 @@
+type: "OverflowGate"
+health: 100
+	"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"armor":1,
+	"consumes": {
+        "power": 0.05
+    }
+requirements: [
+       "silicon/2"
+    "titanium/2"
+    "thorium/1"
+    "phase-fabric/1"
+    "磁钢/2"
+] 
+category: "distribution"
+research: {
+    parent: "电磁路由器"
+},
+researchCost: [
+            "silicon/100"
+    "titanium/200"
+    "thorium/100"
+    "phase-fabric/300"
+    "磁钢/100"
+  ]

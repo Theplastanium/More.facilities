@@ -1,0 +1,74 @@
+{
+	"type": "GenericCrafter",
+"name": "重型分层离心机",
+    "itemCapacity": 100,
+    "health": 820,
+    "size":"5"
+    "requirements": [
+		"plastanium/60",
+		"硅钢片/80",
+		"thorium/110",
+		"metaglass/130",
+		"graphite/120"
+		"titanium/100"
+        "surge-alloy/80"
+    ],
+"craftTime": 20,
+		"drawer": {
+			"type": "DrawMulti",
+			"drawers": [
+				"DrawDefault",
+							{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "slag"
+			},
+				{
+					"type": "DrawRegion",
+					"suffix": "-r",
+					"spinSprite": true,
+					"rotateSpeed": 18
+				}
+								{
+					"type": "DrawRegion",
+					"suffix": "-top",
+					"spinSprite": true,
+					"rotateSpeed": 0
+				}
+			]
+		},
+	"craftEffect": "formsmoke",
+	"updateEffect": "plasticburn",
+"outputLiquid": "镓/0.2"
+	"consumes": {
+		"power": 15,
+		"liquids": [
+		"slag/0.5",
+		]
+		"items": [
+			"sand/3"
+		]
+	},
+outputItems: [
+{ "item": "copper", "amount": 4 },
+                { "item": "lead", "amount": 4 }
+                { "item": "graphite", "amount": 3 },
+                { "item": "titanium", "amount": 2 }
+                { "item": "thorium", "amount": 1 },
+                { "item": "炉渣", "amount": 2 },
+                { "liquid": "镓", "amount": 0.2 }
+]
+	"category": "crafting",
+	"research": {
+		"parent": "disassembler",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "nuclearComplex"
+			}
+		]
+	}
+}

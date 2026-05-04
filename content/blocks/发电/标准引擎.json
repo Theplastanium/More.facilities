@@ -1,0 +1,27 @@
+{
+	"type": "HeaterGenerator",
+	"size": 3,
+	"health": 580,
+	"liquidCapacity": 50,
+	"heatOutput": 4,
+	"explodeOnFull": true,
+	"hasLiquids": true,
+	"requirements": [
+	"copper/80",
+	"lead/50",
+	"silicon/30"
+	"titanium/80"
+	"metaglass/50"
+	"graphite/55"
+	"硅钢片/25"
+    ],
+    "powerProduction": 15,
+    "itemDuration": 360,
+    "ambientSoundVolume": 0.01,
+    "rebuildable": false,
+    "consumes": {
+		"liquid": {"liquid":"燃料","amount":0.5,"booster":false}
+	},
+	"category": "power",
+	"research": "发电引擎",
+}

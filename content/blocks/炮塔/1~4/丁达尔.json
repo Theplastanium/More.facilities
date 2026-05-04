@@ -1,0 +1,219 @@
+{
+	"type": "ItemTurret",
+	"health": 850,
+	"size": 4,
+	"range": 320,
+	"ammoPerShot": 4,
+		"maxAmmo":180,
+		    "recoil": 3,
+		    	"pierce": true,
+		"pierceBuilding": true,
+		"pierceCap": 3,
+	"shoot": {
+		"type": "ShootBarrel",
+		"shots": 6,
+		"shotDelay": 2,
+		"barrels": [
+			20, 4, -30,
+			-20, 4, 30,
+			3.5, 13, 0,
+			-3.5, 13, 0,
+			10.5, 13, 0,
+			-10.5, 13, 0
+		]
+	},
+	"xRand": 1,
+	"ammoUseEffect": "casing2Double",
+	"shootSound": "JG1",
+	"shake": 0.5,
+	"shootCone": 270,
+	"inaccuracy": 1.2,
+	"recoil": 3,
+	"cooldownTime": 20,
+	"shootY": 0,
+	"coolantMultiplier": 1,
+	"velocityRnd": 0.2,
+	"canOverdrive": false,
+	"reload": 12,
+	"xRand": 1.5,
+	"ammoTypes": {
+		"copper": {
+			"speed": 16,
+			"damage": 21,
+			"lifetime": 20,
+	 		"width": 5,
+			"height": 14,
+			"ammoMultiplier": 5,
+			"shootEffect": "shootSmall"
+		},
+				"lead": {
+			"reloadMultiplier": 0.8,
+			"speed": 16,
+			"damage": 13,
+			"lifetime": 20,
+	 		"width": 5,
+			"height": 14,
+			"ammoMultiplier": 8,
+			"shootEffect": "shootSmall",
+			"trailColor": "6F687EFF",
+			"frontColor": "AB99D3FF"
+			    "splashDamageRadius":20,
+	    "splashDamage":18,
+			        "fragBullets":4,
+        "fragBullet":{
+        "speed":4,
+        "damage":10,   
+        "lifetime":10
+        } ,}
+		"graphite": {
+			"reloadMultiplier": 0.5,
+			"speed": 16,
+			"damage": 31,
+			"lifetime": 20,
+	 		"width": 5,
+	 		"pierceCap": 2,
+			"height": 14,
+			"ammoMultiplier": 8,
+			"shootEffect": "shootSmall"
+		},
+		"metaglass": {
+			"speed": 16,
+			"damage": 20,
+			"reloadMultiplier": 1.5,
+			"splashDamageRadius": 16,
+			"splashDamage": 18,
+			"lifetime": 20,
+	 		"width": 5,
+			"height": 14,
+			"collidesGround":false
+			"ammoMultiplier": 8,
+			"shootEffect": "shootSmall"
+		"fragBullets": 5,
+		"fragBullet": {
+			"type": "PointBulletType",
+			"trailEffect": "none",
+			"hitEffect": "flakExplosion",
+			"despawnEffect": "flakExplosion",
+			"splashDamageRadius": 16,
+			"splashDamage": 15,
+			"status": "slow",
+			"statusDuration": 60,
+			"speed": 22,
+			"lifetime": 2
+		}
+		},
+		"pyratite": {
+			"speed": 16,
+			"damage": 24,
+			"splashDamageRadius": 16,
+			"splashDamage": 20,
+			"lifetime": 20,
+	 		"width": 5,
+			"height": 14,
+			"makeFire": true,
+			"status": "burning",
+			"statusDuration": 300,
+			"ammoMultiplier": 10,
+			"shootEffect": "shootSmall",
+			"status": "burning",
+			"statusDuration": 60,
+			"trailColor": "FF8C00",
+			"frontColor": "FFD700"
+		},
+		"silicon": {
+			"speed": 16,
+			"damage": 20,
+			"reloadMultiplier": 1.6,
+			"lifetime": 27,
+	 		"width": 5,
+			"height": 14,
+			"pierceCap": 3,
+			"shootEffect": "shootSmall",
+			"homingRange": 40,
+			"homingPower": 0.06,
+			"ammoMultiplier": 8
+		}
+			"blast-compound":{
+	    "splashDamageRadius":20,
+	    "splashDamage":40,
+	    "speed":16,
+	    "damage":16,
+		"status":"blasted",
+	   	"statusDuration":60,
+	    "backColor":"FF7F24",
+	    "frontColor":"E3E3E3", 
+	    "trailColor":"FF7F24",
+	    "lifetime":20,
+ 		"width": 5,
+		"height": 14,
+        "ammoMultiplier": 8,
+	    "hitEffect":"flakExplosion"
+	}
+		"surge-alloy": {//消耗的弹药
+		    "reloadMultiplier":1,//射击速率
+			"speed": 16,//子弹速度（输入数字×8）
+			"damage": 18,//伤害
+			    "splashDamageRadius":20,
+	    "splashDamage":30,
+					"lightningDamage":4,
+			//闪电伤害
+			"lightning":2,
+			//闪电数量
+            "lightningLength":6,
+            //闪电长度
+			"knockback":0.01,//击退
+			"lifetime":20,//弹药存在时间（帧）
+			"width": 5,//子弹宽度
+			"height": 14,//子弹长度
+			"ammoMultiplier":12,//装填倍数
+			"shootEffect": "shootBig" 	//特效
+				}
+	}
+	"drawer":{"type":"DrawMulti",
+"drawers":[{"type":"DrawTurret",
+"parts":[
+{"type":"RegionPart",
+"mirror":false,//是否镜像显示
+"x":0,"y":0,//起始位置
+"suffix":"-barrel","layer":50,"moveX":0,"moveY":1.5,
+"moveRot":0,//移动圈数
+}
+{"type":"RegionPart",
+"mirror":false,//是否镜像显示
+"x":0,"y":0,//起始位置
+"suffix":"-左","layer":50,"moveX":-3,"moveY":-1.5,
+"moveRot":30,//移动圈数
+}
+{"type":"RegionPart",
+"mirror":false,//是否镜像显示
+"x":0,"y":0,//起始位置
+"suffix":"-右","layer":50,"moveX":3,"moveY":-1.5,
+"moveRot":-30,//移动圈数
+}
+]}]}
+	"researchCostMultiplier": 0.5,
+	"requirements": [
+		{
+			"item": "copper",
+			"amount": 150
+		},
+			{
+			"item": "lead",
+			"amount": 117
+		},
+			{
+			"item": "graphite",
+			"amount": 112
+		},
+			{
+			"item": "titanium",
+			"amount": 200
+		},
+			{
+			"item": "thorium",
+			"amount": 80
+		},
+	],
+	"category": "turret",
+	"research": "salvo"
+}

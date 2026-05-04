@@ -1,0 +1,44 @@
+{
+type: ForceProjector
+size: 3
+"armor":15,
+squareSprite: false
+shieldHealth: 1400
+cooldownNormal: 1.75
+cooldownLiquid: 1.75
+cooldownBrokenBase: 0.35
+coolantConsumption: 0.1
+	"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+category: effect
+research: force-projector
+requirements: [
+  	"copper/30",
+	"lead/40",
+	"silicon/50"
+	"titanium/55"
+	"metaglass/80"
+	"graphite/110"
+	"plastanium/50",
+	"surge-alloy/40",
+]
+consumes: {
+  power: 5
+  items: {
+    items: [
+      surge-alloy/1
+    ]
+    optional: true
+    booster: true
+  }
+}
+radius: 150
+researchCostMultiplier: 0.5
+phaseRadiusBoost: 100
+phaseShieldBoost: 600
+phaseUseTime: 320
+sides: 4
+shieldRotation: 45
+}

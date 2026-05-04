@@ -1,0 +1,86 @@
+{
+  "type": "GenericCrafter",
+  "size": 3,
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 60,
+  "hasLiquids": false,
+  "craftTime": 120,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom",
+      },
+      {
+        "type": "DrawCircles",
+        "color": "ffc073",
+        "strokeMax": 1.2,
+        "radius": 10,
+        "amount": 3,
+      },
+      {
+        "type": "DrawSpikes",
+        "color": "ffd59e",
+        "stroke": 1,
+        "layers": 2,
+        "amount": 8,
+        "rotateSpeed": 0.5,
+        "layerSpeed": -0.9
+      },
+      {
+        "type": "DrawDefault" 
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "ffef99",
+        "alpha": 0.9,
+        "glowIntensity": 0.6
+      },
+      {
+        "type": "DrawMultiWeave",
+        "glowColor": "ffd59e"
+      }
+    ]
+  },
+  "consumes": {
+    "power": 7,
+    "items": {
+      "items": [
+        {
+          "item": "thorium",
+          "amount": 6
+        },
+        {
+          "item": "sand",
+          "amount": 15
+        }
+      ]
+    }
+  },
+  "requirements": [
+		"plastanium/55",
+		"硅钢片/30",
+		"thorium/80",
+		"metaglass/40",
+		"graphite/30"
+		"titanium/45"
+  ],
+  "category": "crafting",
+"research": {
+		"parent": "big-plastanium-press",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "desolateRift"
+			}
+		]
+	}
+  "outputItem": {
+    "item": "phase-fabric",
+    "amount": 3
+  },
+  "health": 600
+}

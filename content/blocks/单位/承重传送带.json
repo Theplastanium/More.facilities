@@ -1,0 +1,20 @@
+{
+"category":"units",
+"type":"PayloadConveyor",
+"health":8000,
+"armor":18
+	"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"consumes": {
+    "power": 0.1
+    }
+	"solid": false,
+	"insulated": true,
+	"placeableLiquid": true,
+"size":9,
+"underBullets":true,
+"canOverdrive":false,
+"payloadLimit":8.5
+"requirements":["surge-alloy/10","硅钢片/10","metaglass/50","graphite/10","titanium/20","thorium/40","silicon/5","plastanium/100","phase-fabric/10",],"research":"payload-conveyor"}

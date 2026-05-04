@@ -1,0 +1,77 @@
+{
+	"type": "ConsumeGenerator",
+	"size": 2,
+	"health": 400,
+	"hasLiquids": true,
+	"hasItems": true,
+	"itemDuration": 15,
+	"powerProduction": 10,
+	"itemCapacity": 20,
+	"liquidCapacity": 100,
+	generateEffectRange: 1
+effectChance: 0.025
+	"generateEffect": "redgeneratespark",
+generateEffectRange: 1
+effectChance: 0.025
+generateEffect: {
+    type: RadialEffect
+    layer: 118
+    rotationSpacing: 60
+    amount: 6
+    lengthOffset: 6
+    effect: {
+      particles: 1
+      length: 90
+      lifetime: 400
+      cone: 20
+      baseRotation: 32
+      useRotation: false 
+      sizeFrom: 0
+      sizeTo: 12
+      colorFrom: e0e0e066
+      colorTo: e0e0e000
+      sizeInterp: pow2Out
+      interp: pow2Out
+      layer: 111
+    }
+  }
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom" 
+      },
+      {
+        "type": "DrawBlurSpin",
+        "suffix": "-rotator",
+        "rotateSpeed": 11
+      },
+            {
+        "type": "DrawBlurSpin",
+        "suffix": "-rotator",
+        "rotateSpeed": -9
+      },
+      {
+        "type": "DrawDefault" 
+      }
+    ]
+  },
+//	"generateEffect": "generatespark",
+	"consumes": {
+		"liquid": "中压蒸汽/0.125"
+	},
+	"outputLiquid": "低压蒸汽/0.25"
+	"buildCostMultiplier": 0.95,
+	"requirements": [
+		"lead/50",
+		"titanium/100",
+		"metaglass/100",
+		"silicon/60",
+		"硅钢片/50"
+	],
+	"ambientSound": "plasticburn",
+	"ambientSoundVolume": 0.06,
+	"category": "power",
+	"research": "大型化学燃烧室"
+}

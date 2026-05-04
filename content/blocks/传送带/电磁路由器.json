@@ -1,0 +1,39 @@
+{
+type: "Router"
+health: 100
+	"armor":1,
+itemCapacity: 5
+	"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"consumes": {
+        "power": 0.05
+    }
+    	"speed": 0.11,
+	"displayedSpeed":11,
+requirements: [
+      "silicon/2"
+    "titanium/2"
+    "thorium/2"
+    "phase-fabric/2"
+    "磁钢/1"
+] 
+category: "distribution"
+"research": {
+		"parent": "router",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "impact0078"
+			}
+		]
+	}
+researchCost: [
+        "silicon/100"
+    "titanium/200"
+    "thorium/100"
+    "phase-fabric/300"
+    "磁钢/100"
+  ]
+  }

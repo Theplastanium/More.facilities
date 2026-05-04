@@ -1,0 +1,11 @@
+{
+	"outputItems":[
+	"slag/0.4"
+	]
+"consumes": {
+		"power": 0.8,
+		"items": [
+        "scrap/1"
+		]
+	},
+}

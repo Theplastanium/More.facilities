@@ -1,0 +1,9 @@
+{
+    "explosionRadius":20,
+	"explosionDamage":114514,
+	"explodeOnFull": true,
+	powerProduction: 15
+	"liquidCapacity": 45,
+	//敌人:这不炸了吗？
+	"outputLiquid": { "liquid": "中压蒸汽", "amount": 0.125},
+}

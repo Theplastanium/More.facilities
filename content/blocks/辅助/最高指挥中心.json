@@ -1,0 +1,24 @@
+{
+	"name": "最高指挥中心",
+	"research": {
+		"parent": "前哨基地",
+	},
+	"requirements": [
+		"thorium/9300",
+		"silicon/8000",
+		"plastanium/1750",
+		"surge-alloy/960",
+	],
+		"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"unitType": "引导",
+	"health": 48000,
+	"armor": 48,
+	"itemCapacity": 20000,
+	"size": 8,
+	"unitCapModifier": 50,
+	"researchCostMultiplier": 0.8,
+	"category": "effect"
+}

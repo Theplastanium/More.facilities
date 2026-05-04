@@ -1,0 +1,68 @@
+{
+	"type": "GenericCrafter",
+	"name": "集成合金厂",
+	"outputItem": "surge-alloy/1",
+	"size": 8,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 6,
+	"itemCapacity": 120,
+	"liquidCapacity": 120,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "water"
+			},
+			{
+				"type": "DrawPistons",
+				"sinMag": 1
+			},
+			"DrawDefault",
+			"DrawFade"
+		]
+	},
+	"craftEffect": "formsmoke",
+	"updateEffect": "plasticburn",
+consumes: {
+  power: 16
+  		"items": [
+        "titanium/2"
+        "lead/4"
+        "copper/3"
+        "silicon/3"
+		]
+  liquids: [
+    water/0.5
+  ]
+}
+  "requirements": [
+		"plastanium/100",
+		"硅钢片/80",
+		"thorium/50",
+		"metaglass/40",
+		"graphite/60"
+		"titanium/90"
+  ],
+outputLiquid: 中压蒸汽/0.125
+"category": "crafting",
+   "explosionRadius":11,
+	"explosionDamage":1145,
+	"explodeOnFull": true,
+	"ambientSound": "smelter",
+"research": {
+		"parent": "surge-smelter",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "肼江"
+			}
+		]
+	}
+}

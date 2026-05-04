@@ -1,0 +1,30 @@
+{
+"type": "BuildTurret"
+"category": "effect"
+"requirements": [
+		"thorium/120",
+		"硅钢片/80",
+		"plastanium/20"
+		"silicon/114"
+		"metaglass/51"
+		"plastanium/40"
+		"scrap/1"
+		//👍🏼👍🏼👍🏼👍🏼
+]
+	"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+"heatColor":"ffd37fe6"
+"buildSpeed":1.75
+"buildBeamOffset":10
+"reloadTime": 120
+"shootCone": 30
+"rotateSpeed": 5
+"alternate": true
+"consumes":{"power":5}
+"health": 600
+"range": 300
+"size":3
+"research":"unloader"
+}

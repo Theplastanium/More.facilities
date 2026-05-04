@@ -1,0 +1,37 @@
+{
+            "type":"AttributeCrafter",
+            "attribute" :"steam"
+            "category": "production"
+            "minEfficiency":8,
+            "liquidCapacity": 120,
+            "displayEfficiencyScale":0.1111111111111
+            "boostScale":0.11111111111111111,
+            "floating":false,//不稳定
+            "baseEfficiency":0,
+            "displayEfficiency":false
+            "outputLiquid": { "liquid": "slag", "amount": 0.222222},
+            "group" : "liquids" 
+            "drawer": {"type": "DrawMulti",
+	"drawers": [
+		{"type": "DrawRegion",
+		"suffix": "-bottom"
+		},
+		{"type": "DrawBlurSpin",
+		"suffix": "-转"
+		"rotateSpeed":1
+		},
+		"DrawDefault",
+		]	}
+            "displayEfficiency" : false  
+            "generateEffect" :"turbinegenerate"  
+            "effectChance" :0.4
+            "size" : 4
+            "consumes": { "power": 3.25}
+            "requirements": [
+		    "beryllium/200",
+            "oxide/400"
+            "钨合金钢/120"
+            "graphite/60"
+                            ],
+        "research":"vent-condenser"
+}

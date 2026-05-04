@@ -1,0 +1,56 @@
+{
+	"type": "GenericCrafter",
+	"name": "钛子弹厂",
+	"outputItem": "12.7^99钛弹/10",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 120,
+	"itemCapacity": 80,
+	"liquidCapacity": 40,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "water"
+			},
+			{
+				"type": "DrawPistons",
+				"sinMag": 1
+			},
+			"DrawDefault",
+			"DrawFade"
+		]
+	},
+	"craftEffect": "formsmoke",
+	"updateEffect": "plasticburn",
+	"consumes": {
+		"power": 4,
+		"liquid": "water/0.2",
+		"items": [
+		    "blast-compound/5"
+		    "copper/10"
+			"titanium/5"
+		]
+	},
+	"requirements": [
+		"graphite/100",
+		"titanium/80",
+		"plastanium/50",
+		"copper/90",
+		"silicon/40"
+	],
+	"category": "crafting",
+	"research": {
+		"parent": "plastanium-compressor",
+		"objectives": [
+			"a127",
+		]
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"type": "GenericCrafter",
+	"name": "合金弹厂",
+	"outputItem": "12.7^99合金弹/10",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 120,
+	"itemCapacity": 80,
+	"liquidCapacity": 40,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "water"
+			},
+			{
+				"type": "DrawPistons",
+				"sinMag": 1
+			},
+			"DrawDefault",
+			"DrawFade"
+		]
+	},
+	"craftEffect": "formsmoke",
+	"updateEffect": "plasticburn",
+	"consumes": {
+		"power": 5,
+		"liquid": "water/0.4",
+		"items": [
+		    "blast-compound/5"
+		    "titanium/10"
+			"surge-alloy/5"
+		]
+	},
+	"requirements": [
+		"graphite/80",
+		"thorium/50",
+		"plastanium/80",
+		"copper/90",
+		"silicon/40"
+	],
+	"category": "crafting",
+	"research": "12.7^99钛厂"
+}

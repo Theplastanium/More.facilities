@@ -1,0 +1,25 @@
+{
+	"type": "conveyor",
+	"name": "电磁传送带",
+	"category": "distribution",
+	"health": "100",
+	"armor":1,
+	"speed": "0.5",
+	"displayedSpeed": "120",
+	"itemCapacity": "4",
+	"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"consumes": {
+    "power": 0.05
+    }
+	"requirements": [
+    "silicon/1"
+    "titanium/2"
+    "thorium/1"
+    "phase-fabric/2"
+    "磁钢/2"
+    ],
+    "research": "titanium-conveyor"
+}

@@ -1,0 +1,9 @@
+{
+	"type":"LiquidRouter",
+	"size":1,
+	"health": 30,
+	"liquidCapacity": 50,
+	"absorbLasers":true,
+	"category": "liquid",
+		"buildVisibility": "sandboxOnly",
+	}

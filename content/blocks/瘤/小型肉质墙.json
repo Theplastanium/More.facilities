@@ -1,0 +1,11 @@
+{
+	"name": "肉质墙",
+	"type": "Wall",
+	"armor": 1,
+	"health": 500,
+	"size": 1,
+		"buildVisibility": "sandboxOnly",
+	"requirements": [
+	],
+	"category": "defense",
+}

@@ -1,0 +1,26 @@
+{
+	"type": "HeaterGenerator",
+	"size": 2,
+	"health": 350,
+	"liquidCapacity": 20,
+	"heatOutput": 9,
+	"explodeOnFull": true,
+	"hasLiquids": true,
+	"requirements": [
+	"copper/40",
+	"lead/60",
+	"silicon/20"
+	"titanium/25"
+	"metaglass/20"
+	"graphite/15"
+    ],
+    "powerProduction": 8,
+    "itemDuration": 360,
+    "ambientSoundVolume": 0.01,
+    "rebuildable": false,
+    "consumes": {
+		"liquid": {"liquid":"燃料","amount":0.2,"booster":false}
+	},
+	"category": "power",
+	"research": "differential-generator",
+}

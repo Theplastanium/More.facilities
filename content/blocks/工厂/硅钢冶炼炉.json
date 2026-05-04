@@ -1,0 +1,44 @@
+{
+	"type": "GenericCrafter",
+	"outputItem": "硅钢片/5",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 60,
+	"itemCapacity": 100,
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            "DrawFlame"
+            ]
+    },
+	"consumes": {
+    "power":4,
+    "items": {	 "items": [
+	  "titanium/5"
+	  "silicon/5"
+		]
+  }
+ },
+"requirements": [
+		"lead/20"
+		"silicon/60"
+        "titanium/80"
+		"graphite/25"
+		"metaglass/30"
+	],
+	"category": "crafting",
+		"research": {
+		"parent": "silicon-crucible",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "tarFields"
+			}
+		]
+	}
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+}

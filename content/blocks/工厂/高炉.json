@@ -1,0 +1,66 @@
+{
+	"type": "GenericCrafter",
+	"name": "冶铁高炉",
+	"health": 1100,
+outputItems: [
+"铁/4"
+"炉渣/2"
+"scrap/1"
+]
+	"size": 4,
+	"hasPower": true,
+	"hasItems": true,
+	"craftTime": 60,
+	"itemCapacity": 24,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameColor": "e1e4c8"
+			}
+		]
+	},
+	"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 5,
+		"baseLength": 6,
+		"length": 6,
+		"region": "更多设施-菱形",
+		"sizeInterp": "pow3In",
+		"lifetime": 15,
+		"sizeFrom": 5,
+		"sizeTo": 0,
+		"colorFrom": "7595D2AA",
+		"colorTo": "7595D2"
+	},
+	"consumes": {
+		"power": 3,
+		"items": [
+			"氧化铁/8"
+			"coal/3"
+			"纳/1"
+		]
+	},
+	"requirements": [
+		"plastanium/55",
+		"硅钢片/60",
+		"thorium/80",
+		"metaglass/40",
+		"graphite/30"
+		"titanium/50"
+	],
+	"category": "crafting",
+	"ambientSound": "smelter",
+	"ambientSoundVolume": 0.65,
+	"research": {
+		"parent": "硅钢冶炼炉",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "肼江"
+			}
+		]
+	}
+}

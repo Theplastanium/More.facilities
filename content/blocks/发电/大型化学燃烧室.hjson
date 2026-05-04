@@ -1,0 +1,78 @@
+{
+type: ConsumeGenerator
+size: 5
+hasLiquids: true
+liquidCapacity: 100
+canOverdrive: false
+itemDuration: 30
+baseExplosiveness: 0
+  "drawer": {
+  "type": "DrawMulti",
+        "drawers": [
+        {
+       "type": "DrawRegion",
+       "suffix": "-bottom"
+	   },
+        {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "water",
+        "suffix": "-liquid"
+        },
+        {	
+        "type": "DrawPistons"
+        suffix: -piston1
+        sinMag: 13
+        sinScl: 2
+        sides: 4
+	      }
+        {	
+        "type": "DrawDefault"
+	       }
+    ]
+    },
+ 
+	"consumes": {
+		"itemExplosive":{}
+				"liquid": {"liquid":"water","amount":0.5,"booster":false}
+	},
+generateEffectRange: 1
+effectChance: 0.025
+generateEffect: {
+    type: RadialEffect
+    layer: 118
+    rotationSpacing: 60
+    amount: 6
+    lengthOffset: 6
+    effect: {
+      particles: 1
+      length: 90
+      lifetime: 400
+      cone: 20
+      baseRotation: 32
+      useRotation: false 
+      sizeFrom: 1
+      sizeTo: 12
+      colorFrom: e0e0e066
+      colorTo: e0e0e000
+      sizeInterp: pow2Out
+      interp: pow2Out
+      layer: 111
+    }
+  }
+outputLiquid: 中压蒸汽/1
+	"explosionRadius":12,
+	"explosionDamage":1145,
+	"explodeOnFull": true,
+	"generateEffect": "blastExplosion",
+powerProduction: 80
+category: power
+requirements: [
+  		"surge-alloy/30","硅钢片/40","metaglass/50","graphite/20","titanium/100","thorium/30","scrap/2","silicon/114","plastanium/80","phase-fabric/20",
+]
+research: {
+    parent: "differential-generator",
+},
+researchCost: [
+  		"surge-alloy/230","硅钢片/440","metaglass/250","graphite/120","titanium/1010","thorium/130","scrap/1","silicon/350","plastanium/800","phase-fabric/200",
+    ]
+    }

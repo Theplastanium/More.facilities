@@ -1,0 +1,34 @@
+{
+	"type": "StackConveyor",
+	"name": "电磁传送带",
+	"category": "distribution",
+	"health": 110,
+	"speed": 1,
+	"itemCapacity": 50,
+	"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"baseEfficiency": 0.5,
+	"armor":2,
+	"consumes": {
+        "power": 0.1
+    }
+	"requirements": [
+    "silicon/1"
+    "titanium/2"
+    "thorium/2"
+    "phase-fabric/1"
+    "磁钢/3"
+    "surge-alloy/1"
+    ],
+    "research": {
+		"parent": "plastanium-conveyor",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "impact0078"
+			}
+		]
+	}
+}

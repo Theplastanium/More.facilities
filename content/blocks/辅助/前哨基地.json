@@ -1,0 +1,26 @@
+{
+	"research": {
+		"root":true,
+		"name": "ET"
+		},
+	"requirements": [
+		"copper/800",
+		"lead/2000",
+		"silicon/500"
+	],
+	consumes: {
+  powerBuffered: 1000
+} 
+	"hasPower": true,
+	"consumesPower": true,
+	"conductivePower": true,
+	"underBullets": true,
+	"unitType": "alpha",
+	"alwaysUnlocked":true,
+	"armor":28,
+	"health": 1000,
+	"itemCapacity": 800,
+	"size": 3,
+	"unitCapModifier": 6,
+	"category": "effect"
+}

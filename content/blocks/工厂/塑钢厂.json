@@ -1,0 +1,58 @@
+{
+	"type": "GenericCrafter",
+	"outputItem": "plastanium/6",
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 60,
+	"itemCapacity": 20,
+	"liquidCapacity": 80,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "乙烯"
+			},
+			{
+				"type": "DrawPistons",
+				"sinMag": 2.5
+			},
+			"DrawDefault",
+			"DrawFade"
+		]
+	},
+	"craftEffect": "formsmoke",
+	"updateEffect": "plasticburn",
+	"consumes": {
+		"power": 7,
+				"liquids": [
+			"氯气/0.3",
+			"乙烯/0.2"
+		]
+		"items": [
+			"titanium/5"
+		]
+	},
+	"requirements": [
+		"graphite/100",
+		"thorium/80",
+		"plastanium/50",
+		"silicon/60"
+	],
+	"category": "crafting",
+"research": {
+		"parent": "plastanium-compressor",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "tarFields"
+			}
+		]
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"type": "GenericCrafter",
+	"health": 400,
+	"outputLiquid": {
+		"liquid": "高压水",
+		"amount": 2.5
+	},
+		"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "water",
+				"suffix": "-w"
+			},
+			"DrawDefault"
+		]
+	},
+	"itemCapacity": 14,
+	"size": 2,
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 450,
+	"craftTime": 60,
+	"consumes": {
+		"power": 10,
+		"liquids":[
+		"water/2.5"
+		]
+	},
+	"requirements": [
+		"thorium/150",
+		"metaglass/40",
+		"silicon/40",
+		"graphite/50"
+		"硅钢片/40",
+	],
+	"category": "power",
+	"research": ""
+}

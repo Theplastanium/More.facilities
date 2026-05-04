@@ -1,0 +1,67 @@
+{
+  "type": "GenericCrafter",
+	"outputItems":[
+	"氮化镓/2",
+	]
+  "hasLiquids": true,
+  "health": 560,
+  "size": 4,
+  "hasPower": true,
+  "hasLiquids": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+			{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "淡气",
+				"suffix": "-淡"
+			},
+						{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "镓",
+				"suffix": "-镓"
+			},
+      "DrawDefault"
+    ]
+  },
+  "craftTime": 60,
+  "liquidCapacity": 60,
+  "consumes": {
+    "power": 5.5,
+    "liquids": {
+      "liquids": [
+        {
+          "liquid": "淡气",
+          "amount": 0.1
+        },
+        {
+          "liquid": "镓",
+          "amount": 0.4
+        }
+      ]
+    }
+  },
+  "requirements": [
+    "graphite/65",
+    "silicon/50",
+    "plastanium/50",
+    "titanium/35",
+    "thorium/15"
+    "graphite/40"
+  ],
+  "category": "crafting",
+"research": {
+		"parent": "silicon-smelter",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "impact0078"
+			}
+		]
+	}
+
+}

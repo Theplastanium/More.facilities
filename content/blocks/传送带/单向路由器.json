@@ -1,0 +1,21 @@
+{
+	"type": "DuctRouter",
+	"size":1,
+	"name":"管道路由器",
+
+	"alwaysUnlocked":false,
+	"health":100
+	"regionRotated":1
+	"itemCapacity":3
+	"solid":true,
+	"category":"distribution",
+	"requirements": [
+		{ "item": "copper","amount":3}
+		{ "item": "lead","amount":3}
+		{ "item": "titanium","amount":3}
+		{ "item": "plastanium","amount":1}
+	],
+	"research": "titanium-conveyor"
+	"speed": 0.11,
+	"displayedSpeed":11,
+}
