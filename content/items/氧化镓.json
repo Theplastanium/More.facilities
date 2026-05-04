@@ -1,0 +1,13 @@
+{
+	"name": "氧化镓",
+	"hardness": 2,
+	"cost": 1.75,
+	"healthScaling": 0.6,
+	"alwaysUnlocked": false,
+	"color": "DDD7CF",
+	"radioactivity": 0.01,
+	"explosiveness":0.01,
+	"flammability": 0.001,
+	"charge": 0.001,
+	"research": "晶体镓"
+}

@@ -1,0 +1,12 @@
+{
+	"name": "纳",
+	"description": "遇到水产生氢氧化钠和氢，会自爆",
+    "details": "不许加钠"
+	"color": "FFFFFF",
+	"alwaysUnlocked":false,
+	"hardness":1,
+	"radioactivity": 0,
+	"explosiveness": 0.314,
+	"flammability": 0,
+	"research": "盐水"
+}

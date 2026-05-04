@@ -1,0 +1,11 @@
+{
+	"cost":5,
+	"color": "6B968D",
+	"alwaysUnlocked":false,   
+	"hardness":0,
+	"healthScaling": 0,
+	"radioactivity": 1.5,
+	"explosiveness": 0,
+	"flammability": 0,
+	"research": "thorium"
+}

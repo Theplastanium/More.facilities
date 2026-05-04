@@ -1,0 +1,12 @@
+{
+	"name": "NaN",
+	"cost": 2147483647,
+	"hardness": 1,
+	"alwaysUnlocked": false,
+	"color": "FFFFFF",
+	"healthScaling": 2147483647,
+	"radioactivity": 2147483647,
+	"explosiveness": 2147483647,
+	"flammability": 2147483647,
+	"research": ""
+}

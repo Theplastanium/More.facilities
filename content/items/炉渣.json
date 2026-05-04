@@ -1,0 +1,12 @@
+{
+	"name": "炉渣",
+	"cost": 2147483647,
+	"color": "4E4947",
+	"alwaysUnlocked":false,   
+	"hardness":7,
+	"healthScaling": 0,
+	"radioactivity": 0,
+	"explosiveness": 0,
+	"flammability": 0,
+	"research": "scrap"
+}

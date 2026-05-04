@@ -1,0 +1,13 @@
+{
+	"name": "沥青弹",
+	"hardness":3,
+	"cost":8,
+	"healthScaling": 1,
+	"alwaysUnlocked":false,
+	"color": "5A5A56",
+	"radioactivity": 0,
+	"explosiveness": 0.1,
+	"flammability": 1.5,
+	"charge":0,
+	"research": "重油"
+}

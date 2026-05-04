@@ -1,0 +1,13 @@
+{
+	"name": "凝固汽油弹",
+	"hardness":3,
+	"cost":2,
+	"healthScaling": 1,
+	"alwaysUnlocked":false,
+	"color": "5A5A56",
+	"radioactivity": 0,
+	"explosiveness": 1,
+	"flammability": 3,
+	"charge":0,
+	"research": "oil"
+}

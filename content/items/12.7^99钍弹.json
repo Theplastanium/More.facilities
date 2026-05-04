@@ -1,0 +1,21 @@
+{
+	"name": "12.7^99钍弹",
+	"hardness":3,
+	"cost":9,
+	"healthScaling": 1,
+	"alwaysUnlocked":false,
+	"color": "BA87B4",
+	"radioactivity": 1,
+	"explosiveness": 0.2,
+	"flammability": 0.2,
+	"charge":0,
+	"research":{ 
+	"parent":"12.7^99钛弹"
+			"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "tarFields"
+			}
+		]
+	}
+}

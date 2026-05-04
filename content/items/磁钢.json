@@ -1,0 +1,13 @@
+{
+	"name": "磁钢",
+	"hardness":3,
+	"cost":2.5,
+	"healthScaling": 1,
+	"alwaysUnlocked":false,
+	"color": "5C5D79",
+	"radioactivity": 0,
+	"explosiveness": 0,
+	"flammability": 0,
+	"charge":0.45,
+	"research": "硅钢片"
+}

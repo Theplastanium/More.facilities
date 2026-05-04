@@ -1,0 +1,12 @@
+{
+	"name": "碳纤维",
+	"cost": 7,
+	"color": "515151",
+	"alwaysUnlocked":false,   
+	"hardness":7,
+	"healthScaling": 0,
+	"radioactivity": 0,
+	"explosiveness": 0,
+	"flammability": 0,
+	"research": "纯碳"
+}

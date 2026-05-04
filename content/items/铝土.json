@@ -1,0 +1,13 @@
+{
+	"name": "铝土",
+	"cost": 3,
+	"hardness":3,
+	"color": "DEDEDEFF",
+	"alwaysUnlocked":false,   
+	"hardness":7,
+	"healthScaling": 0,
+	"radioactivity": 0.01,
+	"explosiveness": 0,
+	"flammability": 0,
+	"research": "sand"
+}
