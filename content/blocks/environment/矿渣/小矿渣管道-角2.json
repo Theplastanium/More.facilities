@@ -1,0 +1,11 @@
+{
+	"type": "floor",
+	"name": "矿渣管道",
+	"speedMultiplier": 1.3,
+	"dragMultiplier": 1.25,
+	"attributes":{
+		"heat": 1
+	},
+	"blendGroup": "矿渣管道",
+	"variants": 0
+}

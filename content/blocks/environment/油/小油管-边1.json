@@ -1,0 +1,12 @@
+{
+	"type": "floor",
+	"name": "油管",
+	//"rotate": true,
+	"speedMultiplier": 1.3,
+	"dragMultiplier": 1.25,
+	"attributes":{
+		"oil": 1
+	},
+	"blendGroup": "油管",
+	"variants": 0
+}

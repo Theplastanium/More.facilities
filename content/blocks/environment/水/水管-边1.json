@@ -1,0 +1,13 @@
+{
+	"type": "floor",
+	"name": "水管",
+	//"rotate": true,
+	"speedMultiplier": 1.3,
+	"dragMultiplier": 1.25,
+	"attributes":{
+		"water": 2.5
+        "heat": -1
+	},
+	"blendGroup": "水管",
+	"variants": 0
+}

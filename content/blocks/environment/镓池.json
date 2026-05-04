@@ -1,0 +1,22 @@
+{
+    "type": "Floor",
+    "name": "液态镓",
+    "speedMultiplier":0.5,
+    //移动速率
+    "variants":0,
+    "cacheLayer": "water",
+    "albedo": 2,
+    //反照率
+    	"attributes":{
+		"heat": 0.4
+	},
+    "shallow":false,//浅水
+    "cacheLayer":"water",
+    "isLiquid": true,
+    "liquidDrop": "镓",
+    "liquidMultiplier": 1,
+    "placeableOn":true,
+    //是否能放置方块
+    "supportsOverlay":true
+    "status": "slow",
+}
