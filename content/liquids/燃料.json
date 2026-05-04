@@ -1,0 +1,12 @@
+{
+	"alwaysUnlocked":false,
+	"color": "F8EED7",
+	"effect":"tarred",
+	"flammability": 1.8,
+	"temperature": 0.5,
+	"heatCapacity": 0,
+	"viscosity": 0.8,
+	"explosiveness": 0.2,
+	"canStayOn": ["water","cryofluid"],
+	"research": "oil"
+}

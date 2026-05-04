@@ -1,0 +1,12 @@
+{
+	"type": "Liquid",
+	"barColor": "8FA2EE",
+	"color": "8FA2EE",
+	"explosiveness": 0.1,
+	"flammability": 0.4,
+	"viscosity": 0,
+	"temperature": 0,
+    "boilPoint":40
+	"research": "天然气"
+	"heatCapacity":0
+}

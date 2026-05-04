@@ -1,0 +1,12 @@
+{
+    "type":"Liquid",
+	"color":"727FE1",
+	"gas":false,
+	"moveThroughBlocks":true,
+	"temperature": 0.2,
+	"heatCapacity": 0,
+	"viscosity": 0,
+	"explosiveness": 1.1,
+	"flammability": 1.2,
+	"research": "原油"
+}

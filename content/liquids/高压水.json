@@ -1,0 +1,12 @@
+{
+	"type": "Liquid",
+	"barColor": "486ACD",
+	"color": "486ACD",
+	"explosiveness": 0,
+	"flammability": 0,
+	"viscosity": 0.50,
+	"temperature": 0.50,
+    "boilPoint":0.5
+	"research": "water"
+	"heatCapacity":3
+}

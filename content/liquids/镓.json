@@ -1,0 +1,12 @@
+{
+	"type": "Liquid",
+	"barColor": "D8D8D8",
+	"color": "D8D8D8",
+	"explosiveness": 0,
+	"flammability": 0.01,
+	"viscosity": 0.5,
+	"temperature": 1,
+    "boilPoint":40
+	"research": "slag"
+	"heatCapacity":-10
+}

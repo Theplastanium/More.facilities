@@ -1,0 +1,11 @@
+{
+	"alwaysUnlocked":false,
+	"color": "FFFFFF",  
+	"gas": true,
+	"flammability": 0.3,
+	"temperature": 0.5,
+	"heatCapacity": 0,
+	"viscosity": 0,
+	"explosiveness": 0.5,
+	"research": "页岩气"
+}
