@@ -1,0 +1,238 @@
+{
+"type":"hover",
+"speed": 2.1,
+"hitSize":90,
+"health":11000,
+"crushDamage": 150,
+"fogRadius":80
+"research": {
+		"parent": "Anti tumor unit",
+		}
+"engineSize":5
+"hovering":true,
+"template":"ErekirUnitType"
+"shadowElevation":0
+"armor":55
+"immunities":["melting","shocked","sapped","blasted""瘤""失活"],
+"research": {
+		"parent": "Anti tumor unit",
+		"requirements":
+		    [
+		    "oxide/5",
+				"silicon/110",
+				"graphite/50",
+				"beryllium/20",
+				"tungsten/50"
+		    ]
+		    }
+"abilities": [
+		{
+			"type": "LiquidExplodeAbility",
+			"liquid": "aa12?",
+			"radAmountScale": 0.8,
+			"radScale": 1.25,
+		}
+		{
+			"type": "ForceFieldAbility",
+			"sides": 2,
+			"radius": 65,
+			"max": 3000,
+			"regen": 1,
+			"cooldown": 180
+		}
+{
+	"type":"SuppressionFieldAbility"
+     "orbRadius":13
+     "x":0
+     "y":0
+     "particleSize":9
+     "suppressionRange": 1100,
+	 "suppressionDuration": 70,
+     "layer":110
+	 "color":"91A7E3"
+	}
+	]
+"parts":[
+	{
+	"type":"HoverPart",//悬浮动画块
+	"mirror":false,//是否镜像显示
+	"x":0,"y":0,//平面坐标位置
+	"radius":65,//半径
+	"phase":90,//
+	"stroke":2,//
+	"layerOffset":-0.001,//图层
+	"color":"DEEDFFFF"//颜色
+	}
+	]
+	//来自@Cheems
+   "weapons":[
+   {
+			"name": "水炮",
+			"range": 350,
+			"x": 0,
+			"y": 11,
+			"mirror": false,
+			"recoil": 0,
+			"reload": 10,
+			"rotate": true,
+			"inaccuracy": 10,
+			"shootSound": "none",
+			"bullet": {
+				"type": "LiquidBulletType",
+				"liquid": "aa12?",
+				"lifetime": 60,
+				"speed": 10,
+				"puddleSize": 10,
+				"pierceArmor": true,
+				"pierceCap": 4,
+				"buildingDamageMultiplier": 0.5,
+				"orbSize": 3.5,
+				"knockback": 5,
+				"statusDuration": 600,
+				"status": "失活",
+				"damage": 25,
+			}
+		},
+   		{
+			"name": "歼灭导弹",
+			"x": 14,
+			"y": 0,
+			"reload": 42,
+			"mirror": true,
+			"rotate": false,
+			"alternate": true,
+			"rotateSpeed": 0,
+			"shoot": {
+				"shots": 6,
+				"shotDelay": 2,
+				"type": "ShootBarrel",
+				"barrels": [
+					0,1,-30,
+					1,0,-35,
+					2,-4,-40,
+					2,-4,-40,
+					1,0,-35,
+					0,1,-30
+				]},
+			"shootSound": "missile",
+			"inaccuracy": 2,
+			"shootCone": 180,
+			"bullet": {
+				"type": "MissileBulletType",
+				"damage": 53,
+				"keepVelocity": false,
+				"buildingDamageMultiplier": 0.75,
+				"status": "blasted",
+				"statusDuration": 60,
+				"homingDelay": 6,
+				"homingRange": 80,
+				"homingPower": 1,
+				"splashDamageRadius": 45,
+				"splashDamage": 45,
+				"hitEffect": "flakExplosionBig",
+				"despawnEffect": "flakExplosionBig",
+				"sprite": "落雁",
+				"trailLength": 8,
+				"trailWidth": 0.8,
+				"trailColor": "FFFFFF",
+				"frontColor": "E3E3E3",
+				"backColor": "FF5B5B",
+				"drag": -0.012,
+				"shrinkY": 0,
+				"width": 8,"height": 30,
+				"speed": 11,"lifetime": 30
+			}
+		},
+   	    	{"name":"反瘤点防",
+		"x":-9,
+		"y":10.5,
+	    "rotate": true,
+	    "mirror": false,
+	    "beamWidth": 0.5,
+	    "repairSpeed": 0.5,
+        "type":"RepairBeamWeapon",
+        "bullet": {
+				"maxRange": 230,
+			},
+	},
+               {
+                "name": "反瘤点防",
+                "type": "PointDefenseWeapon",
+                "x": 9,
+                "y": 10.5,
+                "rotate": true,
+                "rotateSpeed": 6,
+                "mirror": false,
+                "alternate": false,
+                "shootY": 1.25,
+                "inaccuracy": 0,
+                "recoil": 1,
+                "reload": 1,
+                "targetInterval": 5,
+                "targetSwitchInterval": 5,
+                "bullet": {
+                    "speed": 80,
+                    "lifetime": 6,
+                    "shootEffect": "sparkShoot",
+                    "hitEffect": "pointHit",
+                    "maxRange": 240,
+                    "damage": 132
+            }
+            }
+      {
+      "name": "歼灭霰弹"
+      "y": 0,
+      "x": 10,
+      "reload": 28,
+      "rotate": true,//旋转
+      	"under":true
+            "top":true,//上部图层
+		    "layerOffset": -0.001,//图层偏移
+      "shoot": {
+        "type": "ShootSpread",
+        "spread": 9,
+        "shots": 120
+      },
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 120,
+        "trailWidth": 2,
+        "splashDamage": 30.5,
+			"splashDamageRadius": 15,
+        "pierceCap": 3,
+        "lifetime": 30,
+        "speed": 20,
+        "trailLength": 7,
+        "pierce": true,
+        "pierceBuilding": false,
+      }
+    },
+          {
+      "name": "歼灭霰弹"
+      "y": 0,
+      "x": 10,
+      "reload": 20,
+      "rotate": true,//旋转
+      	"under":true
+            "top":true,//上部图层
+		    "layerOffset": -0.001,//图层偏移
+      "shoot": {
+        "type": "ShootSpread",
+        "spread": 2,
+        "shots": 12
+      },
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 100,
+        "trailWidth": 2,
+        "pierceArmor": true,
+        "lifetime": 45,
+        "pierceCap": 4,
+        "speed": 10,
+        "trailLength": 7,
+        "pierce": true,
+        "pierceBuilding": false,
+      }
+    },
+    ]
+    }

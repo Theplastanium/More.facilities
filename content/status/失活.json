@@ -1,0 +1,24 @@
+{
+  "name": "失活",
+  "damage":3000
+  "speedMultipler": 0.9,
+  "healthMultiplier": 0.9,
+  "reloadMultiplier": 0.8,
+  "effectChance": 2,
+  "effect": {
+    "type": "MuitiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "lifetime": 50,
+        "sizeFrom": 3,
+        "sizeTo": 0,
+        "baseLength": 0,
+        "length": 20,
+        "colorFrom": "59c2a200",
+        "colorTo": "59c2a2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+	"name": "击穿",
+	"color": "97FFA8",
+	"damage": 3.5,
+	"speedMultiplier": 0.6,
+	"healthMultiplier": 1,
+	"reloadMultiplier": 0.8,
+	"damageMultiplier": 1,
+	"effectChance": 0.9,
+"affinities":[ 
+"wet"
+],
+"transitionDamage":80,
+
+}

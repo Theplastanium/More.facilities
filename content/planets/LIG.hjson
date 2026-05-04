@@ -1,0 +1,73 @@
+    generator: "AsteroidGenerator",
+    parent: "ET",
+    iconColor: ffffff,
+    orbitRadius: 12,
+    hasAtmosphere: false,
+    updateLighting: false,
+    drawOrbit: false,
+    accessible: true,
+    alwaysUnlocked: true,
+    defaultCore: "最高指挥中心",
+    clearSectorOnLose: true,
+    allowSectorInvasion: false,
+	allowLaunchToNumbered: false,
+    radius: 1,
+    hiddenItems: [
+        "beryllium",
+        "oxide",
+        "tungsten",
+        "carbide",
+        "fissile-matter",
+        "dormant-cyst",
+        "spore-pod",
+    ],
+        itemWhitelist: [
+        "copper",
+        "lead",
+        "scrap",
+        "graphite",
+        "coal",
+        "titanium",
+        "thorium",
+        "silicon",
+        "plastanium",
+        "phase-fabric",
+        "surge-alloy",
+        "sand",
+        "blast-compound",
+        "pyratite",
+        "metaglass",
+    ]
+        liquidWhitelist: [
+        "氯气",
+        "nitrogen",
+        "hydrogen",
+        "ozone",
+        "neoplasm",
+        "cryofluid",
+        "oil",
+        "slag",
+        "water",
+        "乙烯",
+        "页岩气",
+        "原油",
+        "燃料",
+        "重油",
+        "天然气",
+    ]
+mesh: {
+  type: NoiseMesh
+  divisions: 3
+  radius: 0.1
+  planet: 1
+  color1: D3D3D3
+  color2: ffffff
+  octaves: 4
+  persistence: 0.2
+  scale: 1.1
+  mag: 5
+  coct: 4
+  cper: 1.4
+  cscl: 0.3
+  cthresh: 0.01
+  }

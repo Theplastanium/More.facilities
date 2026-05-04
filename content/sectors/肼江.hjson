@@ -1,0 +1,17 @@
+{
+        sector: 12,
+    planet: "ET",
+    captureWave: 12
+    research: {
+        parent: "降落区",
+        objectives: [
+            {
+                type: "OnSector",
+                preset: "降落区"
+            }
+        ]
+    },
+    difficulty: 12,
+    overrideLaunchDefaults: true
+    addStartingItems: true
+    }

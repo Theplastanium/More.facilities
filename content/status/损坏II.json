@@ -1,0 +1,35 @@
+{
+	"name": "损坏II",
+	"color": "97FFA8",
+	"damage": 2.5,
+	"speedMultiplier": 0.8,
+	"healthMultiplier": 1,
+	"reloadMultiplier": 0.8,
+	"damageMultiplier": 0.7,
+	"effectChance": 0.7,
+	"effect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"baseLength": 0,
+		"length": 16,
+		"lifetime": 10,
+		"line": true,
+		"lenFrom": 10,
+		"lenTo": 0,
+		"strokeFrom": 1,
+		"strokeTo": 0,
+		"colorFrom": "97FFA8",
+		"colorTo": "97FFA8"
+	}
+"affinities":[ 
+	"burning","electrified",
+		"melting","disarmed",
+		"sapped","shocked","slow","unmoving",
+		"corroded",
+],
+"transitionDamage": 114,
+"opposites":[
+	
+	"freezing",
+]
+}

@@ -1,0 +1,17 @@
+{
+        sector: 11,
+    planet: "ET",
+    captureWave: 5
+research: {
+        parent: "肼江",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "肼江"
+            }
+        ]
+    },
+    difficulty: 13,
+    overrideLaunchDefaults: true
+    addStartingItems: true
+    }

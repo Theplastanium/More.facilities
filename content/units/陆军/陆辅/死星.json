@@ -1,0 +1,254 @@
+{
+	"type": "legs",
+	"health":40000,
+	"armor":27,
+		"canDrown": false,
+	"speed": 0.9,
+	"legLength":32,
+	"legBaseOffset":17,
+	"legSplashDamage":220,
+	"legSplashRange":18,
+	"legCount":4,
+	"legMoveSpace":1.4,
+	"stepShake":0.77,
+	"buildRange":360,
+	"buildSpeed":8.5,
+	"buildBeamOffset":24,
+	"rippleScale":1,
+	"hovering":true,
+	"allowLegStep":true,
+	"canBoost":false,
+	"range":480,
+	"drownTimeMultiplier":8,
+	"immunities":[
+		"electrified",
+		"slow",
+		"sapped",
+		"disarmed"
+	],
+	"ammoType":{
+		"type":"PowerAmmoType",
+		"totalPower":80000
+	},
+	"weapons":[
+	{
+name: 茉莉air
+x: 0
+y: -30
+mirror: false
+heatColor: 84F491FF
+shoot: {
+shots: 10
+shotDelay: 1
+firstShotDelay: 20
+}
+"shootStatus": "unmoving"
+"shootStatusDuration": 110
+parentizeEffects: true
+rotate: false
+reload: 220
+recoil: 0
+shootSound: railgun
+ejectEffect: none
+bullet: {
+    type: BasicBulletType
+    speed: 4
+    lifetime: 180
+    damage: 60
+    width: 16
+    height: 16
+    spin: 3
+    inaccuracy: 25
+    healAmount: 100
+    homingPower: 0.15
+    homingRange: 150
+    homingDelay: 15
+    collidesTeam: true
+    collides: true
+    keepVelocity: false
+    backColor: 74AC82
+    frontColor: 41e860 
+    smokeEffect: "shootSmallSmoke"
+      "fragVelocityMin": 0.3,
+      "fragVelocityMax": 1.5,
+      "fragBullets": 3,
+      despawnHit: true
+      "fragBullet": {
+        "speed": 3,
+        "collidesTiles": false,
+        "damage": 20,
+        "width": 6,
+        "heigth": 6,
+        lifetime: 35
+    trailChance: 1
+    trailEffect: {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 35
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 74AC82
+    colorTo: A0F19A
+    region: particle
+  }
+    despawnHit: true
+    despawnEffect: {
+    type: WaveEffect
+    lifetime: 35
+    sizeFrom: 0
+    sizeTo: 8
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: 74AC82
+    colorTo: A0F19A
+  }
+      }
+    ammoMultiplier: 1
+                "chargeEffect": {
+                    "type": "multiEffect",
+                    "lifetime": 180,
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "sizeFrom": 0,
+                            "sizeTo": 8,
+                            "length": 0,
+                            "lifetime": 180,
+                            "colorFrom": "84F491FF",
+                            "colorTo": "84F491FF",
+                            "cone": 360
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            line: true
+                            "particles": 15,
+                            "sizeFrom": 0,
+                            "sizeTo": 8,
+                            offset: 60
+                            baseLength: -40
+                            "length": 40,
+                            lenFrom: 0
+                            lenTo: 5
+                            strokeFrom: 0
+                            strokeTo: 3
+                            "lifetime": 1280,
+                            "colorFrom": "84F491FF",
+                            "colorTo": "84F491FF",
+                            "cone": 360
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 180,
+                            "sizeFrom": 0,
+                            "sizeTo": 18,
+                            "strokeFrom": 5,
+                            "strokeTo": 0,
+                            "colorFrom": "62AE7FFF",
+                            "colorTo": "84F491FF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "sizeFrom": 0,
+                            "sizeTo": 17,
+                            "length": 0,
+                            "spin": 7,
+                            "lifetime": 180,
+                            "region": "更多设施-star",                           
+                            "colorFrom": "62AE7FFF",
+                            "colorTo": "84F491FF"
+                        },
+                    ]
+                }
+    hitEffect: {
+    type: WaveEffect
+    lifetime: 35
+    sizeFrom: 0
+    sizeTo: 15
+    strokeFrom: 8
+    strokeTo: 0
+    colorFrom: 74AC82
+    colorTo: A0F19A
+  }
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "74AC82",
+                "colorTo": "A0F19A",
+                "sizeFrom": 0,
+                "sizeTo": 6,
+                "lifetime": 25
+                strokeFrom: 5
+                strokeTo: 0
+            }
+        ]
+    }
+    backSprite: 更多设施-star
+    sprite: 更多设施-star2
+    shrinkX: 0
+    shrinkY: 0
+      weaveMag: 3
+      weaveScale: 5
+    trailChance: 1
+    trailEffect: {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    sizeFrom: 7
+    sizeTo: 0
+    colorFrom: 74AC82
+    colorTo: A0F19A
+    region: particle
+  }
+}
+}
+	{
+		"name":"死星1",
+		"shootSound":"laserblast",
+		"chargeSound":"lasercharge",
+		"top":false,
+		"mirror":false,
+		"shake":14,
+		"x":0,"y":0,
+		"shootY":5,
+		"reload":400,
+		"recoil":0,
+		"cooldownTime":350,
+		"shootStatusDuration":130,
+		"shootStatus":"unmoving",
+		"parentizeEffects":true,
+		"shoot":{
+			"type":"ShootPattern",
+			"firstShotDelay":60
+		},
+	"bullet":{
+		"type":"LaserBulletType",
+		"length":550,
+		"damage":800,
+		"splashDamage":650,
+		"splashDamageRadius":40,
+		"width":75,
+		"lifetime":110,
+		"lightningColor":"98FFA9",
+		"lightningSpacing":32,
+		"lightningLength":5,
+		"lightningDelay":1.1,
+		"lightningLengthRand":15,
+		"lightningDamage":120,
+		"lightningAngleRand":40,
+		"largeHit":true,
+		"sideAngle":20,
+		"sideWidth":2,
+		"sideLength":60,
+		"colors":["98FFA990", "98FFA980", "FFFFFF"],
+		"chargeEffect":"greenLaserCharge",
+		"healPercent":33,
+		"collidesTeam":true
+	}}
+	]
+}

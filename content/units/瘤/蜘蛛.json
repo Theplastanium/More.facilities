@@ -1,0 +1,81 @@
+{
+type: legs
+legCount: 3
+legPairOffset: 1
+legLength: 12
+legSpeed: 0.23
+immunities: [burning]
+hovering: true
+health: 300
+armor: 4
+speed: 0.9
+stepShake: 0
+drawCell: false
+hitSize: 16
+drag: 0.4
+itemCapacity: 0
+outlineColor: 42413e
+aimDst: 160
+abilities: [
+  		{
+			"type": "StatusFieldAbility",
+			"duration": 36000,
+			"reload": 60,
+			"range": 360000,
+			"applyEffect": "none",
+			"activeEffect": {
+				"type": "WaveEffect",
+				"lifetime": 20,
+				"sizeFrom": 30,
+				"sizeTo": 30,
+				"strokeFrom": 1.3,
+				"strokeTo": 0,
+				"colorFrom": "D05D42",
+				"colorTo": "EA9458"
+			},
+			"effect": "瘤"
+		}
+  			{
+			"type": "LiquidExplodeAbility",
+			"liquid": "neoplasm",
+			"radAmountScale": 0.8,
+			"radScale": 1.25,
+		}
+  {
+    type: LiquidRegenAbility
+    liquid: neoplasm
+  }
+  ]
+weapons: [
+  {
+    name: small-barite-weapon
+    x: -7.6
+    y: 0
+    mirror: true
+    alternate: true
+    rotate: false
+    reload: 76
+    inaccuracy: 9
+    shoot: {
+      shots: 3
+      shotDelay: 2
+    }
+    shootSound: splash
+    bullet: {
+      type: LiquidBulletType
+      liquid: neoplasm
+      orbSize: 3
+      damage: 5
+      pierce: true
+      pierceCap: 1
+      knockback: 1
+      speed: 2
+      lifetime: 32
+      puddleSize: 16
+      despawnHit: true
+      despawnSound: splash
+      layer: 99
+    }
+  }
+]
+}

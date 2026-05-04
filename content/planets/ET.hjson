@@ -1,0 +1,104 @@
+    generator: "PlanetGenerator",
+    parent: "sun",
+    iconColor: 95C0F7,
+    orbitRadius: 10,
+    hasAtmosphere: true,
+    updateLighting: true,
+    atmosphereRadIn: 0.01,
+    atmosphereRadOut: 0.3,
+    atmosphereColor: 95C0F7,
+    drawOrbit: true,
+    accessible: true,
+    alwaysUnlocked: true,
+    defaultCore: "前哨基地",
+    sectorSeed: 69,
+    startSector: 8,
+    sectorSize: 1,
+    clearSectorOnLose: true,
+    allowSectorInvasion: false,
+	allowLaunchToNumbered: false,
+    radius: 1,
+    hiddenItems: [
+        "beryllium",
+        "oxide",
+        "tungsten",
+        "carbide",
+        "fissile-matter",
+        "dormant-cyst",
+        "spore-pod"
+    ],
+    itemWhitelist: [
+        "copper",
+        "lead",
+        "scrap",
+        "graphite",
+        "coal",
+        "titanium",
+        "thorium",
+        "silicon",
+        "plastanium",
+        "phase-fabric",
+        "surge-alloy",
+        "sand",
+        "blast-compound",
+        "pyratite",
+        "metaglass",
+    ]
+        liquidWhitelist: [
+        "氯气",
+        "nitrogen",
+        "hydrogen",
+        "ozone",
+        "neoplasm",
+        "cryofluid",
+        "oil",
+        "slag",
+        "water",
+        "乙烯",
+        "页岩气",
+        "原油",
+        "燃料",
+        "重油",
+        "天然气",
+    ]
+cloudMesh: {
+  type: HexSkyMesh
+  planet: ET
+  seed: 2
+  speed: 3
+  radius: 0.05
+  divisions: 5
+  color: 8FA2EE
+  octaves: 2
+  persistence: 1
+  scl: 2
+  thresh: 0.45
+}
+    "mesh": {
+      "type": "NoiseMesh",
+      "planet": "ET",
+      "seed": 69,
+      "color1": " 74AC83",
+      "color2": "95C0F7",
+      "color3":"9F9F9F"
+      "color4":"797B81"
+      "divisions": 5,
+      "radius": 0.8,
+      "octaves": 8,
+      "persistence": 1,
+      "scale": 2,
+      "mag": 1
+    }
+    	"cloudMesh": { //用于云的网格
+		"type": "HexSkyMesh",
+		"planet": "Calante",
+		"seed": 72, //用于云生成的种子
+		"speed": 1, //云的移动速度
+		"radius": 0.15, //云球半径
+		"divisions": 3, //云的规模，越大六边形越多
+		"color": "#5A63EDD1",
+		"octaves": 3, //噪声属性
+		"persistence": 0.7, //噪声属性
+		"scl": 1, //噪音尺度
+		"thresh": 0.4 //噪声的最大数量阈值
+	},

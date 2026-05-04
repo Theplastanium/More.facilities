@@ -1,0 +1,21 @@
+{
+	"name": "扫描",
+	"color": "FFFFFF",
+	"healthMultiplier":1 ,
+	"speedMultiplier": 0.9999,
+	"reloadMultiplier": 0.9999,
+	"opposites": [
+		"electrified"
+	],
+	"effectChance": 0.01,
+	"effect": {
+		"type": "WaveEffect",
+		"lifetime": 20,
+		"strokeFrom": 1,
+		"strokeTo": 1,
+		"sizeFrom": 10,
+		"sizeTo": 10,
+		"colorFrom": "ffffffff",
+		"colorTo": "ffffff00"
+	}
+}

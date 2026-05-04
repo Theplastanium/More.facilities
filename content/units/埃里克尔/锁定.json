@@ -1,0 +1,394 @@
+{
+	"type": "tank",
+	"squareShape": true,
+	"omniMovement": false,
+	"rotateMoveFirst": false,
+	"speed": 1,
+	"hitSize": 44,
+	"engineOffset": 5,
+	"engineSize": 12,
+	"canBoost": true,
+	"armor":68
+	"fogRadius":85
+"research": {
+		"parent": "Anti tumor unit",
+		"requirements":
+		    [
+		    "oxide/15",
+				"silicon/90",
+				"graphite/40",
+				"beryllium/80",
+				"tungsten/40"
+		    ]
+		    }
+	"abilities": [
+	  {
+    type: LiquidRegenAbility
+    liquid: neoplasm
+  }
+  			{
+			"type": "LiquidExplodeAbility",
+			"liquid": "aa12?",
+			"radAmountScale": 8,
+			"radScale": 1.25,
+		}
+			{
+			"type": "ForceFieldAbility",
+			"sides": 2,
+			"radius": 65,
+			"max": 1300,
+			"regen": 1,
+			"cooldown": 180
+		}
+		]
+	"drownTimeMultiplier": 2.6,
+	"crushDamage": 120,
+	"treadRects": [
+		{
+			"x": -86,
+			"y": -108,
+			"width": 42,
+			"height": 112
+		},
+		{
+			"x": -72,
+			"y": -124,
+			"width": 21,
+			"height": 16
+		},
+		{
+			"x": -86,
+			"y": 9,
+			"width": 42,
+			"height": 119
+		}
+	],
+	"ammoType": "tungsten",
+	"ammoCapacity": 80,
+	"targetAir": true,
+	"health": 12500,
+	"armor": 48,
+	"rotateSpeed": 1.22,
+	"itemCapacity": 30,
+	"faceTarget": false,
+		"immunities":["melting","shocked","sapped","blasted""瘤""失活"],
+	"targetFlags": [
+		"core",
+		"turret"
+	],
+	"research": "Anti tumor unit",
+	"requirements": {
+		"block": "tetrative-reconstructor",
+	},
+	"weapons": [
+	{
+			"name": "水炮",
+			"range": 100,
+			"x": 8,
+			"y": 7,
+			"mirror": false,
+			"recoil": 0,
+			"reload": 2,
+			"rotate": true,
+			"inaccuracy": 10,
+			"shootSound": "none",
+			"bullet": {
+				"type": "LiquidBulletType",
+				"liquid": "aa12?",
+				"lifetime": 20,
+				"speed": 15,
+				"puddleSize": 10,
+				"pierceArmor": true,
+				"pierceCap": 4,
+				"buildingDamageMultiplier": 0.5,
+				"orbSize": 3.5,
+				"knockback": 5,
+				"statusDuration": 600,
+				"status": "失活",
+				"damage": 25,
+			}
+		},
+	{
+			"name": "水炮",
+			"range": 100,
+			"x": 8,
+			"y": 7,
+			"mirror": false,
+			"recoil": 0,
+			"reload": 2,
+			"rotate": true,
+			"inaccuracy": 10,
+			"shootSound": "none",
+			"bullet": {
+				"type": "LiquidBulletType",
+				"liquid": "aa12?",
+				"lifetime": 20,
+				"speed": 15,
+				"puddleSize": 10,
+				"pierceArmor": true,
+				"pierceCap": 4,
+				"buildingDamageMultiplier": 0.5,
+				"orbSize": 3.5,
+				"knockback": 5,
+				"statusDuration": 600,
+				"status": "失活",
+				"damage": 25,
+			}
+		},
+	{
+            "name": "机炮",
+            "mirror": true,
+            "x": 3
+            "y": -3,
+            "reload": 3,
+      "rotate": true,//旋转
+      	"under":true
+            "top":true,//上部图层
+            "recoil": 0,
+            "shootSound": "spark",
+            "inaccuracy": 0,
+
+            "bullet":{
+	"speed": 5.3,
+			"damage": 100,
+			"reloadMultiplier": 1.6,
+			"lifetime": 45,
+			"pierceCap": 4,
+			"width": 7,
+			"splashDamage": 40.5,
+			"splashDamageRadius": 18,
+			"buildingDamageMultiplier": 0.5,
+			"pierceArmor": true,
+			"height": 8,
+			"splashDamage": 25.5,
+			"splashDamageRadius": 15,
+			"shootEffect": "shootSmall",
+			"homingRange": 40,
+			"homingPower": 0.06,
+			"ammoMultiplier": 5
+    }
+    }
+		{
+			"name": "导弹",
+			"minWarmup": 0.9,
+			"x": 0,
+			"y": 0,
+			"reload": 400,
+			"mirror": true,
+			"rotate": true,
+			"rotateSpeed":8,
+			"shootSound": "missileLaunch",
+			"inaccuracy":10,
+			"shootCone": 360,
+			"bullet": {
+				"speed": 0,
+				"hitShake": 5,
+				"shootEffect": {
+					"type": "WaveEffect",
+					"interp": "circleOut",
+					"lifetime": 80,
+					"sizeFrom": 0,
+					"sizeTo": 60,
+					"strokeFrom": 8,
+					"strokeTo": 8,
+					"colorFrom": "BFFFDB",
+					"colorTo": "BFFFDB00"
+				},
+				"smokeEffect": "shootSmallFlame",
+				"spawnUnit": "锁定导弹"
+			}
+		}
+		{
+			"name": "锁定1",
+			"reload": 110,
+			"x": 0,
+			"y": -0.5,
+			"shootY": 33,
+			"cooldownTime": 100,
+			"rotate": true,
+			"top": true,
+			"rotateSpeed": 1.6,
+			"recoil": 5,
+			"mirror": false,
+			"inaccuracy": 0,
+			"shootSound": "mediumCannon",
+			"shake": 8,
+			"bullet": {
+				"damage": 600,
+				"splashDamage": 405,
+				"splashDamageRadius": 55,
+				"buildingDamageMultiplier": 0.25,
+				"speed": 31,
+				"lifetime": 15,
+				"pierceCap": 3,
+				"pierceArmor": true,
+				"status": "分解",
+				"statusDuration": 400,
+				"lightning": 2,
+				"lightningDamage": 90,
+				"lightningLength": 15,
+				"lightningColor": "FEEBB3",
+				"shrinkY": 0,
+				"frontColor": "FFFFFF",
+				"backColor": "FEEBB3",
+				"trailLength": 15,
+				"trailWidth": 2.2,
+				"trailColor": "FEEBB3",
+				"pierce": true,
+				"pierceCap": 4,
+				"knockback": 8,
+				"hitEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 9,
+							"sizeFrom": 10,
+							"sizeTo": 0,
+							"length": 65,
+							"baseLength": 0,
+							"lifetime": 15,
+							"colorFrom": "FEEBB3",
+							"colorTo": "FFFFFF",
+							"cone": 40
+						},
+						{
+							"type": "WaveEffect",
+							"lifetime": 10,
+							"sizeFrom": 2,
+							"sizeTo": 60,
+							"strokeFrom": 10,
+							"strokeTo": 0,
+							"colorFrom": "FEEBB3",
+							"colorTo": "FEEBB3"
+						}
+					]
+				},
+				"shootEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 6,
+							"sizeFrom": 8,
+							"sizeTo": 0,
+							"length": 55,
+							"baseLength": 0,
+							"lifetime": 33,
+							"colorFrom": "FEEBB3",
+							"colorTo": "FFFFFF",
+							"cone": 35
+						},
+						{
+							"type": "WaveEffect",
+							"lifetime": 10,
+							"sizeFrom": 0,
+							"sizeTo": 30,
+							"strokeFrom": 3,
+							"strokeTo": 0,
+							"colorFrom": "FEEBB3",
+							"colorTo": "FFFFFF"
+						}
+					]
+				},
+				"smokeEffect": "smokeCloud",
+				"width": 16,
+				"height": 28,
+				"hitSound": "plasmaboom",
+				"fragLifeMin": 0.1,
+				"fragBullets": 3,
+				"fragRandomSpread": 60,
+				"fragBullet": {
+					"type": "PointBulletType",
+					"trailEffect": "none",
+					"despawnEffect": "none",
+					"status": "blasted",
+					"hitEffect": {
+						"type": "MultiEffect",
+						"effects": [
+							{
+								"type": "ParticleEffect",
+								"particles": 9,
+								"sizeFrom": 8,
+								"sizeTo": 0,
+								"length": 55,
+								"baseLength": 0,
+								"lifetime": 15,
+								"colorFrom": "FEEBB3",
+								"colorTo": "FEEBB3"
+							},
+							{
+								"type": "WaveEffect",
+								"lifetime": 15,
+								"sizeFrom": 2,
+								"sizeTo": 40,
+								"strokeFrom": 6,
+								"strokeTo": 0,
+								"colorFrom": "FEEBB3",
+								"colorTo": "FEEBB3"
+							}
+						]
+					},
+					"hitSound": "laser",
+					"collides": false,
+					"damage": 250,
+					"splashDamageRadius": 40,
+					"splashDamage": 210,
+					"buildingDamageMultiplier": 2.25,
+					"lifetime": 10,
+					"speed": 8
+				},
+				"despawnEffect": "bigShockwave"
+			},
+			"parts": [
+				{
+					"type": "RegionPart",
+					"mirror": true,
+					"suffix": "-管",
+					"under": true,
+					"moveY": -4,
+					"heatProgress": "recoil",
+					"progress": "recoil"
+				}
+			]
+		}
+			{
+			"name": "锁定光圈",
+			"x": 0,
+			"y": 0,
+			"reload": 220,
+			"rotate": false,
+			"alternate": false,
+			"shootSound": "release",
+			"inaccuracy": 0,
+			"shootCone": 10,
+
+			}
+			    {
+      "name": "锁定霰弹"
+      "y": 0,
+      "x": 10,
+      "reload": 28,
+      "rotate": true,//旋转
+      	"under":true
+            "top":true,//上部图层
+		    "layerOffset": -0.001,//图层偏移
+      "shoot": {
+        "type": "ShootSpread",
+        "spread": 6,
+        "shots": 4
+      },
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 62,
+        "trailWidth": 2,
+        "lifetime": 8,
+        "pierceCap": 2,
+        "speed": 15,
+        "trailLength": 7,
+        "pierce": true,
+        "pierceBuilding": false,
+      }
+    },
+	]
+}

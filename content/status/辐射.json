@@ -1,0 +1,44 @@
+{
+	"name": "辐射",
+	"color": "F2FF9C",
+	"damage": 1.2,
+	"speedMultiplier": 0.7,
+	"healthMultiplier": 0.85,
+	"reloadMultiplier": 0.8,
+	"damageMultiplier": 1.1,
+	"transitionDamage": 1000,
+	"dragMultiplier": 1.8,
+	"effectChance": 1,
+	"effect": {
+		"type": "MultiEffect",
+		"effects": [
+			/*{
+				"type": "ParticleEffect",
+				"particles": 1,
+				"baseLength": 25,
+				"length": 35,
+				"lifetime": 20,
+				"spin": 5,
+				"interp": "fastSlow",
+				"sizeInterp":"pow3In",
+				"region": "更多设施-星",
+				"sizeFrom": 8,
+				"sizeTo": 0,
+				"colorFrom": "ECA7C6",
+				"colorTo": "ECA7C6"
+			},*/
+			{
+				"type": "ParticleEffect",
+				"particles": 3,
+				"baseLength": 0,
+				"length": 125,
+				"lifetime": 30,
+				"sizeFrom": 7,
+				"sizeTo": 0,
+				"interp": "fastSlow",
+				"colorFrom": "ECA7C6",
+				"colorTo": "ECA7C6"
+			}
+		]
+	}
+}

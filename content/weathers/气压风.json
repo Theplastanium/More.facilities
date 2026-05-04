@@ -1,0 +1,20 @@
+{
+	"type": "ParticleWeather",
+	"particleRegion": "circle-small",
+	"color": "c0ecff",
+	"noiseColor": "E4F3FB",
+	"noisePath": "fog",
+	"drawNoise": true,
+	"sizeMax": 3,
+	"sizeMin": 2,
+	"density": 5000,
+	"statusGround": false,
+	"useWindVector": false,
+	"sound": "rain",
+	"soundVol": 4,
+	"soundVolMin": 0.5,
+	"soundVolOscMag": 1,
+	"soundVolOscScl": 10,
+	"statusDuration": 3,
+	"status": "凉快"
+}

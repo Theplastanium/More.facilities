@@ -1,0 +1,66 @@
+{
+  "type": "missile",
+  "flying": true,
+  "template": "MissileUnitType",
+  "speed": 0,
+  "lifetime": 1,
+  "deathExplosionEffect": "massiveExplosion",
+"targetable":true,//可被选为目标
+  "trailColor": "ED6E69",
+  "trailLength": 22,
+  "weapons": [
+    {
+      "shootCone": 360,
+      "mirror": false,
+      "reload": 1,
+      "shootOnDeath": true,
+      "shake": 8,
+      "bullet": {
+        "type": "ExplosionBulletType",
+        "splashDamage": 300,
+        "splashDamageRadius": 60,
+        "hitColor": "FF785E",
+        "collidesAir": true,
+        "collidesGround": false,
+        "status": "blasted",
+		"statusDuration": 300,
+        "buildingDamageMultiplier": 0.6,
+        "fragLifeMin": 0.1,
+        "fragBullets": 10,
+        "fragBullet": {
+          "type": "FlakBulletType",
+          "speed": 0.1,
+          "damage": 20,
+          "collidesAir": true,
+          "collidesGround": false,
+          "collidesTiles": false,
+          "buildingDamageMultiplier": 1.114,
+          "drag": 0.02,
+          
+          "hitEffect": "massiveExplosion",
+          "despawnEffect": "scatheSlash",
+          "knockback": 1.8,
+          "lifetime": 23,
+          "height": 18,
+          "width": 9,
+          "splashDamageRadius": 10,
+          "splashDamage": 18,
+          "backColor": "FF785E",
+          "trailColor": "FF785E",
+          "hitColor": "FF785E",
+          "frontColor": "ffffff",
+          "smokeEffect": "shootBigSmoke2",
+          "despawnShake": 5,
+                  "status": "freezing",
+		"statusDuration": 30,
+          "lightRadius": 30,
+          "lightColor": "FF785E",
+          "lightOpacity": 0.5,
+          "trailLength": 20,
+          "trailWidth": 3.5,
+          "trailEffect": "none"
+        }
+      }
+    }
+  ]
+}

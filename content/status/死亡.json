@@ -1,0 +1,38 @@
+{
+	"name": "损坏V",
+	"color": "97FFA8",
+	"damage": 2147483647,
+	"speedMultiplier": 0,
+	"healthMultiplier": 0,
+	"reloadMultiplier": 0,
+	"damageMultiplier": 0,
+	"effectChance": 0.4,
+	"effect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"baseLength": 0,
+		"length": 16,
+		"lifetime": 10,
+		"line": true,
+		"lenFrom": 10,
+		"lenTo": 0,
+		"strokeFrom": 1,
+		"strokeTo": 0,
+		"colorFrom": "97FFA8",
+		"colorTo": "97FFA8"
+	}
+"affinities":[ 
+	"burning","electrified",
+		"melting","disarmed",
+		"sapped","shocked","slow","unmoving",
+		"corroded","burning",
+		"electrified",
+		"freezing",
+		"melting",
+		"muddy",
+		"sapped",
+		"shocked",
+		"slow",
+],
+"transitionDamage": 2147483647,
+}

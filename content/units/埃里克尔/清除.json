@@ -1,0 +1,487 @@
+{
+  "type": "legs",
+  "speed": 2,
+  
+  "hitSize": 60,
+  "health": 16000,
+  "armor": 55,
+  "rotatespeed":0.7
+  "fogRadius":70
+  "template": "ErekirUnitType",
+  "legCount": 8,
+  "legLength": 40,
+  "legBaseOffset": 18,
+  "buildSpeed": 2,
+	"buildBeamOffset": -8,
+  "legExtension": 0,
+  "maxStretch": 1.2,
+  "crushDamage": 120,
+  "legStraightness":0.4
+  "baseLegStraightness":0.35
+  "layer": 100
+  "immunities":["melting","shocked","sapped","blasted""瘤""失活"],
+  "parts": [
+    {
+    "type": "RegionPart",
+    "layer": 110,
+    "colorTo": "99F8FFFF",
+    "color": "000000FF",
+    "mirror": false,
+    "progress": "warmup",
+    "growProgress":"warmup"
+    "drawglowrigon":true
+    "outline": false,
+    "suffix": "-glow"
+    },
+    ],
+  "abilities": [
+  	  {
+    type: LiquidRegenAbility
+    liquid: neoplasm
+  }
+    {
+    type: LiquidRegenAbility
+    liquid: aa12?
+  }
+  		{
+			"type": "StatusFieldAbility",
+			"duration": 180,
+			"reload": 200,
+			"range": 30,
+			"applyEffect": "none",
+			"activeEffect": {
+				"type": "WaveEffect",
+				"lifetime": 20,
+				"sizeFrom": 30,
+				"sizeTo": 30,
+				"strokeFrom": 1.3,
+				"strokeTo": 0,
+				"colorFrom": "97FFA8",
+				"colorTo": "97FFA800"
+			},
+			"effect": "修复"
+		}
+  		{
+			"type": "ForceFieldAbility",
+			"sides": 8,
+			"radius": 66,
+			"max": 4000,
+			"regen": 3.5,
+			"cooldown": 100
+		}
+  				{
+			"type": "LiquidExplodeAbility",
+			"liquid": "aa12?",
+			"radAmountScale": 0.8,
+			"radScale": 1.25,
+		}
+				{
+			"type": "EnergyFieldAbility",
+			"damage": 240,
+			"buildingDamageMultiplier": 0.6,
+			"reload": 76,
+			"range": 300,
+			"healPercent": 8,
+			"hitEffect": {
+				"type": "ParticleEffect",
+				"particles": 9,
+				"sizeFrom": 9,
+				"sizeTo": 0,
+				"line": true,
+				"length": 100,
+				"baseLength": 0,
+				"lifetime": 30,
+				"colorFrom": "ED6E69",
+				"colorTo": "B94641"
+			},
+			"sameTypeHealMult": 0.6,
+			"damageEffect": "chainLightning",
+			"status": "electrified",
+			"shootSound": "spark",
+			"statusDuration": 360,
+			"x": 0,
+			"y": -15,
+			"maxTargets": 40
+		}
+		]
+"research": {
+		"parent": "Anti tumor unit",
+		"requirements":
+		    [
+		    "oxide/40",
+				"silicon/110",
+				"graphite/20",
+				"beryllium/60",
+				"tungsten/50"
+		    ]
+		    }
+  "weapons": [
+  {
+			"name": "水炮",
+			"range": 350,
+			"x": 0,
+			"y": 13,
+			"mirror": false,
+			"recoil": 0,
+			"reload": 10,
+			"rotate": true,
+			"inaccuracy": 10,
+			"shootSound": "none",
+			"bullet": {
+				"type": "LiquidBulletType",
+				"liquid": "aa12?",
+				"lifetime": 60,
+				"speed": 10,
+				"puddleSize": 10,
+				"pierceArmor": true,
+				"pierceCap": 4,
+				"buildingDamageMultiplier": 0.5,
+				"orbSize": 3.5,
+				"knockback": 5,
+				"statusDuration": 600,
+				"status": "失活",
+				"damage": 25,
+			}
+		},
+		{
+			"name": "清除穿甲弹",
+			"x": 0,
+			"y": 0,
+			"recoil": 0,
+			"shootX": 5,
+			"shootY": 22,
+			"reload": 4,
+			"top": false,
+			"rotate": false,
+			"shootSound": "bolt",
+			"bullet": {
+				"damage": 75,
+				"pierceArmor": true,
+				"pierce": true,
+				"splashDamage": 40.5,
+			"splashDamageRadius": 15,
+				"pierceCap": 2,
+				"splashDamageRadius": 10,
+				"splashDamage": 16,
+				"buildingDamageMultiplier": 1.75,
+				"hitEffect": {
+					"type": "ParticleEffect",
+					"particles": 3,
+					"sizeFrom": 4,
+					"sizeTo": 0,
+					"length": 35,
+					"baseLength": 5,
+					"lifetime": 15,
+					"colorFrom": "FF8C0080",
+					"colorTo": "FF8C0080"
+				},
+				"despawnEffect": "none",
+				"makeFire": true,
+				"trailLength": 2,
+				"trailWidth": 3,
+				"trailColor": "FF8C00",
+				"frontColor": "FFD700",
+				"backColor": "FF8C00",
+				"status": "burning",
+				"statusDuration": 600,
+				"width": 10,
+				"height": 15,
+				"speed": 20,
+				"lifetime": 16
+			}
+		},
+ 		{
+			"name": "清除激光1",
+			"reload": 60,
+			"x": 7,
+			"y": -1,
+			"rotate": false,
+			"top": false,
+			"recoil": 4,
+			"inaccuracy": 0,
+			"alternate": true,
+			"shootSound": "laser",
+			"shake": 2,
+			"bullet": {
+				"type": "LaserBulletType",
+				"healPercent": 8,
+				"recoil": 1,
+				"damage": 205,
+				
+				"collidesTeam": true,
+				"laserAbsorb": false,
+				"shootEffect": "bigShockwave",
+				"sideAngle": 35,
+				"sideWidth": 1,
+				"sideLength": 70,
+				"colors": [
+					"97FFA880",
+					"91A7E3",
+					"FFFFFF"
+				],
+				"width": 18,
+				"length": 280
+			}
+		}
+		{
+			"name": "合金碎片弹",
+			"x": -5,
+			"reload": 200,
+			"recoil": 0,
+			"heatColor": "FF5555",
+			"cooldownTime": 160,
+			"inaccuracy": 0,
+			"rotate": false,
+			"mirror":false,
+			"shootSound": "laserblast",
+			"shootY": 10,
+			"shoot": {
+				"type": "ShootPattern",
+				"firstShotDelay": 30
+			},
+			"bullet": {
+				"shootEffect": {
+					"type": "ParticleEffect",
+					"particles": 14 ,
+					"sizeFrom": 5,
+					"sizeTo": 0,
+					"interp": "pow5Out",
+					"sizeInterp": "pow5In",
+					"length": 52,
+					"baseLength": 0,
+					"lifetime": 60,
+					"colorFrom": "95A6DE",
+					"colorTo": "95A6DE",
+					"cone": 48
+				},
+				"type": "BasicBulletType",
+				"damage": 305,
+				"splashDamageRadius": 80,
+				"splashDamage": 144,
+				"buildingDamageMultiplier": 2,
+				"lightningDamage": 70,
+				"lightning": 4,
+				"lightningLength": 9,
+				"lightningLengthRand": 3,
+				"lightningColor": "95A6DE",
+				"speed": 3,
+				"status": "分解",
+				"statusDuration": 110,
+				"lifetime": 165,
+				"pierce": true,
+				"pierceArmor": true,
+				"hittable":false,
+				"absorbable":false,
+				"homingRange": 120,
+				"homingDelay": 40,
+				"homingPower": 0.015,
+				"width": 38,
+				"height": 38,
+				"spin": 10,
+				"shrinkX": 0,
+				"shrinkY": 0,
+				"ammoMultiplier": 6,
+				"sprite": "mine-bullet",
+				"backColor": "95A6DE",
+				"frontColor": "FFFFFF",
+				"trailChance": 1,
+				"trailEffect": {
+					"type": "ParticleEffect",
+					"particles": 4,
+					"length": 10,
+					"baseLength": 3,
+					"lifetime": 80,
+					"interp": "pow10Out",
+					"sizeInterp": "pow5In",
+					"colorFrom": "FF5B5B70",
+					"colorTo": "FF5B5B70",
+					"sizeFrom": 2.3,
+					"sizeTo": 0
+				},
+				"chargeEffect": {
+					"type":"MultiEffect",
+					"effects":[
+						{
+							"type": "WaveEffect",
+							"interp":"circleOut",
+							"lifetime": 45,
+							"sizeFrom": 50,
+							"sizeTo": 0,
+							"strokeFrom": 0,
+							"strokeTo": 3,
+							"colorFrom": "ABB3CD",
+							"colorTo": "95A6DE"
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 12,
+							"strokeFrom": 6,
+							"strokeTo": 0,
+							"line": true,
+							"interp": "pow5In",
+							"sizeInterp": "pow5Out",
+							"lenFrom": 6,
+							"lenTo": 0,
+							"length": 80,
+							"baseLength": -40,
+							"lifetime": 45,
+							"colorFrom": "ABB3CD",
+							"colorTo": "95A6DE"
+						}
+					]
+				},
+				"smokeEffect": {
+					"type": "ParticleEffect",
+					"particles": 20,
+					"line": true,
+					"strokeFrom": 2,
+					"strokeTo": 0,
+					"lenFrom": 16,
+					"lenTo": 8,
+					"length": 36,
+					"baseLength": 3,
+					"lifetime": 22,
+					"colorFrom": "FFE176",
+					"colorTo": "FFE176",
+					"cone": 40
+				},
+				"hitShake": 5,
+				"hitSound": "plasmaboom",
+				"hitSoundVolume": 3,
+				"hitEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 23,
+							"sizeFrom": 8,
+							"sizeTo": 0,
+							"length": 60,
+							"baseLength": 25,
+							"lifetime": 55,
+							"colorFrom": "95A6DE",
+							"colorTo": "ffffff"
+						},
+						{
+							"type": "WaveEffect",
+							"lifetime": 42,
+							"sizeFrom": 1,
+							"sizeTo": 80,
+							"strokeFrom": 6,
+							"strokeTo": 0,
+							"colorFrom": "95A6DE",
+							"colorTo": "FFFFFF"
+						}
+					]
+				},
+				"despawnEffect": "none",
+				"bulletInterval": 2,
+				"intervalBullets": 2,
+				"intervalBullet": {
+					"type": "LightningBulletType",
+					"status": "shocked",
+					"hitColor": "95A6DE",
+					"hitEffect": "hitLancer",
+					"despawnEffect": "none",
+					"lightningColor": "95A6DE",
+					"hitSound": "spark",
+					"damage": 114,
+					"lightningLength": 11,
+					"lightningLengthRand": 6,
+					"lightningType": {
+						"instantDisappear": true,
+						"lightning": 3,
+						"lightningDamage": 36,
+						"lightningLength": 0,
+						"lightningLengthRand": 4,
+						"collidesTeam": true,
+						"hittable": false,
+						"hitColor": "95A6DE",
+						"hitEffect": "hitLancer",
+						"despawnEffect": "none",
+						"lightningColor": "95A6DE",
+						"hitSound": "spark",
+						"status": "shocked"
+					}
+				},
+				"fragBullets": 3,
+				"fragLifeMin": 0.8,
+				"fragBullet":{
+					"smokeEffect": "none",
+					"despawnEffect": "none",
+					"hitEffect": {
+						"type": "MultiEffect",
+						"effects": [
+							{
+								"type": "ParticleEffect",
+								"particles": 9,
+								"sizeFrom": 8,
+								"sizeTo": 0,
+								"length": 65,
+								"baseLength": 9,
+								"lifetime": 35,
+								"colorFrom": "95A6DE",
+								"colorTo": "FFFFFF",
+								"cone": 40
+							},
+							{
+								"type": "WaveEffect",
+								"lifetime": 25,
+								"sizeFrom": 2,
+								"sizeTo": 40,
+								"strokeFrom": 5,
+								"strokeTo": 0,
+								"colorFrom": "95A6DE",
+								"colorTo": "95A6DE"
+							}
+						]
+					},
+					"hitSound": "plasmaboom",
+					"shrinkY": 0,
+					"width": 32,
+					"height": 32,
+					"spin": 20,
+					"hitSize": 18,
+					"sprite": "large-bomb",
+					"frontColor": "FFFFFF",
+					"backColor": "95A6DE",
+					"trailLength": 13,
+					"trailWidth": 4,
+					"trailColor": "95A6DE",
+					"speed": 2.5,
+					"lifetime": 60,
+					"drag": -0.05,
+					"damage": 88,
+					"splashDamageRadius": 40,
+					"splashDamage": 24,
+					"homingRange": 50,
+					"homingDelay": 5,
+					"homingPower": 0.1,
+					"pierce": true,
+					"pierceBuilding": true,
+					"pierceCap": 3,
+					"buildingDamageMultiplier":1.25,
+					"status": "分解",
+					"statusDuration": 120,
+					"bulletInterval": 3,
+					"intervalBullets": 4,
+					"intervalRandomSpread": 360,
+					"intervalSpread": 16,
+					"intervalAngle": 0,
+					"intervalBullet": {
+						"type": "LightningBulletType",
+						"damage": 48,
+						"lightningColor": "FF5B5BFAA",
+						"hitColor": "FF5B5BAA",
+						"lightningLength": 5,
+						"lightningLengthRand": 4,
+						"hitEffect": "hitLancer",
+						"despawnEffect": "none",
+						"status": "shocked",
+						"statusDuration": 80
+					}
+				}	
+			}
+		}
+]
+}

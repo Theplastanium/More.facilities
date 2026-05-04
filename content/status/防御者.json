@@ -1,0 +1,24 @@
+{
+	"name": "防御者",
+	"color": "FF5B5B",
+		"damage": -1.5,
+	"damageMultiplier": 1.5,
+	"healthMultiplier": 1.25,
+	"speedMultiplier": 1.4,
+	"reloadMultiplier": 1.5,
+	"effectChance": 0.5,
+	//"affinities": ["overdrive","shielded","修复"],
+	"effect": {
+		"type": "ParticleEffect",
+		"particles": 3,
+		"baseLength": 26,
+		"length": -25,
+		"lifetime": 20,
+		"spin": 9,
+		"region": "更多设施-三角形",
+		"sizeFrom": 2.5,
+		"sizeTo": 0,
+		"colorFrom": "FFFFFF",
+		"colorTo": "F8D48A"
+	}
+}

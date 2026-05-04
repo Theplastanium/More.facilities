@@ -1,0 +1,61 @@
+{
+	"type": "flying",
+	"autoFindTarget":true,
+	"drawMinimap":false,
+	"name": "简易飞行装置",
+	"rotateSpeed": 3,
+	"speed": 1.67,
+	"accel": 0.03,
+	"drag": 0.01,
+	"ammoCapacity": 10,
+	"hitSize": 1,
+	"flying": true,
+	"health": 20,
+	"trailLength": 6,
+	"engineOffset": 0.01,
+	"engineSize": 0.1,
+	"faceTarget": true,
+	"circleTarget": true,
+	"targetFlags": ["battery"],
+	"research": "简易单位打印厂"
+	"abilities": [
+	  {
+    type: SpawnDeathAbility
+    faceOutwards: false
+    amount: 1
+    randAmount: 1
+    unit: 炸药
+  }
+	]
+	"weapons": [
+{
+						"collidesAir":true,
+			"collidesGround":true,
+			"name": "air",
+			"x":0,
+			y:0
+			"reload": 3600,
+			"shootX": -0.75,
+			"shootY": 15,
+			"mirror": true,
+			"recoil": 0.6,
+			"inaccuracy": 1,
+			"shootSound":"missile",
+			"top": true,
+			"shootWarmupSpeed":0.03,
+			"minWarmup":0.9,
+			"shake": 0.36,
+			"velocityRnd":0.1,
+						"parts":[
+			],
+			"bullet": {
+				"keepVelocity": false,
+				"speed": 0,
+				"shootEffect": "none",
+				"smokeEffect": "shootSmallFlame",
+				"spawnUnit": "炸药"
+			}
+			
+		},
+	]
+}

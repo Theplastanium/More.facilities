@@ -1,0 +1,89 @@
+{
+	"type": "naval",
+	"immunities": [
+		"electrified",
+		"disarmed",
+		"burning"
+	],
+	"faceTarget": false,
+	"research": "omura"
+	"speed": 1.1,
+	"rotateSpeed": 0.75,
+	"ammoType": "surge-alloy",
+	"ammoCapacity": 200,
+	"hitSize": 80,
+	"trailLength": 160,
+	"waveTrailX": 25,
+	"waveTrailY": -46,
+	"hitSize": 60,
+	"health": 47000,
+	"armor": 22,
+		"abilities": [
+		    {
+      "type": "UnitSpawnAbility",
+      "spawnX": -11,
+      "spawnY": -35,
+      "unit": "horizon",
+      "spawnTime": 600
+    }
+    		    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 11,
+      "spawnY": -35,
+      "unit": "horizon",
+      "spawnTime": 600
+    },
+    ]
+	"weapons": [
+		{
+			"name": "海神1",
+			"reload": 105,
+			"x": 0,
+			"y": 0,
+			"shootY": 10,
+			"cooldownTime": 85,
+			"rotate": true,
+			"rotateSpeed": 5,
+			"mirror": false,
+			"inaccuracy": 0,
+			"shootSound": "railgun",
+			"shake": 8,
+			"bullet": {
+				"type": "RailBulletType",
+				"setDefaults": false,
+				"despawnHit": false,
+				"damage": 2000,
+				"pierce": true,
+				"pierceBuilding": true,
+				"pierceEffect": "railHit",
+				"pointEffect": "railTrail",
+				"hitEffect": "massiveExplosion",
+				"shootEffect": "railShoot",
+				"smokeEffect": "smokeCloud",
+				"pierceDamageFactor": 0.167,
+				"length": 640,
+				"despawnEffect": "bigShockwave",
+				"fragRandomSpread": 0,
+				"fragSpread": 15,
+				"fragBullets": 4,
+				"fragVelocityMin": 1,
+				"fragBullet": {
+					"type": "RailBulletType",
+					"damage": 115,
+					"knockback": 12,
+					"impact": true,
+					"pierce": true,
+					"pierceBuilding": true,
+					"pierceCap": 3,
+					"pierceEffect": "railHit",
+					"pointEffect": "railTrail",
+					"hitEffect": "massiveExplosion",
+					"shootEffect": "railShoot",
+					"smokeEffect": "smokeCloud",
+					"despawnEffect": "none",
+					"length": 120
+				}
+			}
+		}
+	]
+}

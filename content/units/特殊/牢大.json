@@ -1,0 +1,482 @@
+{
+	"type": "payload",
+	"payloadCapacity": 4600,
+	"speed": 2.2,
+	"rotateSpeed": 1,
+	"itemCapacity":1000,
+	"layer":0,
+	"drag": 0.05,
+	"accel": 1.2,
+	"targetFlags": ["drill"],
+	"immunities": ["失活","wet","slow","shocked","sapped","corroded","electrified","tarred","blasted","disarmed","muddy","unmoving","freezing","boss",],
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 8000
+	},
+	"hitSize": 80,
+	"buildRange": 200,
+	"buildSpeed": 1,
+	"buildBeamOffset": 11,
+	"flying": true,
+	"faceTarget": true,
+	"health": 40000,
+	"armor": 60,
+	"itemOffsetY": 1,
+	"engineOffset": 0,
+	"engineSize": 0,
+	"trailLength": 6,
+	"engines": [
+		{
+			"x": -6,
+			"y": -14,
+			"radius": 1.8,
+			"rotation": -112.5
+		},
+		{
+			"x": 6,
+			"y": -14,
+			"radius": 1.8,
+			"rotation": -67.5
+		},
+		{
+			"x": -10.5,
+			"y": -7,
+			"radius": 2.25,
+			"rotation": -112.5
+		},
+		{
+			"x": 10.5,
+			"y": -7,
+			"radius": 2.25,
+			"rotation": -67.5
+		}
+	],
+	"lightRadius": 60,
+	"lightColor": "97FFA8",
+	"abilities": [
+			{
+			"type": "StatusFieldAbility",
+			"duration": 60,
+			"reload": 180,
+			"range": 120,
+			"applyEffect": "none",
+			"activeEffect": {
+				"type": "WaveEffect",
+				"sides": 6,
+				"lifetime": 30,
+				"sizeFrom": 60,
+				"sizeTo": 60,
+				"strokeFrom": 2,
+				"strokeTo": 0,
+				"colorFrom": "97FFA8",
+				"colorTo": "FFFFFF"
+			},
+			"effect": "修复"
+		}
+			{
+			"type": "ForceFieldAbility",
+			"sides": 2,
+			"radius": 65,
+			"max": 3000,
+			"regen": 3,
+			"cooldown": 1800
+		}
+				{
+			"type": "ForceFieldAbility",
+			"sides": 4,
+			"radius": 180,
+			"max": 1800,
+			"regen": 2,
+			"rotate": 45
+			"cooldown": 1200
+		}
+  			{
+			"type": "LiquidExplodeAbility",
+			"liquid": "燃料",
+			"radAmountScale": 12,
+			"radScale": 4,
+		}
+		{
+			"type": "StatusFieldAbility",
+			"duration": 50,
+			"reload": 180,
+			"range": 60,
+			"applyEffect": "none",
+			"activeEffect": {
+				"type": "WaveEffect",
+				"sides": 6,
+				"lifetime": 60,
+				"sizeFrom": 60,
+				"sizeTo": 60,
+				"strokeFrom": 2,
+				"strokeTo": 0,
+				"colorFrom": "97FFA8",
+				"colorTo": "FFFFFF"
+			},
+			"effect": "overdrive"
+		}
+				  {
+    type: "SpawnDeathAbility"
+    amount: 5
+    spread: 45
+    faceOutwards: true
+    unit: "crawler"
+  }
+		  {
+    type: "SpawnDeathAbility"
+    amount: 2
+    spread: 45
+    faceOutwards: true
+    unit: "mace"
+  }
+	],
+	"weapons": [
+			{
+			"collidesAir":true,
+			"collidesGround":true,
+			"layer":-1000,
+			"name": "3.5",
+			"y": 65,
+			"x":0
+			"rotate": true,
+			"rotateSpeed": 9,
+			"inaccuracy": 0,
+				"reload": 7,
+				"mirror": false,
+	"range": 185,
+	"ammoPerShot": 2,
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"layer":-1000,
+	"shoot": {
+		"shots": 1,
+		"shotDelay": 2,
+		"type": "ShootAlternate",
+		"barrels": 2,
+		"spread": 3
+	},
+	"xRand": 1,
+	"ammoUseEffect": "casing2Double",
+	"inaccuracy": 1,
+	"rotateSpeed": 12,
+	"shake": 1,
+			"bullet": {
+			"pierceArmor": true,
+			"speed": 8,
+			"damage": 40,
+			"lifetime": 40,
+			"width": 7,
+			"height": 8,
+			"layer":0,
+			"ammoMultiplier": 2,
+			"shootEffect": "shootSmall"
+			"hitShake": 10,
+			"pierceCap": 2,
+			"reloadMultiplier": 2.7,
+			"knockback": 1.2,
+		},
+		}
+				{
+							"collidesAir":true,
+			"collidesGround":true,
+			"name": "肘",
+			"type": "PointDefenseWeapon",
+			"display": false,
+			"x": -10,
+			"y": 65,
+			"mirror": true,
+			"rotate": true,
+			"alternate": false,
+			"shootSound": "lasershoot",
+			"recoil": 0,
+			"rotateSpeed": 10,
+			"reload": 4.2,
+			"targetInterval": 2,
+			"targetSwitchInterval": 4.2,
+			"bullet": {
+				"speed": 20,
+				"lifetime": 28,
+				"shootEffect": "none",
+				"hitEffect": {
+					"type": "ParticleEffect",
+					"particles": 5,
+					"line": true,
+					"length": 85,
+					"baseLength": 0,
+					"lifetime": 25,
+					"colorFrom": "BFFFDB",
+					"colorTo": "BFFFDB"
+				},
+				"maxRange": 560,
+				"damage": 45
+			}
+		},
+			{
+						"collidesAir":true,
+			"collidesGround":true,
+			"name": "18^53",
+			"x":-30,
+			y:24.8
+			"reload": 100,
+			"shootX": -0.75,
+			"shootY": 15,
+			"mirror": true,
+			"recoil": 0.6,
+			"inaccuracy": 10,
+			"shootSound":"missile",
+			"top": true,
+			"shootWarmupSpeed":0.03,
+			"minWarmup":0.9,
+			"shake": 0.36,
+			"velocityRnd":0.1,
+						"parts":[
+			],
+			"bullet": {
+				"keepVelocity": false,
+				"speed": 0,
+				"shootEffect": "none",
+				"smokeEffect": "shootSmallFlame",
+				"spawnUnit": "牢大导弹"
+			}
+			
+		},
+					{
+			"name": "5.7^18",
+			"x":-47,
+			y:24.5
+	"reload": 45,
+	"range": 220,
+	"ammoPerShot": 2,
+	
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+			"rotate": false
+			"rotateSpeed": 1,
+	"shoot": {
+		"barrels": [
+			-1,4.0,0,
+			1,4,0,
+			-2,3.8,0,
+			2,3.8,0,
+		]
+		"collidesAir":true,
+		"collidesGround":true,
+		"shots": 40,
+		"shotDelay": 1,
+		"type": "ShootAlternate",
+		"barrels": 2,
+		"spread": 3
+	},
+	"xRand": 1,
+	"ammoUseEffect": "casing2Double",
+	"inaccuracy": 1,
+	"rotateSpeed": 12,
+	"shake": 1,
+						"parts":[
+			],
+			"bullet": {
+			"speed": 5.8
+			"damage": 38,
+			"reloadMultiplier": 1.1,
+			"lifetime": 48,
+			"width": 7,
+			"layer":99,
+			"pierceArmor": true,
+			"height": 8,
+			"rangeChange": 16,
+			"shootEffect": "shootSmall",
+			"homingRange": 45,
+			"homingPower": 0.02,
+			"ammoMultiplier": 5
+			"frontColor":"999BA0",
+			"backColor":"707594",
+			"trailColor":"707594",
+			"hitColor":"707594"
+			"buildingDamageMultiplier": 1.1,
+		}
+		},
+					{
+			"collidesAir":true,
+			"collidesGround":true,
+			"name": "16^48",
+			"x":-8,
+			y:0
+	"reload": 60,
+	"fogRadiusMultiplier": 0.75,
+	"rotate": true,
+	"rotateSpeed": 9,
+	"inaccuracy": 0,
+	"maxAmmo": 30,
+	"recoil": 2,
+	"cooldownTime": 80,
+	"shoot": {
+		"shots": 2,
+		"shotDelay": 2,
+		"type": "ShootBarrel",
+		"barrels": [
+			-2,10,0,
+			2,10,0,
+		]
+	},
+	"shootY": 0,
+						"parts":[
+			],
+			"bullet": {
+			"type": "ArtilleryBulletType",
+			"splashDamageRadius": 32,
+			"splashDamage": 220,
+			"status": "burning",
+			"statusDuration": 600,
+			"makeFire": true,
+			"speed": 5,
+			"layer":99,
+			"knockback": 0.7,
+			"sprite": "更多设施-导弹",
+			"backColor": "FFB90F",
+			"frontColor": "E3E3E3",
+			"trailEffect": "smoke",
+			"width": 10,
+			"height": 60,
+			"homingDelay": 42,
+			"homingPower": 0.08,
+			"homingRange": 80,
+			"lifetime": 180,
+			"hitShake": 1,
+			"ammoMultiplier": 4,
+			"hitEffect": "flakExplosionBig",
+			"smokeEffect": "shootSmallFlame",
+			"despawnEffect": "fireHit"
+			}
+			
+		},
+	{
+			"name": "导管",
+			"range": 180,
+			"x": 0,
+			"y": 12,
+			"mirror": false,
+			"recoil": 0,
+			"reload": 0.1,
+			"rotate": true,
+			"inaccuracy": 2,
+			"shootSound": "none",
+			"bullet": {
+				"type": "LiquidBulletType",
+				"liquid": "water",
+				"lifetime": 35,
+				healAmount: 1
+				"pierceArmor": true,
+				"speed": 7,
+				"puddleSize": 10,
+				"orbSize": 3.5,
+							"layer":99,
+				"knockback": 2.5,
+				"statusDuration": 600,
+				"status": "muddy",
+				"damage": 0.01
+				"buildingDamageMultiplier":0.75
+			}
+		},
+			{
+			"name": "12.7^99",
+			"collidesAir":false,
+			"collidesGround":true,
+			"x": -66,
+			"y":29
+			"reload": 100,
+			"shootY": 13,
+			"rotate": false,
+			"mirror": true,
+			"alternate": false,
+			"shootStatusDuration": 110,
+			"shootStatus": "slow",
+			"shake": 2,
+			"inaccuracy": 0,
+			"recoil": 8,
+			"recoilTime": 60,
+			"cooldownTime": 120,
+			"ejectEffect": "casing4",
+			"inaccuracy": 1,
+			"shootSound": "artillery",
+			"bullet": {
+							"type": "ArtilleryBulletType",
+				"collides": true,
+				"collidesTiles": true,
+				"absorbable": false,
+				"damage": 480,
+				"splashDamage": 405,
+				"splashDamageRadius": 45,
+				"buildingDamageMultiplier": 0.7,
+			    "status": "sapped",
+		        "statusDuration": 180,
+				"makeFire": true,
+				"speed": 5,
+				"hitShake": 5,
+				"pierceArmor": true,
+				"lifetime": 120,
+				"shootEffect": "shootBig2",
+				"smokeEffect": "shootBigSmoke",
+				"hitSound": "explosion",
+				"width": 13,
+				"height": 18,
+				"trailLength": 18,
+				"trailWidth": 2.25,
+				"trailColor": "FEEBB390",
+				"hitEffect": "flakExplosionBig",
+				"despawnEffect": "blastExplosion"
+			},
+		},
+      {
+    x: -0.8
+    y: 30.5
+    shootY: 0
+    shootX: 0
+    mirror: false
+    shootSound: none
+    rotate: false
+    alwaysShooting: true
+    ignoreRotation: true
+    shootCone: 360
+        "layer":3,
+    reload: 15
+    recoil: 0
+    bullet: {
+      	"pierceArmor": true,
+      	"status": "electrified",
+			"statusDuration": 600,
+      instantDisappear: true
+      splashDamage: 15
+      splashDamageRadius: 88
+      pierceBuilding: true
+      width: 0
+      height: 0
+      knockback: 0.4
+      shootEffect: {
+        followParent: true
+        rotWithParent: true
+        particles: 1
+        lifetime: 20
+        length: 0
+        region: 更多设施-牢大-r
+        sizeFrom: 120
+        				"spinSprite": true,
+        sizeTo: 120
+        spin: 30
+        layer: 10000
+      }
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      speed: 0
+    }
+  }
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"name": "测试",
+	"color": "FFFFFF",
+	"healthMultiplier": 1,
+	"damageMultiplier":0
+	"speedMultiplier": 0,
+	"reloadMultiplier": 0,
+	"effectChance": 0.01,
+}

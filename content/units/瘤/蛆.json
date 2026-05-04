@@ -1,0 +1,146 @@
+{
+type: crawl
+health: 260
+speed: 1
+"crushDamage": 120,
+armor: 1
+drawBody: false
+drawCell: false
+rotateToBuilding: false
+segments: 3
+segmentScl: 3
+groundLayer: 69.69
+segmentPhase: 5
+segmentMag: 0.5
+rotateSpeed: 6
+omniMovement: false
+immunities: [burning, melting,]
+abilities: [
+  		{
+			"type": "StatusFieldAbility",
+			"duration": 36000,
+			"reload": 60,
+			"range": 36000,
+			"applyEffect": "none",
+			"activeEffect": {
+				"type": "WaveEffect",
+				"lifetime": 20,
+				"sizeFrom": 30,
+				"sizeTo": 30,
+				"strokeFrom": 1.3,
+				"strokeTo": 0,
+				"colorFrom": "EA9458",
+				"colorTo": "D05D42"
+			},
+			"effect": "瘤"
+		}
+  			{
+			"type": "LiquidExplodeAbility",
+			"liquid": "neoplasm",
+			"radAmountScale": 0.8,
+			"radScale": 1.25,
+		}
+  {
+    type: LiquidRegenAbility
+    liquid: neoplasm
+  }
+  ]
+  weapons: [
+  		{
+			"name": "1",
+			"reload": 2,
+			"x": 0,
+			"y": 0,
+			"rotate": false,
+			"shootCone": 270,
+			"ejectEffect": "none",
+			"shootSound": "explosionbig",
+			"mirror": false,
+			"inaccuracy": 0,
+			"alternate": true,
+			"top": false,
+			"shootOnDeath": true,
+			"bullet": {
+				"killShooter": true,
+				"splashDamageRadius": 68,
+				"instantDisappear": true,
+				"collides": false,
+				"splashDamage": 100,
+				"speed": 1,
+				"lifetime": 10,
+				"hitEffect": "massiveExplosion",
+				"despawnEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 18,
+							"sizeFrom": 6,
+							"sizeTo": 0,
+							"length": 45,
+							"baseLength": 3,
+							"lifetime": 35,
+							"colorFrom": "737373",
+							"colorTo": "737373"
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 32,
+							"line": true,
+							"length": 53,
+							"baseLength": 20,
+							"lifetime": 22,
+							"colorFrom": "FFFFFF",
+							"colorTo": "FFE176"
+						},
+						{
+							"type": "WaveEffect",
+							"lifetime": 15,
+							"sizeFrom": 0,
+							"sizeTo": 70,
+							"strokeFrom": 4,
+							"strokeTo": 0,
+							"colorFrom": "FFE176",
+							"colorTo": "FFFFFF"
+						}
+					]
+				},
+				"width": 0,
+				"height": 0
+			}
+		}
+  {
+    name: small-barite-weapon
+    x: -7.6
+    y: 0
+    mirror: true
+    alternate: true
+    rotate: false
+    reload: 76
+    inaccuracy: 9
+    shoot: {
+      shots: 3
+      shotDelay: 2
+    }
+    shootSound: splash
+    bullet: {
+      type: LiquidBulletType
+      liquid: neoplasm
+      orbSize: 3
+      damage: 5
+      pierce: true
+      pierceCap: 1
+      knockback: 1
+      speed: 2
+      lifetime: 32
+      puddleSize: 16
+      despawnHit: true
+      despawnSound: splash
+      layer: 99
+    }
+  }
+]
+hitSize: 10
+drag: 0.4
+outlineColor: 232028
+}

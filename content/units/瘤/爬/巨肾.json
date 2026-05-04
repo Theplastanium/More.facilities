@@ -1,0 +1,51 @@
+{
+	"type": "crawl",
+	"name": "巨肾",
+	"health": 200,
+	"armor": 8,
+	"hitSize": 8,
+	"speed": 1.4,
+	"rotateSpeed": 2.3,
+	"omniMovement": false,
+	"segments": 3,
+	"segmentScl": 3,
+	"segmentPhase": 5,
+	"segmentMag": 0.5,
+	"drawBody": false,
+	"drawCell": false,
+	"hidden": false,
+	"crushDamage": 1,
+	"circleTarget": true,
+	"hovering": false
+	"abilities": [
+  		{
+			"type": "StatusFieldAbility",
+			"duration": 36000,
+			"reload": 60,
+			"range": 36000,
+			"applyEffect": "none",
+			"activeEffect": {
+				"type": "WaveEffect",
+				"lifetime": 20,
+				"sizeFrom": 30,
+				"sizeTo": 30,
+				"strokeFrom": 1.3,
+				"strokeTo": 0,
+				"colorFrom": "EA9458",
+				"colorTo": "D05D42"
+			},
+			"effect": "瘤"
+		}
+  			{
+			"type": "LiquidExplodeAbility",
+			"liquid": "neoplasm",
+			"radAmountScale": 0.8,
+			"radScale": 1.25,
+			"amount": 120,
+		}
+  {
+    type: LiquidRegenAbility
+    liquid: neoplasm
+  }
+	],
+}

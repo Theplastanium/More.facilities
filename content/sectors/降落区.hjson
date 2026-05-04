@@ -1,0 +1,17 @@
+{
+        sector: 10,
+    planet: "ET",
+    captureWave: 0
+    research: {
+        parent: "前哨基地",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "planetaryTerminal"
+            }
+        ]
+    },
+    difficulty: 0,
+    overrideLaunchDefaults: true
+    addStartingItems: true
+    }

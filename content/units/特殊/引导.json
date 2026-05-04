@@ -1,0 +1,239 @@
+{
+	"type": "payload",
+	"payloadCapacity": 1024,
+	"speed": 2.5,
+	"rotateSpeed": 2.8,
+	"drag": 0.07,
+	"template":"ErekirUnitType"
+	"accel": 0.08,
+	"targetFlags": ["drill"],
+	"immunities": [
+		"burning","freezing","melting",
+		"disarmed","sapped","slow",
+		"tarred","wet",
+		"spore-slowed","corroded","失活"
+	],
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 8000
+	},
+	"hitSize": 28,
+	"buildRange": 240,
+	"buildSpeed": 2,
+	"buildBeamOffset": 11,
+	"flying": true,
+	"faceTarget": true,
+	"health": 3300,
+	"armor": 12,
+	"itemCapacity": 300,
+	"itemOffsetY": 1,
+	"engineOffset": 16,
+	"engineSize": 2.8,
+	"trailLength": 6,
+	"engines": [
+		{
+			"x": -6,
+			"y": -14,
+			"radius": 1.8,
+			"rotation": -112.5
+		},
+		{
+			"x": 6,
+			"y": -14,
+			"radius": 1.8,
+			"rotation": -67.5
+		},
+		{
+			"x": -10.5,
+			"y": -7,
+			"radius": 2.25,
+			"rotation": -112.5
+		},
+		{
+			"x": 10.5,
+			"y": -7,
+			"radius": 2.25,
+			"rotation": -67.5
+		}
+	],
+	"lightRadius": 60,
+	"lightColor": "97FFA8",
+	"abilities": [
+	    {
+			"type": "ForceFieldAbility",
+			"sides": 2,
+			"radius": 60,
+			"max": 2000,
+			"regen": 0.5,
+			"cooldown": 120
+		}
+		{
+			"type": "LiquidExplodeAbility",
+			"liquid": "slag",
+			"amount": 300,
+			"radScale": 2.5
+		},
+		{
+			"type": "StatusFieldAbility",
+			"duration": 50,
+			"reload": 180,
+			"range": 60,
+			"applyEffect": "none",
+			"activeEffect": {
+				"type": "WaveEffect",
+				"sides": 6,
+				"lifetime": 30,
+				"sizeFrom": 60,
+				"sizeTo": 60,
+				"strokeFrom": 2,
+				"strokeTo": 0,
+				"colorFrom": "97FFA8",
+				"colorTo": "FFFFFF"
+			},
+			"effect": "修理"
+		}
+	],
+	"parts": [
+		{
+			"type": "RegionPart",
+			"mirror": true,
+			"suffix": "-侧",
+			"layerOffset": -0.001,
+			"moveX": 1.75,
+			"moveY": -1.75
+		},
+		{
+			"type": "RegionPart",
+			"mirror": false,
+			"suffix": "-前",
+			"layerOffset": -0.001,
+			"moveY": -2
+		},
+		{
+			"type": "HaloPart",
+			"sides": 4,
+			"shapes": 1,
+			"rotateSpeed": 0.3,
+			"color": "97FFA8",
+			"layer": 110,
+			"tri": false,
+			"hollow": true,
+			"stroke": 1,
+			"strokeTo": 2,
+			"radius": 24,
+			"radiusTo": 16,
+			"haloRadius": 0
+		}
+	],
+	"weapons": [
+			{
+			"name": "巨像",
+			"reload": 3,
+			"x": 6,
+			"y": -9,
+			"rotate": true,
+			"rotateSpeed": 9,
+			"inaccuracy": 0,
+			"shootSound": "lasershoot",
+			"bullet": {
+				"type": "LaserBoltBulletType",
+				"shootEffect":"shootHeal",
+				"frontColor": "97FFA8",
+				"backColor": "97FFA8",
+				"healPercent": 2,
+				"damage": 15,
+				healAmount: 2
+				"pierce": true,
+				"pierceCap": 2,
+				"collidesTeam": true,
+				"trailLength": 3,
+				"trailWidth": 1.3,
+				"trailColor": "97FFA8",
+				"speed": 10,
+				"lifetime": 22,
+				"width": 2,
+				"height": 8
+			}
+		},
+		{
+			"name": "引导-前",
+			"x":0,
+			"y":-2
+			healAmount: 10
+			"reload": 300,
+			"shootY": 9,
+			"mirror": false,
+			"top": false,
+			"rotate": true,
+			"rotateSpeed": 1,
+			"rotationLimit": 13,
+			"shootSound": "torch",
+			"alwaysContinuous": true,
+			"cooldownTime": 300,
+			"heatColor":"FF4040",
+			"bullet": {
+			
+				"type": "ContinuousFlameBulletType",
+				"recoil": 0.01,
+				"pierceArmor": true,
+				"pierceBuilding": false,
+				"colors":["F33304A0","F33304B8","FEAF1FCC","FCBE11","FEFF5F"],
+				"lightColor":"FCBE11",
+				"flareColor":"FEAF1F",
+				"length": 96,
+				"lifetime": 8,
+				"knockback": 2.5,
+				"statusDuration": 600,
+				"status": "melting",
+				"damage": 180,
+				"healPercent": 2,
+				"healPercent": 0.5,
+				"healColor": "F33304",
+				"incendAmount": 1,
+				"incendSpread": 8,
+				"incendChance": 0.2,
+				"makeFire": true,
+				"shootEffect": {
+					"type": "ParticleEffect",
+					"particles": 4,
+					"sizeFrom":3.3,
+					"sizeTo":0,
+					"interp":"pow10Out",
+					"sizeInterp":"pow5In",
+					"length": 88,
+					"baseLength": 0,
+					"lifetime": 32,
+					"colorFrom": "f8ad42",
+					"colorTo": "F33304B8",
+					"cone": 13
+				},
+				"smokeEffect": {
+					"type": "ParticleEffect",
+					"particles": 2,
+					"line": true,
+					"strokeFrom": 1.3,
+					"strokeTo": 0,
+					"lenFrom": 18,
+					"lenTo": 8,
+					"length": 88,
+					"baseLength": 0,
+					"lifetime": 16,
+					"colorFrom": "FFFFFF",
+					"colorTo": "FFE176",
+					"cone": 16
+				},
+				"hitEffect": {
+					"type": "ParticleEffect",
+					"particles": 3,
+					"lifetime": 20,
+					"sizeFrom":2,
+					"sizeTo":0,
+					"interp":"pow3Out",
+					"sizeInterp":"pow3In",
+					"colorFrom": "F33304",
+					"colorTo": "FFE176"
+				}
+			}
+		}
+	]
+}

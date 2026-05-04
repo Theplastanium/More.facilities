@@ -1,0 +1,306 @@
+{
+	"type": "payload",
+	"payloadCapacity": 600,
+	"allowedInPayloads": false,
+	"useUnitCap": false,
+	"logicControllable": false,
+	"fogRadius":60
+	"speed": 1.6,
+	"hitSize": 20,
+	"armor": 6,
+	"health": 6700,
+	"immunities":["瘤""失活"]
+	"flying": true,
+	"template": "ErekirUnitType",
+	"shadowElevation": 1,
+	"accel": 0.05,
+	"drag": 0.032,
+		"research": "消灭",
+	"requirements": {
+		"block": "tetrative-reconstructor",
+	},
+	"parts": [
+		{
+			"type": "HoverPart",
+			"mirror": false,
+			"x": 0,
+			"y": 1,
+			"radius": 32,
+			"phase": 90,
+			"stroke": 2,
+			"layerOffset": -0.001,
+			"color": "E28654"
+		}
+	],
+	"abilities":[
+	   {
+      "type": "ShieldArcAbility",
+      "radius": 130,
+      "angle": 82,
+      "regen": 9.56,
+      "cooldown": 28,
+      "max": 1000,
+      "y": -10,
+      "width": 10
+    }
+    {
+			"type": "ForceFieldAbility",
+			"sides": 8,
+			"radius": 66,
+			"max": 2000,
+			"regen": 3.5,
+			"cooldown": 100
+		}
+				{
+			"type": "LiquidExplodeAbility",
+			"liquid": "aa12?",
+			"radAmountScale": 0.8,
+			"radScale": 1.25,
+		}
+		{
+			"type": "ForceFieldAbility",
+			"sides": 2,
+			"radius": 65,
+			"max": 1300,
+			"regen": 1,
+			"cooldown": 180
+		}
+		{
+			"type": "StatusFieldAbility",
+			"duration": 180,
+			"reload": 300,
+			"range": 3,
+			"applyEffect": "none",
+			"activeEffect": {
+				"type": "WaveEffect",
+				"lifetime": 20,
+				"sizeFrom": 30,
+				"sizeTo": 30,
+				"strokeFrom": 1.3,
+				"strokeTo": 0,
+				"colorFrom": "97FFA8",
+				"colorTo": "97FFA800"
+			},
+			"effect": "修复"
+		}
+	],
+"weapons": [
+{
+			"name": "水炮",
+			"range": 350,
+			"x": 0,
+			"y": 15,
+			"mirror": false,
+			"recoil": 0,
+			"reload": 10,
+			"rotate": true,
+			"inaccuracy": 10,
+			"shootSound": "none",
+			"bullet": {
+				"type": "LiquidBulletType",
+				"liquid": "aa12?",
+				"lifetime": 60,
+				"speed": 10,
+				"puddleSize": 10,
+				"pierceArmor": true,
+				"pierceCap": 4,
+				"buildingDamageMultiplier": 0.5,
+				"orbSize": 3.5,
+				"knockback": 5,
+				"statusDuration": 600,
+				"status": "失活",
+				"damage": 25,
+			}
+		},
+	{
+			"name": "融毁",
+			"mirror": false,
+			"top": false,
+			"shake": 4,
+			"shootY": 40,
+			"x": 0,
+			"y": 0,
+			"reload": 270,
+			"chargeSound": "lasercharge",
+			"shootSound": "laserbig",
+			"continuous": true,
+			"cooldownTime": 200,
+			"bullet": {
+				"type": "ContinuousLaserBulletType",
+				"damage": 350,
+				"width": 6,
+				"pierceArmor": true,
+				"healPercent": 1,
+				"length": 300,
+				"colors": [
+					"D86E56FF",
+					"FFA05CFF",
+					"FFFFFF"
+				],
+				"hitEffect": {
+					"type": "ParticleEffect",
+					"particles": 6,
+					"sizeFrom": 9,
+					"sizeTo": 0,
+					"line": true,
+					"length": 85,
+					"baseLength": 0,
+					"lifetime": 25,
+					"colorFrom": "FFA05CFF",
+					"colorTo": "D86E56FF",
+					"cone": 80
+				},
+				"lifetime": 150,
+				"hitShake": 2,
+				"despawnEffect": "smokeCloud",
+				"smokeEffect": "none",
+				"chargeEffect": {
+					"type": "WaveEffect",
+					"lifetime": 89,
+					"sizeFrom": 100,
+					"sizeTo": 0,
+					"strokeFrom": 0,
+					"strokeTo": 9,
+					"colorFrom": "FFA05CFF",
+					"colorTo": "D86E56FF"
+				},
+				"incendChance": 0.1,
+				"incendSpread": 8,
+				"incendAmount": 1
+			}
+		}
+		{
+			"name": "灭绝光圈",
+			"x": 0,
+			"y": 0,
+			"reload": 220,
+			"fogRadius":60
+			"rotate": false,
+			"alternate": false,
+			"shootSound": "release",
+			"inaccuracy": 0,
+			"shootCone": 10,
+
+			}
+	{
+			"name": "清除穿甲弹",
+			"x": 0,
+			"y": 0,
+			"recoil": 0,
+			"shootX": 5,
+			"shootY": 22,
+			"reload": 4,
+			"top": false,
+			"rotate": false,
+			"shootSound": "bolt",
+			"bullet": {
+				"damage": 95,
+				"pierceArmor": true,
+				"pierce": true,
+				"splashDamage": 40.5,
+			"splashDamageRadius": 15,
+				"pierceCap": 3,
+				"splashDamageRadius": 32,
+				"splashDamage": 16,
+				"buildingDamageMultiplier": 1.5,
+				"hitEffect": {
+					"type": "ParticleEffect",
+					"particles": 3,
+					"sizeFrom": 4,
+					"sizeTo": 0,
+					"length": 35,
+					"baseLength": 5,
+					"lifetime": 15,
+					"colorFrom": "FF8C0080",
+					"colorTo": "FF8C0080"
+				},
+				"despawnEffect": "none",
+				"makeFire": true,
+				"trailLength": 2,
+				"trailWidth": 3,
+				"trailColor": "FF8C00",
+				"frontColor": "FFD700",
+				"backColor": "FF8C00",
+				"status": "melting",
+				"pierceArmor": true,
+				"statusDuration": 300,
+				"width": 10,
+				"height": 15,
+				"speed": 20,
+				"lifetime": 16
+			}
+		},
+	{
+			"name": "清除激光1",
+			"reload": 60,
+			"x": 7,
+			"y": -1,
+			"rotate": false,
+			"top": false,
+			"recoil": 4,
+			"inaccuracy": 0,
+			"alternate": true,
+			"shootSound": "laser",
+			"shake": 2,
+			"bullet": {
+				"type": "LaserBulletType",
+				"healPercent": 8,
+				"recoil": 1,
+				"damage": 205,
+				
+				"collidesTeam": true,
+				"laserAbsorb": false,
+				"shootEffect": "bigShockwave",
+				"sideAngle": 35,
+				"status": "melting",
+				"pierceArmor": true,
+				"statusDuration": 300,
+				"sideWidth": 1,
+				"sideLength": 70,
+				"colors": [
+					"97FFA880",
+					"91A7E3",
+					"FFFFFF"
+				],
+				"width": 18,
+				"length": 280
+			}
+		}
+		{
+			"name": "机炮",
+			"reload": 2.5,
+			"shootStatusDuration": 5,
+			"shootStatus": "overdrive",
+			"x": 4,
+			"y": 5,
+			"top": false,
+			"rotate": false,
+			"inaccuracy": 1,
+			"layerOffset": -0.01,
+			"shootSound": "JG1",
+			"alternate": true,
+			"minShootVelocity": 0.5,
+			"shootCone": 5,
+			"bullet": {
+	"speed": 5.3,
+			"damage": 120,
+			"reloadMultiplier": 1.6,
+			"lifetime": 45,
+			"pierceCap": 4,
+			"pierceArmor": true,
+			"healPercent": 1,
+			"width": 7,
+			"splashDamage": 40.5,
+			"splashDamageRadius": 18,
+			"buildingDamageMultiplier": 0.9,
+			"pierceArmor": true,
+			"height": 8,
+			"shootEffect": "shootSmall",
+			"homingRange": 40,
+			"homingPower": 0.06,
+			"ammoMultiplier": 5
+    }
+		},
+				
+	]
+}

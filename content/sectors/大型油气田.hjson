@@ -1,0 +1,17 @@
+{
+        sector: 1,
+    planet: "serpulo",
+    captureWave: 5
+    research: {
+        parent: "planetaryTerminal",
+        objectives: [
+            {
+                type: "OnSector",
+                preset: "降落区"
+            }
+        ]
+    },
+    difficulty: 1,
+    overrideLaunchDefaults: true
+    addStartingItems: true
+    }

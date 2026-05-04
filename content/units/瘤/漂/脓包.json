@@ -1,0 +1,93 @@
+{
+	"type": "flying",
+	"name": "脓包",
+	"speed": 1.45,
+	"drag": 0.08,
+	"accel": 0.05,
+	"flying": true,
+	"engineOffset": 0,
+	"engineSize": 0,
+	"hitSize": 18,
+	"faceTarget": true,
+	"lowAltitude": true,
+	"health": 1700,
+	"armor": 0,
+	"rotateSpeed": 1,
+	"circleTarget": true,
+	"template":"ErekirUnitType"
+	"abilities": [
+  		{
+			"type": "StatusFieldAbility",
+			"duration": 36000,
+			"reload": 60,
+			"range": 36000,
+			"applyEffect": "none",
+			"activeEffect": {
+				"type": "WaveEffect",
+				"lifetime": 20,
+				"sizeFrom": 30,
+				"sizeTo": 30,
+				"strokeFrom": 1.3,
+				"strokeTo": 0,
+				"colorFrom": "EA9458",
+				"colorTo": "D05D42"
+			},
+			"effect": "瘤"
+		}
+  			{
+			"type": "LiquidExplodeAbility",
+			"liquid": "neoplasm",
+			"radAmountScale": 0.8,
+			"radScale": 1.25,
+			"amount": 120,
+		}
+  {
+    type: LiquidRegenAbility
+    liquid: neoplasm
+  }
+	],
+	"weapons": [
+		{
+			"name": "脓包A",
+			"reload": 90,
+			"x": 0,
+			"y": 0,
+			"shootY": 0,
+			"mirror": false,
+			"alternate": true,
+			"xRand":0,
+			"rotate": false,
+			"shootCone": 360,
+			"shoot": {
+				"type": "ShootSpread",
+				"shots": 4,
+				"shotDelay": 2,
+				"spread": 0.5
+			},
+			"inaccuracy": 20,
+			"alternate": true,
+			"ejectEffect": "casing2",
+			"shootSound": "mineDeploy",
+			"bullet": {
+				"type": "BombBulletType",
+				"splashDamage": 120,
+				"splashDamageRadius": 10,
+				"status": "blasted",
+				"buildingDamageMultiplier": 1.5,
+				"lifetime": 70,
+				"speed": 4,
+				"trailLength": 10,
+				"trailWidth": 6,
+				"trailColor": "F98F4A",
+				"backColor": "F98F4A",
+				"frontColor": "F98F4A",
+				"width": 10,
+				"height": 10,
+				"shootEffect": "none",
+				"smokeEffect": "none",
+				"hitEffect": "explosion",
+				"despawnEffect": "explosion",
+			}
+		},
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"name": "修复",
+	"color": "97FFA8",
+	"damage": -5,
+	"healthMultiplier": 0.8,
+	"effectChance": 0.3,
+	"opposites": [
+		"burning",
+		"wet",
+		"sapped",
+		"freezing",
+		"melting",
+		"tarred",
+		"muddy",
+		"blasted",
+		"corroded",
+	],
+	"effect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"baseLength": 30,
+		"length": -30,
+		"lifetime": 30,
+		"spin": 6,
+		"interp":"pow3Out",
+		"sizeInterp":"pow3In",
+		"region": "饱和火力-三角形",
+		"sizeFrom": 1,
+		"sizeTo": 0,
+		"colorFrom": "97FFA8",
+		"colorTo": "97FFA8"
+	}
+}
