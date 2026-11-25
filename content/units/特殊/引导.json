@@ -24,7 +24,7 @@
 	"flying": true,
 	"faceTarget": true,
 	"health": 3300,
-	"armor": 12,
+	"armor": 21
 	"itemCapacity": 300,
 	"itemOffsetY": 1,
 	"engineOffset": 16,
@@ -69,7 +69,7 @@
 		}
 		{
 			"type": "LiquidExplodeAbility",
-			"liquid": "slag",
+			"liquid": "燃料",
 			"amount": 300,
 			"radScale": 2.5
 		},
@@ -144,6 +144,7 @@
 				"damage": 15,
 				healAmount: 2
 				"pierce": true,
+				"buildingDamageMultiplier": 0.05
 				"pierceCap": 2,
 				"collidesTeam": true,
 				"trailLength": 3,
@@ -182,12 +183,13 @@
 				"flareColor":"FEAF1F",
 				"length": 96,
 				"lifetime": 8,
+				"buildingDamageMultiplier": 0.03
 				"knockback": 2.5,
 				"statusDuration": 600,
 				"status": "melting",
 				"damage": 180,
 				"healPercent": 2,
-				"healPercent": 0.5,
+				"healPercent": 1.25,
 				"healColor": "F33304",
 				"incendAmount": 1,
 				"incendSpread": 8,

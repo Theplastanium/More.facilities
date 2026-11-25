@@ -1,0 +1,198 @@
+{
+	"type": "payload",
+	"payloadCapacity": 16384,
+	"speed": 1,
+	"rotateSpeed": 3.5,
+	"itemCapacity":2147483647,
+	"layer":0,
+	"range": 400,
+	"researchCostMultiplier": 18
+	"drag": 0.05,
+	"accel": 1.2,
+	"targetFlags": ["turret"],
+	"immunities": ["失活","wet","slow","shocked","sapped","corroded","electrified","tarred","blasted","disarmed","muddy","unmoving","freezing","boss",],
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 8000
+		}
+	"hitSize": 96,
+	"flying": true,
+	"faceTarget": true,
+	"health": 48000,
+	"armor": 120,
+	"itemOffsetY": 1,
+	"engineOffset": 0,
+	"engineSize": 0,
+	"trailLength": 6,
+	"engines": [
+		{
+			"x": 0
+			"y": 0
+			"radius": 0
+			"rotation": 0
+		},
+	],
+	"lightRadius": 60,
+	"lightColor": "97FFA8",
+	"abilities": [
+			{
+			"type": "ForceFieldAbility",
+			"sides": 2,
+			"radius": 65,
+			"max": 8000,
+			"regen": 1,
+			"cooldown": 1400
+		}
+				{
+			"type": "ForceFieldAbility",
+			"sides": 36,
+			"radius": 180,
+			"max": 12000,
+			"regen": 4,
+			"rotate": 45
+			"cooldown": 3000
+		}
+  			{
+			"type": "LiquidExplodeAbility",
+			"liquid": "燃料",
+			"radAmountScale": 4
+			"radScale": 4,
+		}
+	],
+
+	"weapons": [
+{
+			"collidesAir":true,
+			"collidesGround":true,
+			"layer":-1000,
+			"name": "3.5",
+			"y": 65,
+			"x":0
+			"rotate": true,
+			"rotateSpeed": 9,
+			"inaccuracy": 0,
+				"reload": 7,
+				"mirror": false,
+	"range": 185,
+	"ammoPerShot": 2,
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"layer":-1000,
+	"shoot": {
+		"shots": 1,
+		"shotDelay": 2,
+		"type": "ShootAlternate",
+		"barrels": "2"
+		"spread": 3
+	},
+	"xRand": 1,
+	"ammoUseEffect": "casing2Double",
+	"inaccuracy": 1,
+	"rotateSpeed": 12,
+	"shake": 1,
+			"bullet": {
+			"pierceArmor": true,
+			"speed": 8,
+			"damage": 40,
+			"lifetime": 40,
+			"width": 7,
+			"height": 8,
+			"layer":0,
+			"ammoMultiplier": 2,
+			"shootEffect": "shootSmall"
+			"hitShake": 10,
+			"pierceCap": 2,
+			"reloadMultiplier": 2.7,
+			"knockback": 1.2,
+		},
+		}
+				{
+							"collidesAir":true,
+			"collidesGround":true,
+			"name": "肘",
+			"type": "PointDefenseWeapon",
+			"display": false,
+			"x": -10,
+			"y": 65,
+			"mirror": true,
+			"rotate": true,
+			"alternate": false,
+			"shootSound": "lasershoot",
+			"recoil": 0,
+			"rotateSpeed": 10,
+			"reload": 2,
+			"targetInterval": 2,
+			"targetSwitchInterval": 4.2,
+			"bullet": {
+				"speed": 20,
+				"lifetime": 28,
+				"shootEffect": "none",
+				"hitEffect": {
+					"type": "ParticleEffect",
+					"particles": 5,
+					"line": true,
+					"length": 85,
+					"baseLength": 0,
+					"lifetime": 25,
+					"colorFrom": "BFFFDB",
+					"colorTo": "BFFFDB"
+				},
+				"maxRange": 120,
+				"damage": 30
+			}
+		},
+
+      {
+      "name": "air",
+    x: -0.8
+    y: 30.5
+    shootY: 0
+    shootX: 0
+    mirror: false
+    shootSound: none
+    rotate: false
+    alwaysShooting: true
+    ignoreRotation: true
+    shootCone: 360
+        "layer":3,
+    reload: 15
+    recoil: 0
+    bullet: {
+      	"pierceArmor": true,
+      	"status": "electrified",
+			"statusDuration": 600,
+      instantDisappear: true
+      splashDamage: 15
+      splashDamageRadius: 88
+      pierceBuilding: true
+      width: 0
+      height: 0
+      knockback: 0.4
+      shootEffect: {
+        followParent: true
+        rotWithParent: true
+        particles: 1
+        lifetime: 20
+        "speed":0
+        length: 10
+        region: "更多设施-C"
+        sizeFrom: 120
+        sizeTo: 120
+        spin: 20
+        layer: 10000
+      }
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      speed: 0
+    }
+  }
+	]
+	"research": {
+		"parent": "大型组装厂",
+	}
+}

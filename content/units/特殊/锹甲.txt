@@ -1,0 +1,62 @@
+{
+	"type": "tank",
+	"speed": 2,
+	"hitSize": 20,
+	"targetAir": false,
+	"squareShape": true,
+	"omniMovement": false,
+	"rotateMoveFirst": false,
+	"health": 600,
+	"armor": 80,
+	"rotateSpeed": 2,
+	"itemCapacity": 0,
+	"faceTarget": false,
+	"research": "",
+	"requirements": {
+		"block": "",
+		"previous": ""
+	},
+	"weapons": [
+				"pierceArmor": true,
+				"hitEffect": "blastExplosion",
+"status": "死亡",
+		"statusDuration": 2147483647,
+				"width": 8,
+				"height": 9,
+"colorFrom": "E8D074",
+				"colorTo": "E8D0740"
+				"damage": 2147483647,
+				"pierceArmor": true,
+				"buildingDamageMultiplier": 2147483647,
+				"scaledSplashDamage": true,
+"splashDamageRadius": 4,
+		"splashDamage": 2147483647,
+				"lifetime": 1,
+				"speed": 0.1
+		"despawnEffect": "none",
+		"shootEffect": {
+			"type": "WaveEffect",
+			"lifetime": 16,
+			"sizeFrom": 0,
+			"sizeTo": 32,
+			"strokeFrom": 2,
+			"strokeTo": 0,
+			"colorFrom": "FFFFFF",
+			"colorTo": "FCF287"
+		}
+	],
+	"parts": [
+{"type":"RegionPart",
+"mirror":false,//是否镜像显示
+"x":0,"y":0,//起始位置
+"suffix":"-左","layer":50,"moveX":-3,"moveY":-1.5,
+"moveRot":-25,//移动圈数
+}
+{"type":"RegionPart",
+"mirror":false,//是否镜像显示
+"x":0,"y":0,//起始位置
+"suffix":"-右","layer":50,"moveX":3,"moveY":-1.5,
+"moveRot":25,//移动圈数
+}
+	],
+}
