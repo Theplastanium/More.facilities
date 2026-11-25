@@ -1,0 +1,10 @@
+{
+	"color": "FFD59E",
+"explosiveness": 0,
+	"flammability": 0,
+	"viscosity": 0.5,
+	"temperature": 0.5
+    "boilPoint":0.5
+	"heatCapacity":20
+	"research": "熔融钍"
+}

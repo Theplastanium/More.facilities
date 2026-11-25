@@ -1,0 +1,12 @@
+{
+	"type": "Liquid",
+	"barColor": "B9904D",
+	"color": "B9904D",
+	"explosiveness": 0.1
+	"flammability": 0,
+	"viscosity": 0.50,
+	"temperature": 0.50,
+    "boilPoint":0.5
+	"research": "water"
+	"heatCapacity":0
+}

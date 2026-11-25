@@ -8,5 +8,5 @@
 	"temperature": 0.50,
     "boilPoint":0.5
 	"research": "water"
-	"heatCapacity":3
+	"heatCapacity":1.8
 }

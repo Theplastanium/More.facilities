@@ -1,7 +1,7 @@
 {
     "type":"Liquid",
 	"color":"727FE1",
-	"gas":false,
+	"gas": true,
 	"moveThroughBlocks":true,
 	"temperature": 0.2,
 	"heatCapacity": 0,

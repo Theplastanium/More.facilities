@@ -1,0 +1,14 @@
+{
+	"type": "Liquid",
+	"barColor": "8FA2EE",
+	"name":"氘"
+	"color": "8FA2EE",
+		"gas": true,
+	"explosiveness": 0,
+	"flammability": 0,
+	"viscosity": 0,
+	"temperature": 0,
+    "boilPoint":40
+	"research": "water"
+	"heatCapacity":0
+}

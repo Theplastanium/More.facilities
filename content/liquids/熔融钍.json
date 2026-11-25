@@ -1,0 +1,10 @@
+{
+	"color": "FFD59E",
+"explosiveness": -65535,
+	"flammability": -114514,
+	"viscosity": 0.05,
+	"temperature": 2147483647
+    "boilPoint":0.5
+	"heatCapacity":1.14514
+	"research": "cryofluid"
+}
