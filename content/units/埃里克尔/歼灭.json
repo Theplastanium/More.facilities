@@ -30,7 +30,7 @@
 	"targetGround": false,
 	"faceTarget": true,
 	"health": 16600,
-	"armor": 72,
+	"armor": 42,
 	"abilities": [
 			{
 			"type": "ForceFieldAbility",
@@ -42,13 +42,13 @@
 		}
 			{
 			"type": "LiquidExplodeAbility",
-			"liquid": "aa12?",
+			"liquid": "",
 			"radAmountScale": 8,
 			"radScale": 1.25,
 		}
 		]
 	"itemCapacity": 0,
-		"research": "清除",
+		//"research": "清除",
 	"requirements": {
 		"block": "tetrative-reconstructor",
 	},
@@ -66,7 +66,7 @@
 			"shootSound": "none",
 			"bullet": {
 				"type": "LiquidBulletType",
-				"liquid": "aa12?",
+				"liquid": "",
 				"lifetime": 60,
 				"speed": 10,
 				"puddleSize": 10,
@@ -85,8 +85,7 @@
 			"x": 10,
 			"y": 11,
 			"reload": 21,
-			"shootStatus": "shielded",
-			"shootStatusDuration": 120,
+
 			"inaccuracy": 10,
 			"rotate": true,
 			"layerOffset": -20,
@@ -187,7 +186,7 @@
 				"lightningLengthRand": 8,
 				"fragBullets": 6,
 				"fragRandomSpread": 0,
-				"fragSpread": 12,
+				"fragSpread": 4,
 				"fragBullet": {
 					"type": "LightningBulletType",
 					"status": "unmoving",
@@ -198,9 +197,9 @@
 					"lightningColor": "ABB3CD",
 					"hitSound": "spark",
 					"damage": 88,
-					"lightning": 1,
-					"lightningLength": 19,
-					"lightningLengthRand": 7,
+					"lightning": 3,
+					"lightningLength": 5,
+					"lightningLengthRand": 3,
 					"lightningType": {
 						"instantDisappear": true,
 						"lightningDamage": 34,
@@ -285,14 +284,20 @@
 			"rotate": false,
 			"autoTarget": false,
 			"shootY": 34,
-			"cooldownTime": 300,
+			"cooldownTime": 480,
 			"inaccuracy": 0,
 			"shootSound": "largeCannon",
+			"shootSound": "missile",
+			"shootStatus": "unmoving",
+			"shootStatusDuration": 360,
+			"shoot": {
+				"shotDelay": 18
+			},
 			"recoil": 6,
 			"bullet": {
 				"type": "BasicBulletType",
-				"buildingDamageMultiplier": 2,
-				"damage": 6100,
+				"buildingDamageMultiplier": 0.4,
+				"damage": 8100,
 				"speed": 25,
 				"lifetime": 120,
 				"recoil": 1.32,
@@ -325,8 +330,8 @@
 					"sizeFrom": 7,
 					"sizeTo": 0
 				},
-				"lightningDamage": 2350,
-				"lightning": 2,
+				"lightningDamage": 800,
+				"lightning": 6,
 				"lightningLength": 5,
 				"hitEffect": {
 					"type": "MultiEffect",
@@ -415,9 +420,9 @@
 					"speed": 0,
 					"collides": false,
 					"absorbable": false,
-					"buildingDamageMultiplier": 3,
+					"buildingDamageMultiplier": 0.5,
 					"damage": 500,
-					"splashDamage": 1790,
+					"splashDamage": 4800,
 					"splashDamageRadius": 185,
 					"hitShake": 35,
 					"hitSound": "largeCannon",

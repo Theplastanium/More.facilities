@@ -1,0 +1,29 @@
+{
+	"type": "tether",
+	"name": "说",
+	"speed":4,
+	"hitSize":5,
+	"fogRadius":3,//迷雾揭示范围
+"targetable":false,//可被选为目标
+"hittable":false,//可被击中
+"parts":[
+	{
+	"radius":7,
+	"phase":90,
+	"stroke":2,
+	"layerOffset":-0.001
+	"color":"FCF287"
+	"type":"HoverPart",
+	"mirror":false,
+	"x":0,"y":-4,
+	}	]
+	"flying":true,	
+	"rotateSpeed":5,
+	"hitSize":0, 
+	"health": 80,
+	"armor":1,
+	"buildSpeed":1.114514,
+	"defaultController":"BuilderAI",
+	"template":"ErekirUnitType"
+	"research":"无人机母巢"
+			    }

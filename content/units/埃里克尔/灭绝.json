@@ -7,8 +7,8 @@
 	"fogRadius":60
 	"speed": 1.6,
 	"hitSize": 20,
-	"armor": 6,
-	"health": 6700,
+	"armor": 50,
+	"health": 10000,
 	"immunities":["瘤""失活"]
 	"flying": true,
 	"template": "ErekirUnitType",
@@ -39,7 +39,7 @@
       "angle": 82,
       "regen": 9.56,
       "cooldown": 28,
-      "max": 1000,
+      "max": 4000,
       "y": -10,
       "width": 10
     }
@@ -47,13 +47,13 @@
 			"type": "ForceFieldAbility",
 			"sides": 8,
 			"radius": 66,
-			"max": 2000,
+			"max": 2500,
 			"regen": 3.5,
 			"cooldown": 100
 		}
 				{
 			"type": "LiquidExplodeAbility",
-			"liquid": "aa12?",
+			"liquid": "",
 			"radAmountScale": 0.8,
 			"radScale": 1.25,
 		}
@@ -61,7 +61,7 @@
 			"type": "ForceFieldAbility",
 			"sides": 2,
 			"radius": 65,
-			"max": 1300,
+			"max": 2500,
 			"regen": 1,
 			"cooldown": 180
 		}
@@ -92,21 +92,21 @@
 			"y": 15,
 			"mirror": false,
 			"recoil": 0,
-			"reload": 10,
+			"reload": 2,
 			"rotate": true,
 			"inaccuracy": 10,
 			"shootSound": "none",
 			"bullet": {
 				"type": "LiquidBulletType",
-				"liquid": "aa12?",
-				"lifetime": 60,
-				"speed": 10,
+				"liquid": "",
+				"lifetime": 18,
+				"speed": 5,
 				"puddleSize": 10,
 				"pierceArmor": true,
-				"pierceCap": 4,
+				"pierceCap": 5,
 				"buildingDamageMultiplier": 0.5,
 				"orbSize": 3.5,
-				"knockback": 5,
+				"knockback": 2,
 				"statusDuration": 600,
 				"status": "失活",
 				"damage": 25,

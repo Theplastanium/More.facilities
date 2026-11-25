@@ -1,18 +1,15 @@
 {
 "type":"hover",
 "speed": 2.1,
-"hitSize":90,
+"hitSize":68,
 "health":11000,
 "crushDamage": 150,
 "fogRadius":80
-"research": {
-		"parent": "Anti tumor unit",
-		}
 "engineSize":5
 "hovering":true,
 "template":"ErekirUnitType"
 "shadowElevation":0
-"armor":55
+"armor":34
 "immunities":["melting","shocked","sapped","blasted""瘤""失活"],
 "research": {
 		"parent": "Anti tumor unit",
@@ -28,7 +25,7 @@
 "abilities": [
 		{
 			"type": "LiquidExplodeAbility",
-			"liquid": "aa12?",
+			"liquid": "",
 			"radAmountScale": 0.8,
 			"radScale": 1.25,
 		}
@@ -46,12 +43,13 @@
      "x":0
      "y":0
      "particleSize":9
-     "suppressionRange": 1100,
-	 "suppressionDuration": 70,
+     "suppressionRange": 110,
+	 "suppressionDuration": 2,
      "layer":110
 	 "color":"91A7E3"
 	}
 	]
+	"drownTimeMultiplier": 2147483647,//溺水时间
 "parts":[
 	{
 	"type":"HoverPart",//悬浮动画块
@@ -64,7 +62,8 @@
 	"color":"DEEDFFFF"//颜色
 	}
 	]
-	//来自@Cheems
+	//来自mee
+		"research":"Anti-tumor-unit"
    "weapons":[
    {
 			"name": "水炮",
@@ -73,31 +72,31 @@
 			"y": 11,
 			"mirror": false,
 			"recoil": 0,
-			"reload": 10,
+			"reload": 2,
 			"rotate": true,
 			"inaccuracy": 10,
 			"shootSound": "none",
 			"bullet": {
 				"type": "LiquidBulletType",
-				"liquid": "aa12?",
-				"lifetime": 60,
-				"speed": 10,
+				"liquid": "",
+				"lifetime": 18,
+				"speed": 5,
 				"puddleSize": 10,
 				"pierceArmor": true,
-				"pierceCap": 4,
+				"pierceCap": 2,
 				"buildingDamageMultiplier": 0.5,
 				"orbSize": 3.5,
-				"knockback": 5,
+				"knockback": 2,
 				"statusDuration": 600,
 				"status": "失活",
 				"damage": 25,
 			}
 		},
    		{
-			"name": "歼灭导弹",
+			"name": "导弹1",
 			"x": 14,
 			"y": 0,
-			"reload": 42,
+			"reload": 100,
 			"mirror": true,
 			"rotate": false,
 			"alternate": true,
@@ -152,7 +151,7 @@
 	    "repairSpeed": 0.5,
         "type":"RepairBeamWeapon",
         "bullet": {
-				"maxRange": 230,
+				"maxRange": 200,
 			},
 	},
                {
@@ -167,49 +166,23 @@
                 "shootY": 1.25,
                 "inaccuracy": 0,
                 "recoil": 1,
-                "reload": 1,
+                "reload": 14,
                 "targetInterval": 5,
                 "targetSwitchInterval": 5,
                 "bullet": {
-                    "speed": 80,
-                    "lifetime": 6,
+                    "speed": 16,
+                    "lifetime": 10,
                     "shootEffect": "sparkShoot",
                     "hitEffect": "pointHit",
-                    "maxRange": 240,
-                    "damage": 132
+                    "maxRange": 180,
+                    "damage": 45
             }
             }
-      {
-      "name": "歼灭霰弹"
-      "y": 0,
-      "x": 10,
-      "reload": 28,
-      "rotate": true,//旋转
-      	"under":true
-            "top":true,//上部图层
-		    "layerOffset": -0.001,//图层偏移
-      "shoot": {
-        "type": "ShootSpread",
-        "spread": 9,
-        "shots": 120
-      },
-      "bullet": {
-        "type": "BasicBulletType",
-        "damage": 120,
-        "trailWidth": 2,
-        "splashDamage": 30.5,
-			"splashDamageRadius": 15,
-        "pierceCap": 3,
-        "lifetime": 30,
-        "speed": 20,
-        "trailLength": 7,
-        "pierce": true,
-        "pierceBuilding": false,
-      }
-    },
+ 
           {
-      "name": "歼灭霰弹"
-      "y": 0,
+      "name": "霰弹"
+      					"mirror": false,
+      "y": 11,
       "x": 10,
       "reload": 20,
       "rotate": true,//旋转
@@ -218,17 +191,18 @@
 		    "layerOffset": -0.001,//图层偏移
       "shoot": {
         "type": "ShootSpread",
-        "spread": 2,
+        "spread": 1.5,
         "shots": 12
       },
       "bullet": {
+      			"knockback": 1.5,
         "type": "BasicBulletType",
-        "damage": 100,
+        "damage": 18,
         "trailWidth": 2,
         "pierceArmor": true,
-        "lifetime": 45,
+        "lifetime": 40,
         "pierceCap": 4,
-        "speed": 10,
+        "speed": 4,
         "trailLength": 7,
         "pierce": true,
         "pierceBuilding": false,

@@ -1,10 +1,10 @@
 {
   "type": "legs",
-  "speed": 2,
-  
+  "speed": 1,
+  "legSplashDamage": 288,
   "hitSize": 60,
   "health": 16000,
-  "armor": 55,
+  "armor": 38,
   "rotatespeed":0.7
   "fogRadius":70
   "template": "ErekirUnitType",
@@ -15,7 +15,7 @@
 	"buildBeamOffset": -8,
   "legExtension": 0,
   "maxStretch": 1.2,
-  "crushDamage": 120,
+  "crushDamage": 1,
   "legStraightness":0.4
   "baseLegStraightness":0.35
   "layer": 100
@@ -41,7 +41,7 @@
   }
     {
     type: LiquidRegenAbility
-    liquid: aa12?
+    liquid: 
   }
   		{
 			"type": "StatusFieldAbility",
@@ -71,17 +71,17 @@
 		}
   				{
 			"type": "LiquidExplodeAbility",
-			"liquid": "aa12?",
+			"liquid": "",
 			"radAmountScale": 0.8,
 			"radScale": 1.25,
 		}
 				{
 			"type": "EnergyFieldAbility",
-			"damage": 240,
-			"buildingDamageMultiplier": 0.6,
-			"reload": 76,
-			"range": 300,
-			"healPercent": 8,
+			"damage": 30,
+			"buildingDamageMultiplier": 0.5,
+			"reload": 60,
+			"range": 200,
+			"healPercent": 1.5,
 			"hitEffect": {
 				"type": "ParticleEffect",
 				"particles": 9,
@@ -91,21 +91,21 @@
 				"length": 100,
 				"baseLength": 0,
 				"lifetime": 30,
-				"colorFrom": "ED6E69",
-				"colorTo": "B94641"
+				"colorFrom": "95A6DE",
+				"colorTo": "ABB3CD"
 			},
-			"sameTypeHealMult": 0.6,
+			"sameTypeHealMult": 0.4,
 			"damageEffect": "chainLightning",
 			"status": "electrified",
 			"shootSound": "spark",
 			"statusDuration": 360,
 			"x": 0,
 			"y": -15,
-			"maxTargets": 40
+			"maxTargets": 14
 		}
 		]
 "research": {
-		"parent": "Anti tumor unit",
+		"parent": "Anti-tumor-unit",
 		"requirements":
 		    [
 		    "oxide/40",
@@ -118,23 +118,23 @@
   "weapons": [
   {
 			"name": "水炮",
-			"range": 350,
+			"range": 1000,
 			"x": 0,
 			"y": 13,
 			"mirror": false,
 			"recoil": 0,
-			"reload": 10,
+			"reload": 2,
 			"rotate": true,
 			"inaccuracy": 10,
 			"shootSound": "none",
 			"bullet": {
 				"type": "LiquidBulletType",
-				"liquid": "aa12?",
-				"lifetime": 60,
-				"speed": 10,
+				"liquid": "",
+				"lifetime": 18,
+				"speed": 5,
 				"puddleSize": 10,
 				"pierceArmor": true,
-				"pierceCap": 4,
+				"pierceCap": 3,
 				"buildingDamageMultiplier": 0.5,
 				"orbSize": 3.5,
 				"knockback": 5,
@@ -206,7 +206,7 @@
 				"type": "LaserBulletType",
 				"healPercent": 8,
 				"recoil": 1,
-				"damage": 205,
+				"damage": 195,
 				
 				"collidesTeam": true,
 				"laserAbsorb": false,
@@ -226,7 +226,7 @@
 		{
 			"name": "合金碎片弹",
 			"x": -5,
-			"reload": 200,
+			"reload": 250,
 			"recoil": 0,
 			"heatColor": "FF5555",
 			"cooldownTime": 160,
@@ -255,16 +255,16 @@
 					"cone": 48
 				},
 				"type": "BasicBulletType",
-				"damage": 305,
-				"splashDamageRadius": 80,
-				"splashDamage": 144,
-				"buildingDamageMultiplier": 2,
+				"damage": 500,
+				"splashDamageRadius": 32,
+				"splashDamage": 100,
+				"buildingDamageMultiplier": 0.5,
 				"lightningDamage": 70,
 				"lightning": 4,
 				"lightningLength": 9,
 				"lightningLengthRand": 3,
 				"lightningColor": "95A6DE",
-				"speed": 3,
+				"speed": 2.4,
 				"status": "分解",
 				"statusDuration": 110,
 				"lifetime": 165,
@@ -274,7 +274,7 @@
 				"absorbable":false,
 				"homingRange": 120,
 				"homingDelay": 40,
-				"homingPower": 0.015,
+				"homingPower": 0.02,
 				"width": 38,
 				"height": 38,
 				"spin": 10,
@@ -293,8 +293,8 @@
 					"lifetime": 80,
 					"interp": "pow10Out",
 					"sizeInterp": "pow5In",
-					"colorFrom": "FF5B5B70",
-					"colorTo": "FF5B5B70",
+					"colorFrom": "95A6DE",
+					"colorTo": "95A6DE",
 					"sizeFrom": 2.3,
 					"sizeTo": 0
 				},
@@ -376,7 +376,11 @@
 				},
 				"despawnEffect": "none",
 				"bulletInterval": 2,
-				"intervalBullets": 2,
+				/*"intervalBullets": 8,//每秒子弹
+				"intervalRandomSpread": 360,//随机散布
+				"intervalSpread": 16,//散布
+				"intervalAngle": 0,//旋转角度*/
+				"intervalBullets": 1,//x=~*30?
 				"intervalBullet": {
 					"type": "LightningBulletType",
 					"status": "shocked",
@@ -385,14 +389,14 @@
 					"despawnEffect": "none",
 					"lightningColor": "95A6DE",
 					"hitSound": "spark",
-					"damage": 114,
+					"damage": 25,
 					"lightningLength": 11,
 					"lightningLengthRand": 6,
 					"lightningType": {
 						"instantDisappear": true,
-						"lightning": 3,
-						"lightningDamage": 36,
-						"lightningLength": 0,
+						"lightning": 2,
+						"lightningDamage": 16,
+						"lightningLength": 2,
 						"lightningLengthRand": 4,
 						"collidesTeam": true,
 						"hittable": false,
@@ -404,7 +408,7 @@
 						"status": "shocked"
 					}
 				},
-				"fragBullets": 3,
+				"fragBullets": 18,
 				"fragLifeMin": 0.8,
 				"fragBullet":{
 					"smokeEffect": "none",
@@ -449,11 +453,11 @@
 					"trailWidth": 4,
 					"trailColor": "95A6DE",
 					"speed": 2.5,
-					"lifetime": 60,
+					"lifetime": 6,
 					"drag": -0.05,
-					"damage": 88,
-					"splashDamageRadius": 40,
-					"splashDamage": 24,
+					"damage": 22,
+					"splashDamageRadius": 6,
+					"splashDamage": 20,
 					"homingRange": 50,
 					"homingDelay": 5,
 					"homingPower": 0.1,
@@ -464,15 +468,14 @@
 					"status": "分解",
 					"statusDuration": 120,
 					"bulletInterval": 3,
-					"intervalBullets": 4,
-					"intervalRandomSpread": 360,
-					"intervalSpread": 16,
-					"intervalAngle": 0,
-					"intervalBullet": {
+
+                "fragBullets": 10,
+				"fragLifeMin": 0.8,
+				"fragBullet":{
 						"type": "LightningBulletType",
-						"damage": 48,
-						"lightningColor": "FF5B5BFAA",
-						"hitColor": "FF5B5BAA",
+						"damage": 22,
+						"lightningColor": "95A6DE",
+						"hitColor": "ABB3CD",
 						"lightningLength": 5,
 						"lightningLengthRand": 4,
 						"hitEffect": "hitLancer",

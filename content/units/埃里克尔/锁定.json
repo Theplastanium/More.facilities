@@ -1,17 +1,14 @@
 {
 	"type": "tank",
-	"squareShape": true,
-	"omniMovement": false,
-	"rotateMoveFirst": false,
 	"speed": 1,
 	"hitSize": 44,
 	"engineOffset": 5,
 	"engineSize": 12,
-	"canBoost": true,
-	"armor":68
+	"armor":28
 	"fogRadius":85
+	  "template": "ErekirUnitType",
 "research": {
-		"parent": "Anti tumor unit",
+		"parent": "Anti-tumor-unit",
 		"requirements":
 		    [
 		    "oxide/15",
@@ -28,7 +25,7 @@
   }
   			{
 			"type": "LiquidExplodeAbility",
-			"liquid": "aa12?",
+			"liquid": "",
 			"radAmountScale": 8,
 			"radScale": 1.25,
 		}
@@ -41,8 +38,8 @@
 			"cooldown": 180
 		}
 		]
-	"drownTimeMultiplier": 2.6,
-	"crushDamage": 120,
+	"drownTimeMultiplier": 8,//溺水时间
+	"crushDamage": 4,//碾压伤害
 	"treadRects": [
 		{
 			"x": -86,
@@ -76,7 +73,6 @@
 		"core",
 		"turret"
 	],
-	"research": "Anti tumor unit",
 	"requirements": {
 		"block": "tetrative-reconstructor",
 	},
@@ -94,15 +90,15 @@
 			"shootSound": "none",
 			"bullet": {
 				"type": "LiquidBulletType",
-				"liquid": "aa12?",
-				"lifetime": 20,
-				"speed": 15,
+				"liquid": "",
+				"lifetime": 18,
+				"speed": 5,
 				"puddleSize": 10,
 				"pierceArmor": true,
-				"pierceCap": 4,
+				"pierceCap": 2,
 				"buildingDamageMultiplier": 0.5,
 				"orbSize": 3.5,
-				"knockback": 5,
+				"knockback": 3,
 				"statusDuration": 600,
 				"status": "失活",
 				"damage": 25,
@@ -121,7 +117,7 @@
 			"shootSound": "none",
 			"bullet": {
 				"type": "LiquidBulletType",
-				"liquid": "aa12?",
+				"liquid": "",
 				"lifetime": 20,
 				"speed": 15,
 				"puddleSize": 10,
@@ -169,11 +165,11 @@
     }
     }
 		{
-			"name": "导弹",
+			"name": "导弹1",
 			"minWarmup": 0.9,
 			"x": 0,
 			"y": 0,
-			"reload": 400,
+			"reload": 680,
 			"mirror": true,
 			"rotate": true,
 			"rotateSpeed":8,
@@ -382,7 +378,7 @@
         "type": "BasicBulletType",
         "damage": 62,
         "trailWidth": 2,
-        "lifetime": 8,
+        "lifetime": 24,
         "pierceCap": 2,
         "speed": 15,
         "trailLength": 7,

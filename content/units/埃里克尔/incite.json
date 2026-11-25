@@ -1,0 +1,6 @@
+{
+	"payloadCapacity": 400,//√(~)/8=size
+"mineSpeed": 12,
+	"speed": 5.117,
+	"armor": 3,
+}
