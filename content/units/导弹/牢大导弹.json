@@ -1,15 +1,26 @@
 {
   "type": "missile",
+  "name":"棍母"
   "flying": true,
   "template": "MissileUnitType",
   "speed": 6.8,
   "lifetime": 100,
+  	"health": 300,
+	"armor": 6,
   "deathExplosionEffect": "massiveExplosion",
   	"fogRadius":8,//迷雾揭示范围
 "targetable":false,//可被选为目标
   "trailColor": "ED6E69",
-  "trailLength": 22,
+  "trailLength": 8,
   	"abilities": [
+  				{
+			"type": "ForceFieldAbility",
+			"sides": 2,
+			"radius": 65,
+			"max": 200,
+			"regen": 3,
+			"cooldown": 2147483647
+		}
   			{
 			"type": "LiquidExplodeAbility",
 			"liquid": "燃料",
@@ -28,9 +39,9 @@
         "type": "ExplosionBulletType",
         "splashDamage": 1800,
         "splashDamageRadius": 60,
-        "hitColor": "9cb664",
+        "hitColor": "CD9FCF",
         "collidesAir": true,
-        "collidesGround": false,
+        "collidesGround": true,
         "status": "辐射",
 		"statusDuration": 300,
         "buildingDamageMultiplier": 0.8,
@@ -54,14 +65,14 @@
           "width": 9,
           "splashDamageRadius": 40,
           "splashDamage": 480,
-          "backColor": "9cb664",
-          "trailColor": "9cb664",
-          "hitColor": "9cb664",
-          "frontColor": "ffffff",
+          "backColor": "CD9FCF",
+          "trailColor": "CD9FCF",
+          "hitColor": "CD9FCF",
+          "frontColor": "A576A7",
           "smokeEffect": "shootBigSmoke2",
           "despawnShake": 5,
           "lightRadius": 30,
-          "lightColor": "9cb664",
+          "lightColor": "A576A7",
           "lightOpacity": 0.5,
           "trailLength": 20,
           "trailWidth": 3.5,

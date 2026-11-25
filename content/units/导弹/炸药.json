@@ -21,7 +21,7 @@
         "splashDamageRadius": 60,
         "hitColor": "FF785E",
         "collidesAir": true,
-        "collidesGround": false,
+        "collidesGround": true,
         "status": "blasted",
 		"statusDuration": 300,
         "buildingDamageMultiplier": 0.6,

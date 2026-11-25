@@ -2,8 +2,9 @@
 	"type": "missile",
 	"template": "MissileUnitType",
 	"name": "锁定导弹",
-	"speed": 8,
-	"lifetime":90,
+	"speed": 5,
+		"armor": 8,
+	"lifetime":180,
 	"rotateSpeed":4,
 	"outlineColor": "383848",
 	"homingDelay":30,
@@ -12,7 +13,8 @@
 	"hidden":true,
 	"missileAccelTime":60,
 	"hitSize":18,
-	"health": 3590,
+	"health": 340
+	,
 	"fogRadius":8,
 	"engineLayer":110,
 	"engineColor":"FFFFFF",
@@ -32,7 +34,7 @@
 		}
 			{
 			"type": "LiquidExplodeAbility",
-			"liquid": "aa12?",
+			"liquid": "",
 			"radAmountScale": 8,
 			"radScale": 2,
 		}]
