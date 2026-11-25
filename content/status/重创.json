@@ -7,7 +7,7 @@
 	"reloadMultiplier":0.8,
 	"damageMultiplier":0.2,
 	"opposites": ["修复","修理"],
-	//"affinities":["tarred","油蚀"],
+	//"affinities":["tarred","晶化"],
 	"transitionDamage":22,
 	"effectChance": 1,
 	"effect": {

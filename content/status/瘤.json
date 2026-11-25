@@ -5,7 +5,7 @@
 	"effectChance": 0.6,
 	"damage":0.01666
 	"transitionDamage": 1200,
-	"affinities": ["失活","辐射"],
+	"affinities": ["失活","辐射","晶化"],
 	"effect": {
 		"type": "ParticleEffect",
 		"particles": 1,

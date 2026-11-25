@@ -25,9 +25,9 @@
 	"burning","electrified",
 		"melting","disarmed",
 		"sapped","shocked","slow","unmoving",
-		"corroded",
+		"corroded","晶化"
 ],
-"transitionDamage": 114,
+"transitionDamage": 325,
 "opposites":[
 	
 	"freezing",
