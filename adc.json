@@ -2,9 +2,9 @@
   "root": [
     {
       "planet":"ET",
-      "items": ["scrap", "copper", "lead", "graphite", "coal", "titanium", "thorium", "silicon", "plastanium", "phase-fabric", "surge-alloy",   "sand", "blast-compound", "pyratite", "metaglass","氢氧化钠","铝土","铝合金","硅钢片","氮化镓","氧化镓","铟","纳","12.7^99合金弹","12.7^99钛弹","12.7^99钍弹","氧化铁","铁","裂变产物","凝固汽油弹","碳纤维布","纯碳","变压模块","冰晶石","沥青弹""磁钢"
+      "items": ["scrap", "copper", "lead", "graphite", "coal", "titanium", "thorium", "silicon", "plastanium", "phase-fabric", "surge-alloy",   "sand", "blast-compound", "pyratite", "metaglass","氢氧化钠","铝土","铝合金","硅钢片","氮化镓","氧化镓","铟","纳","12.7^99合金弹","12.7^99钛弹","12.7^99钍弹","氧化铁","铁","裂变产物","凝固汽油弹","碳纤维布","纯碳","变压模块","冰晶石","沥青弹","磁钢","泰伯利亚矿","泰伯利亚矿原矿","锂","desh"
  ],
-      "liquids": ["water","slag","oil","cryofluid","nitrogen","氯气","乙烯","页岩气","原油","天然气","重油","燃料","淡气","高压蒸汽","中压蒸汽","低压蒸汽","偏二甲肼","镓","高压水"
+      "liquids": ["water","slag","oil","cryofluid","nitrogen","氯气","乙烯","页岩气","原油","天然气","重油","燃料","淡气","高压蒸汽","中压蒸汽","低压蒸汽","偏二甲肼","镓","高压水""熔融锂铅合金","熔融钍","洗矿废水","浆状熔融相位临界钍流体",""
 ],
       "units": [
         "dagger","mace","fortress","secepter","regin",
@@ -13,7 +13,7 @@
         "flare","horizon","zenith","antumbra","eclipse",
         "mono","poly","mega","quad","oct",
         "risso","minke","bryde","sei","omura",
-        "retusa","oxynoe","cyerce","aegires","navanax","引导","龙王","海神","死星","日蚀","要塞","王座","天蝎"
+        "retusa","oxynoe","cyerce","aegires","navanax","引导","龙王","海神","死星","日蚀","要塞","王座","天蝎","牢大","曼巴","锹甲","行","德尔塔","冲击波",
       ]
     }
     {
