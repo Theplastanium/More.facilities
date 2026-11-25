@@ -1,0 +1,143 @@
+##如何使用这个文本
+##下面所有代码公开，可以随意借用，但希望能把这个文本加入你的mod的bundles里
+##用眼睛看，并保持202020用眼规则
+##后面带?的表存疑，或与上下文本填写需要调换，()[]表提示
+
+
+
+
+
+
+
+#type unit
+单位荷载容量计算：y=√x/8如6=√2304/8注意，x为单位文件填写数据，y位你所要的荷载容量，反推(y*8)^2=x
+单位空间计算 "hitSize"/8 如96/8=12
+单位组装厂生产空间计算：第一个单位 "hitSize"*0.225 如96*0.225=21.6
+"abilities": [        单位特殊能力
+			{
+			"type": "StatusFieldAbility",     生成effect
+			"duration": 60,                    持续时间
+			"reload": 180,                   给effect的速度
+			"range": 120,                   可以使自方单位受到effect的最远距离
+			"applyEffect": "none",
+			"activeEffect": {              特效s
+				"type": "WaveEffect",
+				"sides": 6,
+				"lifetime": 30,
+				"sizeFrom": 60,
+				"sizeTo": 60,
+				"strokeFrom": 2,
+				"strokeTo": 0,
+				"colorFrom": "97FFA8",
+				"colorTo": "FFFFFF"
+			},
+			"effect": "修复"            effect
+		}
+			{
+			"type": "ForceFieldAbility",     生成力墙投影
+			"sides": 2,                     面数≤2为自身力墙无视"range"的投影范围
+			"radius": 65,                每秒回复盾容
+			"max": 3000,               最大盾容量
+			"regen": 3,                  投影范围
+			"cooldown": 1800           热量过高重新回复盾容时间
+		}
+  			{
+			"type": "LiquidExplodeAbility",   死亡留下液体
+			"liquid": "燃料",                  液体
+			"radAmountScale": 1           (液体量?)
+			"radScale": 2,                 (液体范围?)
+		}
+    type: "SpawnDeathAbility"             死亡释放单位
+    amount: 5                             数量
+    spread: 45                           (角度?)
+    faceOutwards: true                      不知道
+    unit: "crawler"                          单位
+  }
+  	   {
+      "type": "ShieldArcAbility",         弧形力墙投影(仅在攻击时展开)
+      "radius": 130,              半径
+      "angle": 82,                 角度
+      "regen": 9.56,                盾容回复速度
+      "cooldown": 28,               盾容过热回复速度
+      "max": 4000,               最大盾容
+      "y": -10,                   中心点
+      "width": 10                  宽
+    }
+    {
+	"type": "LiquidExplodeAbility",  吸收液体并回血  
+    "liquid": "water",                 吸收的液体
+	"radAmountScale": 0.8,         吸收的液体量?
+    "radScale": 1.25,                每单位量回复的血量?
+		}
+	],
+	
+
+
+#type turret
+"reload": x,    重新装填时间(数值越低越快)
+"range": x,    炮台感知范围(与炮台子弹射程独立，以x*8为一格，如6*8=48[既6格要感知范围要填48])
+"maxAmmo": x, 最大弹药容量，如果ammoMultiplier太大，而maxAmmo太小可能不能装填弹药?(理论上)
+"recoilTime": x, 开炮制退时间
+"recoil": x,      开炮制退距离(每8位一格?[没测])
+"cooldownTime": x,  冷却时间(不知道有什么用)
+"shoot": {           对炮弹&炮管编辑
+		"type": "ShootBarrel",    子弹类型
+		"shots": 6,               一次射出多少子弹
+		"shotDelay": 2,          射击延迟(前摇)
+		"barrels": [             炮管编辑(炮管x.y.°[x坐标，y坐标，角度])
+			3.5, 13, 0,
+			-3.5, 13, 0,
+			10.5, 13, 0,
+			-10.5, 13, 0
+		]
+	},
+"collidesGround": 炮台是否对地面单位进行感知用true/false(与targetGround独立下文介绍)
+"collidesAir":      炮台是否对地面单位进行感知用true/false(与targetAir独立下文介绍)
+
+
+
+#type bullet
+"targetAir":      填true/false子弹是否对空中单位碰撞(对空中目标造成伤害)
+"targetGround": 填true/false子弹是否对地面单位碰撞(对地面目标造成伤害)
+"fromColor": "F595BE",       子弹颜色        
+"toColor": "F595BE",          子弹颜色(如果可以渐变)
+"ammoMultiplier": 4,           弹药装填倍率，越高一个物品可以填充炮台子弹量越高，如果ammoMultiplier太大，而maxAmmo太小可能不能装填弹药?(理论上)
+"shootEffect": "thoriumShoot",   射击效果(不知道有什么用)
+"smokeEffect": "thoriumShoot"  射击烟雾(不知道有什么用)
+"type": "ShrapnelBulletType",    子弹类型
+"reloadMultiplier": 1.2,           射速倍率
+"width": 20,                    子弹宽度(如果子弹用的是图片的话)
+"length": 160,                  子弹长度(如果子弹用的是图片的话)
+"damage": 125,                子弹伤害
+"splashDamageRadius": 15,    范围伤害范围(每8为一格子)
+"splashDamage": 30,           范围伤害伤害
+"reflectable":false,             这颗子弹是否能被反弹(存疑)
+"speed": 150,                子弹飞行速度
+"drag": 0.017,                不知道
+"lifetime": 100,                子弹存活时间
+"armorMultiplier":4             护甲穿透倍率(＞1为负面效果，＜1为正面效果)[子弹碰撞敌人时，敌人护甲*armorMultiplier(＞1，护甲变厚，＜1护甲变薄]
+"pierceArmor": true,          穿甲(无视armor的减伤)
+"knockback": 15,             击退(数值过高会适得其反[反而会拉近敌人])
+"status": "晶化"               effect效果
+"statusDuration": 2147483647,   每60一秒，
+"buildingDamageMultiplier":"0.2"  建筑伤害倍率 (damage*buildingDamageMultiplier)
+"pierceCap": 120                穿透(不包括力墙)
+"pierce": true,                   穿透(现版本好像没用?)
+"pierceBuilding": true,            穿透建筑(现版本好像没用?)
+
+
+
+#type drop
+"speedMultiplier": 0.95,     挖掘速度倍率
+	"attributes":              地形成分
+	{"oil": 0.5,"water":0.2},    成分(列表)
+	"variants":2,               变体(外观变体)
+	"playerUnmineable": true      玩家是否可以挖掘
+"oreThreshold": 0.89,               矿石阈值
+    "oreScale": 33                  矿石规模
+
+
+
+
+#type sounds
+如果你的单位/炮台是用mindustry内置的音效，必须去将mindustry内置音效添加到模组音效这，然后改个名字，就可以用了(154音效改版解决办法)
